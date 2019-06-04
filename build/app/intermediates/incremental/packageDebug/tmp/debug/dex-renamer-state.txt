@@ -1,4 +1,0 @@
-#Wed Jun 05 01:05:09 SGT 2019
-base.0=D\:\\Programming\\learnTechv2\\build\\app\\intermediates\\transforms\\dexMerger\\debug\\0
-path.0=classes.dex
-renamed.0=classes.dex

@@ -4,7 +4,6 @@ import 'package:learntech/WhatsApp/displayTopic.dart';
 import 'package:learntech/WhatsApp/uiCopy.dart';
 import 'topicList.dart';
 import 'dart:ui';
-//import 'package:auto_size_text/auto_size_text.dart'
 
 class TopicSelect extends StatefulWidget {
   final String selectedTopic;
@@ -22,75 +21,84 @@ class _TopicSelectState extends State<TopicSelect> {
   );
   var currentPageValue = 0.0;
 
-//  (() {
-//
+  List imagePaths = new List();
+
+  @override
+  void initState() {
+    print("initState");
+    for (int x = 0; x < loadTopics("WhatsApp").length; x++) {
+      imagePaths.add(loadTopics("WhatsApp")[x].imagePath);
+    }
+    for (int x = 0; x < loadTopics("Security Tips").length; x++) {
+      imagePaths.add(loadTopics("Security Tips")[x].imagePath);
+    }
+    super.initState();
+  }
+
+  @override
+  void didChangeDependencies() {
+    print("didChangeDependencies");
+    for (int x = 0; x < imagePaths.length; x++) {
+      precacheImage(AssetImage(imagePaths[x]), context);
+      print("loading into cache");
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
-
     _pageViewController.addListener(() {
       setState(() {
         currentPageValue = _pageViewController.page;
       });
     });
 
-    final ModuleTopic imageTopic = loadTopics("${widget.selectedTopic}")[currentPageValue.round()];
-    return Stack(
-      children: <Widget>[
-        Container(
-          decoration: BoxDecoration(
-        image: DecorationImage(
-          image: AssetImage(
-            imageTopic.imagePath),
-            fit: BoxFit.cover,)
-        ),
-
-          child: BackdropFilter(
-            filter: ImageFilter.blur(sigmaX: 4.0, sigmaY: 4.0),
-            child: Scaffold(
-                backgroundColor: Colors.transparent,
-                appBar: AppBar(
-                  title: Text(widget.selectedTopic == "WhatsApp"
-                      ? "WhatsApp"
-                      : "Security Tips"),
-                  leading: IconButton(
-                    icon: Icon(Icons.arrow_back),
-                    onPressed: () => Navigator.pop(context, false),
-                  ),
-                  backgroundColor: Colors.transparent,
-                  elevation: 0.0,
-//              centerTitle: true, //Android is left-align by default
+    final ModuleTopic imageTopic =
+        loadTopics("${widget.selectedTopic}")[currentPageValue.round()];
+    return Stack(children: <Widget>[
+      Container(
+        decoration: BoxDecoration(
+            image: DecorationImage(
+          image: AssetImage(imageTopic.imagePath),
+          fit: BoxFit.cover,
+        )),
+        child: BackdropFilter(
+          filter: ImageFilter.blur(sigmaX: 4.0, sigmaY: 4.0),
+          child: Scaffold(
+              backgroundColor: Colors.transparent,
+              appBar: AppBar(
+                title: Text(widget.selectedTopic == "WhatsApp"
+                    ? "WhatsApp"
+                    : "Security Tips"),
+                leading: IconButton(
+                  icon: Icon(Icons.arrow_back),
+                  onPressed: () => Navigator.pop(context, false),
                 ),
-                body: PageTransformer(pageViewBuilder: (context, visibilityResolver) {
-                  return PageView.builder(
-                    controller: _pageViewController,
-                    itemCount: loadTopics("${widget.selectedTopic}").length,
-                    itemBuilder: (context, index) {
-                      final topic = loadTopics("${widget.selectedTopic}")[index];
-                      final pageVisibility =
-                      visibilityResolver.resolvePageVisibility(index);
-                      return WhatsAppTopicCards(
-                        topic: topic,
-                        pageVisibility: pageVisibility,
-                      );
-                    },
-                  );
-                })),
-          ),
+                backgroundColor: Colors.transparent,
+                elevation: 0.0,
+              ),
+              body: PageTransformer(
+                  pageViewBuilder: (context, visibilityResolver) {
+                return PageView.builder(
+                  controller: _pageViewController,
+                  itemCount: loadTopics("${widget.selectedTopic}").length,
+                  itemBuilder: (context, index) {
+                    final topic = loadTopics("${widget.selectedTopic}")[index];
+                    final pageVisibility =
+                        visibilityResolver.resolvePageVisibility(index);
+                    return WhatsAppTopicCards(
+                      topic: topic,
+                      pageVisibility: pageVisibility,
+                    );
+                  },
+                );
+              })),
         ),
-      ]
-//        Container(
-//        decoration: BoxDecoration(
-//          image: DecorationImage(
-//                  image: AssetImage(imageTopic.imagePath),
-//            fit: BoxFit.cover,
-//          )
-//        ),
-    );
+      ),
+    ]);
   }
 }
 
-class ImageReturn extends StatelessWidget {
+class ImageReturn extends StatefulWidget {
   ImageReturn({
     @required this.topic,
   });
@@ -98,17 +106,23 @@ class ImageReturn extends StatelessWidget {
   final ModuleTopic topic;
 
   @override
+  _ImageReturnState createState() => _ImageReturnState();
+}
+
+class _ImageReturnState extends State<ImageReturn> {
+  @override
   Widget build(BuildContext context) {
     return Container(
       child: Image.asset(
-        "${topic.imagePath}",
+        "${widget.topic.imagePath}",
         fit: BoxFit.cover,
+        gaplessPlayback: true,
       ),
     );
   }
 }
 
-class WhatsAppTopicCards extends StatelessWidget {
+class WhatsAppTopicCards extends StatefulWidget {
   WhatsAppTopicCards({
     @required this.topic,
     @required this.pageVisibility,
@@ -117,14 +131,20 @@ class WhatsAppTopicCards extends StatelessWidget {
   final ModuleTopic topic;
   final PageVisibility pageVisibility;
 
+  @override
+  _WhatsAppTopicCardsState createState() => _WhatsAppTopicCardsState();
+}
+
+class _WhatsAppTopicCardsState extends State<WhatsAppTopicCards> {
   Widget _applyTextEffects({
     @required double translationFactor,
     @required Widget child,
   }) {
-    final double xTranslation = pageVisibility.pagePosition * translationFactor;
+    final double xTranslation =
+        widget.pageVisibility.pagePosition * translationFactor;
 
     return Opacity(
-      opacity: pageVisibility.visibleFraction,
+      opacity: widget.pageVisibility.visibleFraction,
       child: Transform(
         alignment: FractionalOffset.topLeft,
         transform: Matrix4.translationValues(
@@ -142,7 +162,7 @@ class WhatsAppTopicCards extends StatelessWidget {
     var textWithCoolEffects = _applyTextEffects(
       translationFactor: 300.0,
       child: Text(
-        topic.topicName,
+        widget.topic.topicName,
         style: textTheme.caption.copyWith(
           color: Colors.white70,
           fontWeight: FontWeight.w500,
@@ -152,19 +172,6 @@ class WhatsAppTopicCards extends StatelessWidget {
         textAlign: TextAlign.center,
       ),
     );
-
-//    var titleText = _applyTextEffects(
-//      translationFactor: 200.0,
-//      child: Padding(
-//        padding: const EdgeInsets.only(top: 16.0),
-//        child: Text(
-//          topic.title,
-//          style: textTheme.title
-//              .copyWith(color: Colors.white, fontWeight: FontWeight.bold),
-//          textAlign: TextAlign.center,
-//        ),
-//      ),
-//    );
 
     return Padding(
       padding: const EdgeInsets.fromLTRB(0.0, 00.0, 0.0, 0.0),
@@ -181,14 +188,13 @@ class WhatsAppTopicCards extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var image = Image.asset(
-      topic.imagePath,
-      fit: BoxFit.cover,
-      alignment: FractionalOffset(
-        0.5 + (pageVisibility.pagePosition / 3),
-        0.5,
-      ),
-    );
+    var image = Image.asset(widget.topic.imagePath,
+        fit: BoxFit.cover,
+        alignment: FractionalOffset(
+          0.5 + (widget.pageVisibility.pagePosition / 3),
+          0.5,
+        ),
+        gaplessPlayback: true);
     var imageOverlayGradient = DecoratedBox(
       decoration: BoxDecoration(
         gradient: LinearGradient(
@@ -201,15 +207,14 @@ class WhatsAppTopicCards extends StatelessWidget {
         ),
       ),
     );
-
     return GestureDetector(
       onTap: () => Navigator.push(
           context,
           MaterialPageRoute(
               builder: (context) => DisplayTopic(
-                    topicName: topic.topicName,
-                    imagePath: topic.imagePath,
-                    topicInformation: topic.topicInfo,
+                    topicName: widget.topic.topicName,
+                    imagePath: widget.topic.imagePath,
+                    topicInformation: widget.topic.topicInfo,
                   ))),
       child: Padding(
         padding: const EdgeInsets.symmetric(

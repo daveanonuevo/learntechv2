@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:learntech/UI/SideBar/contactUs.dart';
+import 'package:learntech/UI/SideBar/settings.dart';
+import 'package:learntech/UI/SideBar/about.dart';
 
 class SideBar extends StatelessWidget {
   @override
@@ -29,7 +31,9 @@ class SideBar extends StatelessWidget {
 								fontSize: 30.0
 							),
 						),
-						onTap: ()=> Navigator.of(context).pop() //add on required to navigate other pages
+						onTap: ()=> Navigator.of(context).push( MaterialPageRoute(
+							builder: (context) =>
+									Settings())	) //add on required to navigate other pages
 					),
 						new Divider(color: Colors.grey),
 						new ListTile(
@@ -63,7 +67,9 @@ class SideBar extends StatelessWidget {
 									fontSize: 30.0
 								),
 							),
-							onTap: ()=> Navigator.of(context).pop() //add on required to navigate other pages
+							onTap: ()=> Navigator.of(context).push(	MaterialPageRoute(
+								builder: (context) =>
+										About()) ) //add on required to navigate other pages
 						),
 						new Divider(color: Colors.grey),
 					],

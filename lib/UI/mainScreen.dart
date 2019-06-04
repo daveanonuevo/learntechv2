@@ -7,7 +7,6 @@ class MainPage extends StatelessWidget {
   Widget build(BuildContext context) {
     MediaQueryData queryData;
     queryData = MediaQuery.of(context);
-    print(queryData.devicePixelRatio);
 
     return Container(
       decoration: BoxDecoration(
@@ -23,7 +22,7 @@ class MainPage extends StatelessWidget {
         drawer: SideBar(),
         backgroundColor: Colors.transparent,
         body: Padding(
-          padding: const EdgeInsets.symmetric(vertical:0.0, horizontal: 32 ),
+          padding: const EdgeInsets.symmetric(vertical:0.0, horizontal: 35 ),
           child: Center(
             child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,

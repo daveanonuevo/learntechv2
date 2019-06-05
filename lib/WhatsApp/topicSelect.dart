@@ -24,31 +24,43 @@ class _TopicSelectState extends State<TopicSelect> {
     viewportFraction: 0.85,
     initialPage: 0,
   );
+  final PreloadPageController _backgroundViewController = PreloadPageController(
+    viewportFraction: 1.0,
+    initialPage: 0,
+  );
 
   @override
   Widget build(BuildContext context) {
     _pageViewController.addListener(() {
       setState(() {
+        _backgroundViewController.animateToPage(_pageViewController.page.floor(), duration: Duration(seconds: 1), curve: Curves.ease);
         currentPageValue = _pageViewController.page;
+//        _backgroundViewController.animateToPage(_pageViewController.page.floor(), duration: Duration(seconds: 1), curve: Curves.ease);
+
       });
     });
 
-    final ModuleTopic imageTopic =
-        loadTopics("${widget.selectedTopic}")[currentPageValue.round()];
-
     return Stack(fit: StackFit.expand, children: <Widget>[
-//      FadeInImage(
-//        placeholder: Image.asset('assets/pikachu.gif').image,
-//        image: Image.asset(imageTopic.imagePath).image,
-//        fit: BoxFit.cover,
-//      ),
+      PageTransformer(pageViewBuilder: (context, visibilityResolver) {
+        return PreloadPageView.builder(
+          controller: _backgroundViewController,
+          preloadPagesCount: loadTopics(widget.selectedTopic == "WhatsApp"
+                  ? "WhatsApp"
+                  : "Security Tips")
+              .length,
+          itemCount: loadTopics("${widget.selectedTopic}").length,
+          itemBuilder: (context, index) {
+            final topic = loadTopics("${widget.selectedTopic}")[index];
+            final pageVisibility =
+                visibilityResolver.resolvePageVisibility(index);
+            return BackgroundImages(
+              topic: topic,
+              pageVisibility: pageVisibility,
+            );
+          },
+        );
+      }),
       Container(
-        decoration: BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage(imageTopic.imagePath),
-            fit: BoxFit.cover,
-          ),
-        ),
         child: BackdropFilter(
           filter: ImageFilter.blur(sigmaX: 4.0, sigmaY: 4.0),
           child: Scaffold(
@@ -91,6 +103,34 @@ class _TopicSelectState extends State<TopicSelect> {
   }
 }
 
+class BackgroundImages extends StatefulWidget {
+  BackgroundImages({
+    @required this.topic,
+    @required this.pageVisibility,
+  });
+
+  final ModuleTopic topic;
+  final PageVisibility pageVisibility;
+
+  @override
+  _BackgroundImagesState createState() => _BackgroundImagesState();
+}
+
+class _BackgroundImagesState extends State<BackgroundImages> {
+  @override
+  Widget build(BuildContext context) {
+    var image = Image.asset(
+      widget.topic.imagePath,
+      fit: BoxFit.cover,
+      alignment: FractionalOffset(
+        0.5 + (widget.pageVisibility.pagePosition / 3),
+        0.5,
+      ),
+    );
+    return image;
+  }
+}
+
 class WhatsAppTopicCards extends StatefulWidget {
   WhatsAppTopicCards({
     @required this.topic,
@@ -109,8 +149,6 @@ class _WhatsAppTopicCardsState extends State<WhatsAppTopicCards> {
     @required double translationFactor,
     @required Widget child,
   }) {
-    print("Doing Animations!");
-    print(widget.pageVisibility.visibleFraction);
     final double xTranslation =
         widget.pageVisibility.pagePosition * translationFactor;
 

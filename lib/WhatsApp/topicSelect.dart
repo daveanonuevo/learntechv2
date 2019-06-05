@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:learntech/WhatsApp/displayTopic.dart';
-import 'package:learntech/WhatsApp/uiCopy.dart';
 import 'topicList.dart';
 import 'dart:ui';
+import 'package:preload_page_view/preload_page_view.dart';
+import 'package:learntech/WhatsApp/uiCopy.dart';
 
 class TopicSelect extends StatefulWidget {
   final String selectedTopic;
@@ -15,34 +16,14 @@ class TopicSelect extends StatefulWidget {
 }
 
 class _TopicSelectState extends State<TopicSelect> {
-  final PageController _pageViewController = PageController(
-    viewportFraction: 0.85,
-    initialPage: 0,
-  );
   var currentPageValue = 0.0;
 
   List imagePaths = new List();
 
-  @override
-  void initState() {
-    print("initState");
-    for (int x = 0; x < loadTopics("WhatsApp").length; x++) {
-      imagePaths.add(loadTopics("WhatsApp")[x].imagePath);
-    }
-    for (int x = 0; x < loadTopics("Security Tips").length; x++) {
-      imagePaths.add(loadTopics("Security Tips")[x].imagePath);
-    }
-    super.initState();
-  }
-
-  @override
-  void didChangeDependencies() {
-    print("didChangeDependencies");
-    for (int x = 0; x < imagePaths.length; x++) {
-      precacheImage(AssetImage(imagePaths[x]), context);
-      print("loading into cache");
-    }
-  }
+  final PreloadPageController _pageViewController = PreloadPageController(
+    viewportFraction: 0.85,
+    initialPage: 0,
+  );
 
   @override
   Widget build(BuildContext context) {
@@ -54,13 +35,20 @@ class _TopicSelectState extends State<TopicSelect> {
 
     final ModuleTopic imageTopic =
         loadTopics("${widget.selectedTopic}")[currentPageValue.round()];
-    return Stack(children: <Widget>[
+
+    return Stack(fit: StackFit.expand, children: <Widget>[
+//      FadeInImage(
+//        placeholder: Image.asset('assets/pikachu.gif').image,
+//        image: Image.asset(imageTopic.imagePath).image,
+//        fit: BoxFit.cover,
+//      ),
       Container(
         decoration: BoxDecoration(
-            image: DecorationImage(
-          image: AssetImage(imageTopic.imagePath),
-          fit: BoxFit.cover,
-        )),
+          image: DecorationImage(
+            image: AssetImage(imageTopic.imagePath),
+            fit: BoxFit.cover,
+          ),
+        ),
         child: BackdropFilter(
           filter: ImageFilter.blur(sigmaX: 4.0, sigmaY: 4.0),
           child: Scaffold(
@@ -78,8 +66,13 @@ class _TopicSelectState extends State<TopicSelect> {
               ),
               body: PageTransformer(
                   pageViewBuilder: (context, visibilityResolver) {
-                return PageView.builder(
+                return PreloadPageView.builder(
                   controller: _pageViewController,
+                  preloadPagesCount: loadTopics(
+                          widget.selectedTopic == "WhatsApp"
+                              ? "WhatsApp"
+                              : "Security Tips")
+                      .length,
                   itemCount: loadTopics("${widget.selectedTopic}").length,
                   itemBuilder: (context, index) {
                     final topic = loadTopics("${widget.selectedTopic}")[index];
@@ -95,30 +88,6 @@ class _TopicSelectState extends State<TopicSelect> {
         ),
       ),
     ]);
-  }
-}
-
-class ImageReturn extends StatefulWidget {
-  ImageReturn({
-    @required this.topic,
-  });
-
-  final ModuleTopic topic;
-
-  @override
-  _ImageReturnState createState() => _ImageReturnState();
-}
-
-class _ImageReturnState extends State<ImageReturn> {
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      child: Image.asset(
-        "${widget.topic.imagePath}",
-        fit: BoxFit.cover,
-        gaplessPlayback: true,
-      ),
-    );
   }
 }
 
@@ -140,6 +109,8 @@ class _WhatsAppTopicCardsState extends State<WhatsAppTopicCards> {
     @required double translationFactor,
     @required Widget child,
   }) {
+    print("Doing Animations!");
+    print(widget.pageVisibility.visibleFraction);
     final double xTranslation =
         widget.pageVisibility.pagePosition * translationFactor;
 
@@ -155,6 +126,11 @@ class _WhatsAppTopicCardsState extends State<WhatsAppTopicCards> {
         child: child,
       ),
     );
+  }
+
+  @override
+  void initState() {
+    super.initState();
   }
 
   _buildTextContainer(BuildContext context) {
@@ -188,13 +164,14 @@ class _WhatsAppTopicCardsState extends State<WhatsAppTopicCards> {
 
   @override
   Widget build(BuildContext context) {
-    var image = Image.asset(widget.topic.imagePath,
-        fit: BoxFit.cover,
-        alignment: FractionalOffset(
-          0.5 + (widget.pageVisibility.pagePosition / 3),
-          0.5,
-        ),
-        gaplessPlayback: true);
+    var image = Image.asset(
+      widget.topic.imagePath,
+      fit: BoxFit.cover,
+      alignment: FractionalOffset(
+        0.5 + (widget.pageVisibility.pagePosition / 3),
+        0.5,
+      ),
+    );
     var imageOverlayGradient = DecoratedBox(
       decoration: BoxDecoration(
         gradient: LinearGradient(

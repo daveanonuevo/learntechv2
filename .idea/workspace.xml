@@ -6,10 +6,26 @@
   <component name="ChangeListManager">
     <list default="true" id="6ca02cd8-45b2-4524-bf4b-09fdbbee782f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app.dill.track.dill" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app.dill.track.dill.incremental.dill" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/snapshot_blob.bin.d.fingerprint" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/4.10.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/4.10.2/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/4.10.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/4.10.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/4.10.2/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/4.10.2/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/4.10.2/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/4.10.2/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_assets/kernel_blob.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/snapshot_blob.bin.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/snapshot_blob.bin.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/intermediates/incremental/debug-mergeJavaRes/merge-state" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/incremental/debug-mergeJavaRes/merge-state" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/intermediates/incremental/debug-mergeJniLibs/merge-state" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/incremental/debug-mergeJniLibs/merge-state" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/intermediates/incremental/packageDebug/tmp/debug/file-input-save-data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/incremental/packageDebug/tmp/debug/file-input-save-data.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/intermediates/merged_assets/debug/mergeDebugAssets/out/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/merged_assets/debug/mergeDebugAssets/out/flutter_assets/kernel_blob.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/4.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/4.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/5.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/5.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/6.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/6.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/7.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/7.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/__content__.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/__content__.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/intermediates/transforms/dexMerger/debug/__content__.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexMerger/debug/__content__.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/UI/SideBar/about.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/UI/SideBar/about.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/UI/SideBar/settings.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/UI/SideBar/settings.dart" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,7 +39,40 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/UI/SideBar/settings.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1377">
+              <caret line="81" column="1" selection-start-line="81" selection-start-column="1" selection-end-line="81" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/UI/mainScreen.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/UI/SideBar/about.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="82">
+              <caret line="28" column="42" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
+              <folding>
+                <element signature="e#0#40#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/main.dart">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
@@ -36,61 +85,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/UI/mainScreen.dart">
+        <entry file="file://$PROJECT_DIR$/lib/UI/sidebar.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/UI/SideBar/settings.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="658">
-              <caret line="77" column="8" selection-start-line="77" selection-start-column="8" selection-end-line="77" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/WhatsApp/topicList.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="14807">
-              <caret line="895" column="21" selection-start-line="895" selection-start-column="21" selection-end-line="895" selection-end-column="21" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/UI/SideBar/about.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1938">
-              <caret line="114" column="35" lean-forward="true" selection-start-line="114" selection-start-column="35" selection-end-line="114" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/UI/languageSelect.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="2" selection-start-column="2" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/UI/SideBar/contactUs.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="160" column="39" selection-start-line="160" selection-start-column="36" selection-end-line="160" selection-end-column="39" />
+            <state relative-caret-position="17">
+              <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -110,10 +108,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>imagePat</find>
-      <find>MyHomePageState</find>
-      <find>Privacy</find>
-      <find>Image.asset</find>
       <find>BoxFit.</find>
       <find>arr</find>
       <find>tap</find>
@@ -140,6 +134,10 @@
       <find>media</find>
       <find>t</find>
       <find>tail</find>
+      <find>stack</find>
+      <find>align</find>
+      <find>Wid</find>
+      <find>Widget</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -163,12 +161,12 @@
         <option value="$PROJECT_DIR$/lib/WhatsApp/test.dart" />
         <option value="$PROJECT_DIR$/pubspec.yaml" />
         <option value="$PROJECT_DIR$/lib/WhatsApp/topicSelect.dart" />
-        <option value="$PROJECT_DIR$/lib/UI/SideBar/settings.dart" />
         <option value="$PROJECT_DIR$/lib/WhatsApp/topicList.dart" />
         <option value="$PROJECT_DIR$/lib/main.dart" />
-        <option value="$PROJECT_DIR$/lib/UI/mainScreen.dart" />
         <option value="$PROJECT_DIR$/lib/UI/sidebar.dart" />
         <option value="$PROJECT_DIR$/lib/UI/SideBar/contactUs.dart" />
+        <option value="$PROJECT_DIR$/lib/UI/mainScreen.dart" />
+        <option value="$PROJECT_DIR$/lib/UI/SideBar/settings.dart" />
         <option value="$PROJECT_DIR$/lib/UI/SideBar/about.dart" />
       </list>
     </option>
@@ -355,11 +353,25 @@
       <option name="project" value="LOCAL" />
       <updated>1559716429613</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Merge branch 'pr/2' of https://github.com/TayYuanGeng/LearnTechv2&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;android/.gradle/4.10.2/fileHashes/fileHashes.bin&#10;#&#9;android/.gradle/4.10.2/fileHashes/fileHashes.lock&#10;#&#9;android/.gradle/4.10.2/taskHistory/taskHistory.bin&#10;#&#9;android/.gradle/4.10.2/taskHistory/taskHistory.lock&#10;#&#9;android/.gradle/buildOutputCleanup/buildOutputCleanup.lock&#10;#&#9;build/app.dill.track.dill&#10;#&#9;build/app.dill.track.dill.incremental.dill&#10;#&#9;build/app/intermediates/blame/res/debug/multi-v2/debug.json&#10;#&#9;build/app/intermediates/blame/res/debug/multi-v2/values.json&#10;#&#9;build/app/intermediates/blame/res/debug/single/debug.json&#10;#&#9;build/app/intermediates/flutter/debug/flutter_assets/kernel_blob.bin&#10;#&#9;build/app/intermediates/flutter/debug/snapshot_blob.bin.d&#10;#&#9;build/app/intermediates/flutter/debug/snapshot_blob.bin.d.fingerprint&#10;#&#9;build/app/intermediates/flutter/flutter-x86.jar&#10;#&#9;build/app/intermediates/incremental/debug-mergeJavaRes/merge-state&#10;#&#9;build/app/intermediates/incremental/debug-mergeJniLibs/merge-state&#10;#&#9;build/app/intermediates/incremental/mergeDebugAssets/merger.xml&#10;#&#9;build/app/intermediates/incremental/mergeDebugJniLibFolders/merger.xml&#10;#&#9;build/app/intermediates/incremental/mergeDebugResources/compile-file-map.properties&#10;#&#9;build/app/intermediates/incremental/mergeDebugResources/merger.xml&#10;#&#9;build/app/intermediates/incremental/mergeDebugShaders/merger.xml&#10;#&#9;build/app/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt&#10;#&#9;build/app/intermediates/incremental/packageDebug/tmp/debug/file-input-save-data.txt&#10;#&#9;build/app/intermediates/merged_assets/debug/mergeDebugAssets/out/flutter_assets/kernel_blob.bin&#10;#&#9;build/app/intermediates/res/merged/debug/drawable_launch_background.xml.flat&#10;#&#9;build/app/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat&#10;#&#9;build/app/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat&#10;#&#9;build/app/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat&#10;#&#9;build/app/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat&#10;#&#9;build/app/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat&#10;#&#9;build/app/intermediates/res/merged/debug/values_values.arsc.flat&#10;#&#9;build/app/intermediates/transforms/dexBuilder/debug/4.jar&#10;#&#9;build/app/intermediates/transforms/dexBuilder/debug/5.jar&#10;#&#9;build/app/intermediates/transforms/dexBuilder/debug/6.jar&#10;#&#9;build/app/intermediates/transforms/dexBuilder/debug/7.jar&#10;#&#9;build/app/intermediates/transforms/dexBuilder/debug/__content__.json&#10;#&#9;build/app/intermediates/transforms/dexMerger/debug/__content__.json&#10;#&#9;lib/UI/SideBar/about.dart">
+      <created>1559718034272</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1559718034272</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Merge branch 'pr/2' of https://github.com/TayYuanGeng/LearnTechv2&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;android/.gradle/4.10.2/fileHashes/fileHashes.bin&#10;#&#9;android/.gradle/4.10.2/fileHashes/fileHashes.lock&#10;#&#9;android/.gradle/4.10.2/taskHistory/taskHistory.bin&#10;#&#9;android/.gradle/4.10.2/taskHistory/taskHistory.lock&#10;#&#9;android/.gradle/buildOutputCleanup/buildOutputCleanup.lock&#10;#&#9;build/app.dill.track.dill&#10;#&#9;build/app.dill.track.dill.incremental.dill&#10;#&#9;build/app/intermediates/blame/res/debug/multi-v2/debug.json&#10;#&#9;build/app/intermediates/blame/res/debug/multi-v2/values.json&#10;#&#9;build/app/intermediates/blame/res/debug/single/debug.json&#10;#&#9;build/app/intermediates/flutter/debug/flutter_assets/kernel_blob.bin&#10;#&#9;build/app/intermediates/flutter/debug/snapshot_blob.bin.d&#10;#&#9;build/app/intermediates/flutter/debug/snapshot_blob.bin.d.fingerprint&#10;#&#9;build/app/intermediates/flutter/flutter-x86.jar&#10;#&#9;build/app/intermediates/incremental/debug-mergeJavaRes/merge-state&#10;#&#9;build/app/intermediates/incremental/debug-mergeJniLibs/merge-state&#10;#&#9;build/app/intermediates/incremental/mergeDebugAssets/merger.xml&#10;#&#9;build/app/intermediates/incremental/mergeDebugJniLibFolders/merger.xml&#10;#&#9;build/app/intermediates/incremental/mergeDebugResources/compile-file-map.properties&#10;#&#9;build/app/intermediates/incremental/mergeDebugResources/merger.xml&#10;#&#9;build/app/intermediates/incremental/mergeDebugShaders/merger.xml&#10;#&#9;build/app/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt&#10;#&#9;build/app/intermediates/incremental/packageDebug/tmp/debug/file-input-save-data.txt&#10;#&#9;build/app/intermediates/merged_assets/debug/mergeDebugAssets/out/flutter_assets/kernel_blob.bin&#10;#&#9;build/app/intermediates/res/merged/debug/drawable_launch_background.xml.flat&#10;#&#9;build/app/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat&#10;#&#9;build/app/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat&#10;#&#9;build/app/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat&#10;#&#9;build/app/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat&#10;#&#9;build/app/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat&#10;#&#9;build/app/intermediates/res/merged/debug/values_values.arsc.flat&#10;#&#9;build/app/intermediates/transforms/dexBuilder/debug/4.jar&#10;#&#9;build/app/intermediates/transforms/dexBuilder/debug/5.jar&#10;#&#9;build/app/intermediates/transforms/dexBuilder/debug/6.jar&#10;#&#9;build/app/intermediates/transforms/dexBuilder/debug/7.jar&#10;#&#9;build/app/intermediates/transforms/dexBuilder/debug/__content__.json&#10;#&#9;build/app/intermediates/transforms/dexMerger/debug/__content__.json&#10;#&#9;lib/UI/SideBar/about.dart">
+      <created>1559721695780</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1559721695780</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73785000" />
+    <option name="totallyTimeSpent" value="81567000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -372,6 +384,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20404859" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -385,7 +398,7 @@
       <window_info id="Captures" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49554655" weight="0.28241563" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49554655" visible="true" weight="0.28241563" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -396,7 +409,7 @@
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5020243" side_tool="true" weight="0.3285968" />
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49946696" weight="0.3232682" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="13" sideWeight="0.4989339" visible="true" weight="0.3321492" />
+      <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.4989339" weight="0.3321492" />
       <window_info anchor="bottom" id="Flutter Performance" order="14" side_tool="true" />
       <window_info anchor="bottom" id="TypeScript" order="15" />
       <window_info anchor="bottom" id="Android Profiler" order="16" show_stripe_button="false" />
@@ -559,43 +572,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" />
-    <entry file="file://$PROJECT_DIR$/lib/UI/mainScreen.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/UI/SideBar/contactUs.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="160" column="39" selection-start-line="160" selection-start-column="36" selection-end-line="160" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/UI/languageSelect.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="2" selection-start-column="2" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/UI/sidebar.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/WhatsApp/displayTopic.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-532">
@@ -625,25 +601,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/WhatsApp/topicList.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14807">
-          <caret line="895" column="21" selection-start-line="895" selection-start-column="21" selection-end-line="895" selection-end-column="21" />
+        <state relative-caret-position="-15289">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="13" />
           <folding>
-            <element signature="e#166#186#0" expanded="true" />
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/UI/SideBar/settings.dart">
+    <entry file="file://$PROJECT_DIR$/lib/UI/languageSelect.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="658">
-          <caret line="77" column="8" selection-start-line="77" selection-start-column="8" selection-end-line="77" selection-end-column="8" />
+        <state relative-caret-position="34">
+          <caret line="2" column="44" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/UI/SideBar/about.dart">
+    <entry file="file://$PROJECT_DIR$/lib/UI/sidebar.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1938">
-          <caret line="114" column="35" lean-forward="true" selection-start-line="114" selection-start-column="35" selection-end-line="114" selection-end-column="35" />
+        <state relative-caret-position="17">
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/UI/SideBar/contactUs.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="62" column="60" selection-start-line="62" selection-start-column="60" selection-end-line="62" selection-end-column="60" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -653,6 +642,33 @@
           <caret line="3" column="38" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/UI/mainScreen.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/UI/SideBar/settings.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1377">
+          <caret line="81" column="1" selection-start-line="81" selection-start-column="1" selection-end-line="81" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/UI/SideBar/about.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="28" column="42" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -26,7 +26,7 @@ class About extends StatelessWidget	{
 					children: <Widget>[
 						Center(
 							child: Padding(
-								padding: EdgeInsets.all(8.0),
+								padding: EdgeInsets.all(10.0),
 								child: Text(
 									"A project by Students of Ngee Ann Polytechnic",
 									style: TextStyle(
@@ -51,7 +51,7 @@ class About extends StatelessWidget	{
 									scrollDirection: Axis.vertical,
 									children: <Widget>[
 										Padding(
-											padding: EdgeInsets.all(8.0),
+											padding: EdgeInsets.all(15.0),
 											child: Text(
 												"Credits:\n",
 												style: TextStyle(
@@ -63,7 +63,7 @@ class About extends StatelessWidget	{
 											),
 										),
 										Padding(
-											padding: EdgeInsets.all(8.0),
+											padding: EdgeInsets.all(15.0),
 											child: Text(
 												"1. All background images sourced from Unsplash.com\n",
 												textAlign: TextAlign.left,
@@ -74,7 +74,7 @@ class About extends StatelessWidget	{
 											),
 										),
 										Padding(
-											padding: EdgeInsets.all(8.0),
+											padding: EdgeInsets.all(15.0),
 											child: Text(
 												"2. All WhatsApp images sourced from whatsappbrand.com\n",
 												textAlign: TextAlign.left,
@@ -85,7 +85,7 @@ class About extends StatelessWidget	{
 											),
 										),
 										Padding(
-											padding: EdgeInsets.all(8.0),
+											padding: EdgeInsets.all(15.0),
 											child: Text(
 												"Disclaimer:\n",
 												style: TextStyle(
@@ -97,7 +97,7 @@ class About extends StatelessWidget	{
 											),
 										),
 										Padding(
-											padding: EdgeInsets.all(8.0),
+											padding: EdgeInsets.all(15.0),
 											child: Text(
 												"1. We are not affiliated, associated, authorized, endorsed by, or in any way officially connected with WhatsApp Inc., or any of its subsidiaries or its affiliates. We do not take reponsibility for decisions/actions taken by the user based solely on the information provided in this application.",
 												textAlign: TextAlign.left,
@@ -108,7 +108,7 @@ class About extends StatelessWidget	{
 											),
 										),
 										Padding(
-											padding: EdgeInsets.all(8.0),
+											padding: EdgeInsets.all(15.0),
 											child: Text(
 												"\n2. We created this application with the sole intention of teaching the elderly in Singapore how to use WhatsApp and ways to be safe online.",
 												textAlign: TextAlign.left,

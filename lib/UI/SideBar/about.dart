@@ -105,20 +105,20 @@ class About extends StatelessWidget	{
 						),
 					),
 				),
-//				bottomNavigationBar: BottomAppBar(
-//					child: Row(
-//						children: <Widget>[
-//								Text(
-//									"A project by Students of Ngee Ann Polytechnic",
-//									textAlign: TextAlign.center,
-//									style: TextStyle(
-//										fontSize: 20.0,
-//										color: Colors.white,
-//									),
-//								),
-//						],
-//					),
-//				),
+				bottomNavigationBar: BottomAppBar(
+					child: Row(
+						children: <Widget>[
+								Text(
+									"A project by Students of Ngee Ann Polytechnic",
+									textAlign: TextAlign.center,
+									style: TextStyle(
+										fontSize: 20.0,
+										color: Colors.white,
+									),
+								),
+						],
+					),
+				),
 			),
 		);
 	}

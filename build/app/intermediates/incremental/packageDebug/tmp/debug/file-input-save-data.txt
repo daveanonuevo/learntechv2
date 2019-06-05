@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed Jun 05 17:45:00 GMT+08:00 2019
+#Wed Jun 05 22:07:58 GMT+08:00 2019
 5.base=D\:\\INFSC SL Proj\\IdeaProjects\\LearnTechv2\\build\\app\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
 22.path=lib/x86/libflutter.so
 32.set=ASSET

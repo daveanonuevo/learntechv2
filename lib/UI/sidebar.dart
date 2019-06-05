@@ -22,22 +22,26 @@ class SideBar extends StatelessWidget {
               leading: new Icon(
                 Icons.settings,
                 color: Colors.black,
-                size: 40,
+                size: 35,
               ),
               title: new Text(
                 "Settings",
                 textAlign: TextAlign.left,
-                style: new TextStyle(fontSize: 30.0),
+                style: new TextStyle(fontSize: 25.0),
               ),
               onTap: () => Navigator.of(context)
                   .push(MaterialPageRoute(builder: (context) => Settings()))),
           new Divider(color: Colors.grey),
           new ListTile(
-              leading: new Icon(Icons.phone, color: Colors.black, size: 40),
+              leading: new Icon(
+                  Icons.phone,
+                  color: Colors.black,
+                  size: 35
+              ),
               title: new Text(
                 "Contact Us",
                 textAlign: TextAlign.left,
-                style: new TextStyle(fontSize: 30.0),
+                style: new TextStyle(fontSize: 25.0),
               ),
               onTap: () => Navigator.of(context).push(MaterialPageRoute(
                   builder: (context) =>
@@ -45,11 +49,15 @@ class SideBar extends StatelessWidget {
               ),
           new Divider(color: Colors.grey),
           new ListTile(
-              leading: new Icon(Icons.info, color: Colors.black, size: 40),
+              leading: new Icon(
+                  Icons.info,
+                  color: Colors.black,
+                  size: 35
+              ),
               title: new Text(
                 "About",
                 textAlign: TextAlign.left,
-                style: new TextStyle(fontSize: 30.0),
+                style: new TextStyle(fontSize: 25.0),
               ),
               onTap: () => Navigator.of(context).push(MaterialPageRoute(
                   builder: (context) =>

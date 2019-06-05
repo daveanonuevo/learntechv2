@@ -55,9 +55,9 @@ class About extends StatelessWidget	{
 										Padding(
 											padding: EdgeInsets.all(10.0),
 											child: Text(
-												"Credits:\n",
+												"Credits:",
 												style: TextStyle(
-													height: 1.5,
+													//height: 1.5,
 													fontSize: 20.0,
 													color: Colors.black,
 													fontWeight: FontWeight.w700,
@@ -67,7 +67,7 @@ class About extends StatelessWidget	{
 										Padding(
 											padding: EdgeInsets.all(10.0),
 											child: Text(
-												"1. All background images sourced from Unsplash.com\n",
+												"1. All background images sourced from Unsplash.com",
 												textAlign: TextAlign.left,
 												style: TextStyle(
 													fontSize: 20.0,
@@ -78,7 +78,7 @@ class About extends StatelessWidget	{
 										Padding(
 											padding: EdgeInsets.all(10.0),
 											child: Text(
-												"2. All WhatsApp images sourced from whatsappbrand.com\n",
+												"2. All WhatsApp images sourced from whatsappbrand.com",
 												textAlign: TextAlign.left,
 												style: TextStyle(
 													fontSize: 20.0,
@@ -89,9 +89,9 @@ class About extends StatelessWidget	{
 										Padding(
 											padding: EdgeInsets.all(10.0),
 											child: Text(
-												"Disclaimer:\n",
+												"Disclaimer:",
 												style: TextStyle(
-													height: 1.5,
+													//height: 1.5,
 													fontSize: 20.0,
 													color: Colors.black,
 													fontWeight: FontWeight.w700,
@@ -112,7 +112,7 @@ class About extends StatelessWidget	{
 										Padding(
 											padding: EdgeInsets.all(10.0),
 											child: Text(
-												"\n2. We created this application with the sole intention of teaching the elderly in Singapore how to use WhatsApp and ways to be safe online.",
+												"2. We created this application with the sole intention of teaching the elderly in Singapore how to use WhatsApp and ways to be safe online.",
 												textAlign: TextAlign.left,
 												style: TextStyle(
 													fontSize: 20.0,

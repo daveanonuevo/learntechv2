@@ -11,12 +11,8 @@
       <change beforePath="$PROJECT_DIR$/android/.gradle/4.10.2/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/4.10.2/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/.gradle/4.10.2/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/4.10.2/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_assets/kernel_blob.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/snapshot_blob.bin.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/snapshot_blob.bin.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/incremental/packageDebug/tmp/debug/file-input-save-data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/incremental/packageDebug/tmp/debug/file-input-save-data.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/merged_assets/debug/mergeDebugAssets/out/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/merged_assets/debug/mergeDebugAssets/out/flutter_assets/kernel_blob.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/UI/SideBar/about.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/UI/SideBar/about.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/UI/mainScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/UI/mainScreen.dart" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,8 +38,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/UI/mainScreen.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="657">
-              <caret line="70" column="63" selection-start-line="70" selection-start-column="59" selection-end-line="70" selection-end-column="63" />
+            <state relative-caret-position="1122">
+              <caret line="66" column="37" selection-start-line="66" selection-start-column="37" selection-end-line="66" selection-end-column="37" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -54,8 +50,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/UI/SideBar/about.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="34" column="30" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
+            <state relative-caret-position="73">
+              <caret line="78" column="52" lean-forward="true" selection-start-line="78" selection-start-column="52" selection-end-line="78" selection-end-column="52" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
@@ -66,8 +62,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/UI/SideBar/contactUs.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="48" column="34" lean-forward="true" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
+            <state relative-caret-position="748">
+              <caret line="44" column="32" selection-start-line="44" selection-start-column="32" selection-end-line="44" selection-end-column="32" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -78,7 +74,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/main.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
+            <state relative-caret-position="34">
               <caret line="3" column="38" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
@@ -90,7 +86,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/UI/sidebar.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
+            <state relative-caret-position="136">
               <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
@@ -111,7 +107,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>virtual</find>
       <find>Sending</find>
       <find>Sending Messages</find>
       <find>contactus</find>
@@ -141,6 +136,7 @@
       <find>15.0</find>
       <find>queryDa</find>
       <find>font</find>
+      <find>Whatss</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -167,9 +163,9 @@
         <option value="$PROJECT_DIR$/lib/WhatsApp/topicList.dart" />
         <option value="$PROJECT_DIR$/lib/main.dart" />
         <option value="$PROJECT_DIR$/lib/UI/sidebar.dart" />
-        <option value="$PROJECT_DIR$/lib/UI/mainScreen.dart" />
         <option value="$PROJECT_DIR$/lib/UI/SideBar/settings.dart" />
         <option value="$PROJECT_DIR$/lib/UI/SideBar/contactUs.dart" />
+        <option value="$PROJECT_DIR$/lib/UI/mainScreen.dart" />
         <option value="$PROJECT_DIR$/lib/UI/SideBar/about.dart" />
       </list>
     </option>
@@ -181,7 +177,7 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
+    <option name="x" value="-9" />
     <option name="width" value="975" />
     <option name="height" value="1047" />
   </component>
@@ -191,7 +187,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
@@ -229,6 +224,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -306,6 +302,7 @@
       <workItem from="1558677792501" duration="991000" />
       <workItem from="1558925124776" duration="430000" />
       <workItem from="1559654598695" duration="28132000" />
+      <workItem from="1559739754896" duration="663000" />
     </task>
     <task id="LOCAL-00001" summary="total refresh cause damn sian">
       <created>1558345323609</created>
@@ -384,11 +381,18 @@
       <option name="project" value="LOCAL" />
       <updated>1559726344068</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Merge branch 'pr/2' of https://github.com/TayYuanGeng/LearnTechv2&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;android/.gradle/4.10.2/fileHashes/fileHashes.bin&#10;#&#9;android/.gradle/4.10.2/fileHashes/fileHashes.lock&#10;#&#9;android/.gradle/4.10.2/taskHistory/taskHistory.bin&#10;#&#9;android/.gradle/4.10.2/taskHistory/taskHistory.lock&#10;#&#9;android/.gradle/buildOutputCleanup/buildOutputCleanup.lock&#10;#&#9;build/app.dill.track.dill&#10;#&#9;build/app.dill.track.dill.incremental.dill&#10;#&#9;build/app/intermediates/blame/res/debug/multi-v2/debug.json&#10;#&#9;build/app/intermediates/blame/res/debug/multi-v2/values.json&#10;#&#9;build/app/intermediates/blame/res/debug/single/debug.json&#10;#&#9;build/app/intermediates/flutter/debug/flutter_assets/kernel_blob.bin&#10;#&#9;build/app/intermediates/flutter/debug/snapshot_blob.bin.d&#10;#&#9;build/app/intermediates/flutter/debug/snapshot_blob.bin.d.fingerprint&#10;#&#9;build/app/intermediates/flutter/flutter-x86.jar&#10;#&#9;build/app/intermediates/incremental/debug-mergeJavaRes/merge-state&#10;#&#9;build/app/intermediates/incremental/debug-mergeJniLibs/merge-state&#10;#&#9;build/app/intermediates/incremental/mergeDebugAssets/merger.xml&#10;#&#9;build/app/intermediates/incremental/mergeDebugJniLibFolders/merger.xml&#10;#&#9;build/app/intermediates/incremental/mergeDebugResources/compile-file-map.properties&#10;#&#9;build/app/intermediates/incremental/mergeDebugResources/merger.xml&#10;#&#9;build/app/intermediates/incremental/mergeDebugShaders/merger.xml&#10;#&#9;build/app/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt&#10;#&#9;build/app/intermediates/incremental/packageDebug/tmp/debug/file-input-save-data.txt&#10;#&#9;build/app/intermediates/merged_assets/debug/mergeDebugAssets/out/flutter_assets/kernel_blob.bin&#10;#&#9;build/app/intermediates/res/merged/debug/drawable_launch_background.xml.flat&#10;#&#9;build/app/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat&#10;#&#9;build/app/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat&#10;#&#9;build/app/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat&#10;#&#9;build/app/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat&#10;#&#9;build/app/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat&#10;#&#9;build/app/intermediates/res/merged/debug/values_values.arsc.flat&#10;#&#9;build/app/intermediates/transforms/dexBuilder/debug/4.jar&#10;#&#9;build/app/intermediates/transforms/dexBuilder/debug/5.jar&#10;#&#9;build/app/intermediates/transforms/dexBuilder/debug/6.jar&#10;#&#9;build/app/intermediates/transforms/dexBuilder/debug/7.jar&#10;#&#9;build/app/intermediates/transforms/dexBuilder/debug/__content__.json&#10;#&#9;build/app/intermediates/transforms/dexMerger/debug/__content__.json&#10;#&#9;lib/UI/SideBar/about.dart">
+      <created>1559729079229</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1559729079229</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84148000" />
+    <option name="totallyTimeSpent" value="85232000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -403,7 +407,7 @@
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20404859" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20404859" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -415,7 +419,7 @@
       <window_info id="Captures" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49554655" visible="true" weight="0.28241563" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49554655" visible="true" weight="0.28241563" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -633,26 +637,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/UI/sidebar.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/main.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="38" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/UI/SideBar/settings.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1377">
@@ -660,10 +644,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/UI/mainScreen.dart">
+    <entry file="file://$PROJECT_DIR$/lib/main.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="657">
-          <caret line="70" column="63" selection-start-line="70" selection-start-column="59" selection-end-line="70" selection-end-column="63" />
+        <state relative-caret-position="34">
+          <caret line="3" column="38" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/UI/sidebar.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -672,8 +666,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/UI/SideBar/contactUs.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="48" column="34" lean-forward="true" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
+        <state relative-caret-position="748">
+          <caret line="44" column="32" selection-start-line="44" selection-start-column="32" selection-end-line="44" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/UI/mainScreen.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1122">
+          <caret line="66" column="37" selection-start-line="66" selection-start-column="37" selection-end-line="66" selection-end-column="37" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -682,8 +686,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/UI/SideBar/about.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="34" column="30" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
+        <state relative-caret-position="73">
+          <caret line="78" column="52" lean-forward="true" selection-start-line="78" selection-start-column="52" selection-end-line="78" selection-end-column="52" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>

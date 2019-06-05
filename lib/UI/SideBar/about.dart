@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 class About extends StatelessWidget	{
   @override
   Widget build(BuildContext context) {
+		MediaQueryData queryData;
+		queryData = MediaQuery.of(context);
 		return Container(
 			decoration: BoxDecoration(
 				image: DecorationImage(
@@ -30,8 +32,8 @@ class About extends StatelessWidget	{
 								child: Text(
 									"A project by Students of Ngee Ann Polytechnic",
 									style: TextStyle(
-										height: 38.0,
-										fontSize: 16.0,
+										height: 40.0,
+										fontSize: 15.0,
 										color: Colors.white,
 									),
 									textAlign: TextAlign.center,
@@ -41,8 +43,8 @@ class About extends StatelessWidget	{
 						Center(
 							child: Container(
 								alignment: Alignment.center,
-								height: 470.0,
-								width: 360.0,
+								height: queryData.size.height / 1.5,
+								width: queryData.size.width / 1.15,
 								decoration: BoxDecoration(
 									color: Colors.white,
 									borderRadius: BorderRadius.all(Radius.circular(20.0)),

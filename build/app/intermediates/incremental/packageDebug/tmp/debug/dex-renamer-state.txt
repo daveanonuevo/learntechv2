@@ -1,4 +1,4 @@
-#Wed Jun 05 17:09:27 GMT+08:00 2019
+#Wed Jun 05 17:44:57 GMT+08:00 2019
 base.0=D\:\\INFSC SL Proj\\IdeaProjects\\LearnTechv2\\build\\app\\intermediates\\transforms\\dexMerger\\debug\\0
 path.0=classes.dex
 renamed.0=classes.dex

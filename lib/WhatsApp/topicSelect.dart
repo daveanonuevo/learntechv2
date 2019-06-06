@@ -33,10 +33,11 @@ class _TopicSelectState extends State<TopicSelect> {
   Widget build(BuildContext context) {
     _pageViewController.addListener(() {
       setState(() {
-        _backgroundViewController.animateToPage(_pageViewController.page.floor(), duration: Duration(seconds: 1), curve: Curves.ease);
+        _backgroundViewController.animateToPage(
+            _pageViewController.page.floor(),
+            duration: Duration(seconds: 1),
+            curve: Curves.ease);
         currentPageValue = _pageViewController.page;
-//        _backgroundViewController.animateToPage(_pageViewController.page.floor(), duration: Duration(seconds: 1), curve: Curves.ease);
-
       });
     });
 
@@ -44,13 +45,13 @@ class _TopicSelectState extends State<TopicSelect> {
       PageTransformer(pageViewBuilder: (context, visibilityResolver) {
         return PreloadPageView.builder(
           controller: _backgroundViewController,
-          preloadPagesCount: loadTopics(widget.selectedTopic == "WhatsApp"
+          preloadPagesCount: ModuleTopic.loadTopics(widget.selectedTopic == "WhatsApp"
                   ? "WhatsApp"
                   : "Security Tips")
               .length,
-          itemCount: loadTopics("${widget.selectedTopic}").length,
+          itemCount: ModuleTopic.loadTopics("${widget.selectedTopic}").length,
           itemBuilder: (context, index) {
-            final topic = loadTopics("${widget.selectedTopic}")[index];
+            final topic = ModuleTopic.loadTopics("${widget.selectedTopic}")[index];
             final pageVisibility =
                 visibilityResolver.resolvePageVisibility(index);
             return BackgroundImages(
@@ -80,19 +81,23 @@ class _TopicSelectState extends State<TopicSelect> {
                   pageViewBuilder: (context, visibilityResolver) {
                 return PreloadPageView.builder(
                   controller: _pageViewController,
-                  preloadPagesCount: loadTopics(
+                  preloadPagesCount: ModuleTopic.loadTopics(
                           widget.selectedTopic == "WhatsApp"
                               ? "WhatsApp"
                               : "Security Tips")
                       .length,
-                  itemCount: loadTopics("${widget.selectedTopic}").length,
+                  itemCount: ModuleTopic.loadTopics("${widget.selectedTopic}").length,
                   itemBuilder: (context, index) {
-                    final topic = loadTopics("${widget.selectedTopic}")[index];
+                    final topic = ModuleTopic.loadTopics("${widget.selectedTopic}")[index];
                     final pageVisibility =
                         visibilityResolver.resolvePageVisibility(index);
                     return WhatsAppTopicCards(
                       topic: topic,
                       pageVisibility: pageVisibility,
+                      module: widget.selectedTopic == "WhatsApp"
+                          ? "WhatsApp"
+                          : "Security Tips",
+                      count: index,
                     );
                   },
                 );
@@ -135,10 +140,14 @@ class WhatsAppTopicCards extends StatefulWidget {
   WhatsAppTopicCards({
     @required this.topic,
     @required this.pageVisibility,
+    @required this.module,
+    @required this.count,
   });
 
   final ModuleTopic topic;
   final PageVisibility pageVisibility;
+  final String module;
+  final int count;
 
   @override
   _WhatsAppTopicCardsState createState() => _WhatsAppTopicCardsState();
@@ -227,9 +236,9 @@ class _WhatsAppTopicCardsState extends State<WhatsAppTopicCards> {
           context,
           MaterialPageRoute(
               builder: (context) => DisplayTopic(
-                    topicName: widget.topic.topicName,
-                    imagePath: widget.topic.imagePath,
-                    topicInformation: widget.topic.topicInfo,
+                topic: widget.topic,
+                module: widget.module,
+                count: widget.count,
                   ))),
       child: Padding(
         padding: const EdgeInsets.symmetric(

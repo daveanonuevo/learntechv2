@@ -1,16 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:learntech/WhatsApp/topicList.dart';
 
 class DisplayTopic extends StatefulWidget {
+
   DisplayTopic(
       {Key key,
-      @required this.topicName,
-      @required this.imagePath,
-      this.topicInformation})
+      @required this.topic,
+      @required this.module,
+      @required this.count})
       : super(key: key);
 
-  final String topicName;
-  final String imagePath;
-  final List<Widget> topicInformation;
+  final ModuleTopic topic;
+  final String module;
+  final int count;
 
   @override
   _DisplayTopicState createState() => _DisplayTopicState();
@@ -19,6 +21,9 @@ class DisplayTopic extends StatefulWidget {
 class _DisplayTopicState extends State<DisplayTopic> {
   @override
   Widget build(BuildContext context) {
+    print(widget.topic.topicName);
+    print(widget.topic.topicInfo);
+    print(widget.topic.imagePath);
     return Scaffold(
         body: CustomScrollView(slivers: <Widget>[
       SliverAppBar(
@@ -28,11 +33,11 @@ class _DisplayTopicState extends State<DisplayTopic> {
         flexibleSpace: FlexibleSpaceBar(
           centerTitle: true,
           title: Text(
-            widget.topicName,
+            widget.topic.topicName,
             textAlign: TextAlign.center,
           ),
           background: Image.asset(
-            widget.imagePath,
+            widget.topic.imagePath,
             fit: BoxFit.cover,
           ),
         ),
@@ -41,12 +46,11 @@ class _DisplayTopicState extends State<DisplayTopic> {
         padding: const EdgeInsets.all(8.0),
         sliver: SliverList(
           delegate: SliverChildListDelegate(
-            widget.topicInformation,
+
+            ModuleTopic.loadTopics(widget.module, context)[widget.count].topicInfo,
           ),
         ),
       )
     ]));
   }
 }
-
-class DisplayInformation {}

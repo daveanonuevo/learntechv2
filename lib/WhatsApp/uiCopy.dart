@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:preload_page_view/preload_page_view.dart';
 
-/// A function that builds a [PageView] lazily.
+/// A function that builds a [PreloadPageView] lazily.
 typedef PreloadPageView PageViewBuilder(
 	BuildContext context, PageVisibilityResolver visibilityResolver);
 

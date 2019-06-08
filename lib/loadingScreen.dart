@@ -53,6 +53,81 @@ class _LoadingState extends State<Load> with TickerProviderStateMixin	{
 								angle: _animationController.value * 2.0 * math.pi,
 						),
 					),
+
+					Center(
+						child: Column(
+							children: <Widget>[
+								Expanded(
+									flex: 1,
+									child: Column(
+										mainAxisAlignment: MainAxisAlignment.end,
+										children: <Widget>[
+											Image.asset('assets/images/LeftTopArrow.png'),
+											Padding(
+												padding: EdgeInsets.only(bottom:267.0, left: 190.0),
+											),
+										],
+									),
+								),
+							],
+						),
+					),
+					Center(
+								child: Column(
+									mainAxisAlignment: MainAxisAlignment.center,
+									children: <Widget>[
+										Image.asset('assets/images/RightBottomArrow.png'),
+//										Padding(
+//											padding: EdgeInsets.only(bottom: 400.0),
+//										),
+									],
+								),
+						),
+						//height: 300.0,
+//						width: 300.0,
+//						child: Column(
+//							children: <Widget>[
+//								Image.asset('assets/images/RightBottomArrow.png'),
+//								Padding(
+//									padding: EdgeInsets.only(bottom: 400.0),
+//								),
+//							],
+//						),
+//					Center(
+//						child: Column(
+//							children: <Widget>[
+//								Expanded(
+//									flex: 1,
+//									child: Column(
+//										mainAxisAlignment: MainAxisAlignment.end,
+//										children: <Widget>[
+//											Image.asset('assets/images/RightBottomArrow.png'),
+//
+////											Padding(
+////												padding: EdgeInsets.only(bottom:300.0, right: 190.0),
+////											),
+//										],
+//									),
+//								),
+//							],
+//						),
+//					),
+
+//								Image.asset(
+//										'assets/images/LeftTopArrow.png',
+//										height: 830.0,
+//										width: 950.0,
+//								),
+
+//					Container(
+//						alignment: Alignment.bottomCenter,
+//						height: 100.0,
+//						decoration: BoxDecoration(
+//							image: DecorationImage(
+//								image: ExactAssetImage('assets/images/LeftTopArrow.png'),
+//							),
+//						),
+//					),
 					Container(
 						alignment: Alignment.center,
 						decoration: BoxDecoration(

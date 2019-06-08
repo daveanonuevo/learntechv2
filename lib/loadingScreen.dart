@@ -53,6 +53,14 @@ class _LoadingState extends State<Load> with TickerProviderStateMixin	{
 								angle: _animationController.value * 2.0 * math.pi,
 						),
 					),
+					Container(
+						alignment: Alignment.center,
+						decoration: BoxDecoration(
+							image: DecorationImage(
+								image: ExactAssetImage('assets/images/IPhoneX.png'),
+							),
+						),
+					),
 					Center(
 						child: Column(
 							children: <Widget>[

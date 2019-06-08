@@ -47,6 +47,8 @@ flutter:
   assets:
       - assets/images/wallpaper.png
       - assets/images/SideBar_JewelChangi.png
+      - assets/images/Cloud.png
+      - assets/images/IPhoneX.png
       - assets/logo/WhatsApp.png
       - assets/logo/lock.png
       - assets/WhatsAppTopics/InstallingWhatsApp.jpg

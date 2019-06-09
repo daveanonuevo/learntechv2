@@ -10,22 +10,34 @@ class Load extends StatefulWidget	{
 }
 
 class _LoadingState extends State<Load> with TickerProviderStateMixin	{
-	AnimationController _animationController, _turnAnimationController;
-	Animation _turnAnimation;
+	AnimationController _animationController, _turnAnimationController, _tmAnimationController;
+	Animation _turnAnimation, _tmAnimation;
 
 	@override
   void initState() {
     super.initState();
     _animationController = AnimationController(
-				duration: const Duration(seconds: 10),
-				vsync: this)..repeat();
+			duration: const Duration(seconds: 10),
+			vsync: this)..repeat();
+
     _turnAnimationController = AnimationController(
 			duration: const Duration(seconds: 7),
 			vsync: this);
+
+    _tmAnimationController = AnimationController(
+			duration: const Duration(seconds: 1),
+			vsync: this);
+
     _turnAnimation = Tween(
 			begin: 0.0,
 			end: 1.0,
 		).animate(_turnAnimationController);
+
+    _tmAnimation = Tween(
+			begin: 0.0,
+			end: 1.0,
+		).animate(_tmAnimationController);
+
     Future.delayed(
 			Duration(
 					seconds: 5
@@ -39,6 +51,14 @@ class _LoadingState extends State<Load> with TickerProviderStateMixin	{
 				);
 			}
 		);
+  }
+
+	@override
+	void dispose() {
+    _animationController.dispose();
+    _tmAnimationController.dispose();
+    _turnAnimationController.dispose();
+    super.dispose();
   }
 
   @override
@@ -101,24 +121,34 @@ class _LoadingState extends State<Load> with TickerProviderStateMixin	{
 							),
 						),
 					),
-					Center(
-						child: Column(
-							children: <Widget>[
-								Expanded(
-									flex: 1,
-									child: Column(
-										mainAxisAlignment: MainAxisAlignment.end,
-										children: <Widget>[
-											CircularProgressIndicator(),
-											Padding(
-												padding: EdgeInsets.all(30.0),
+
+			FadeTransition(
+				opacity: _turnAnimation,
+				child: Center(
+					child: Column(
+						children: <Widget>[
+							Expanded(
+								flex: 1,
+								child: Column(
+									mainAxisAlignment: MainAxisAlignment.end,
+									children: <Widget>[
+										Text(
+											"Learn Tech™",
+											style: TextStyle(
+												fontSize: 30.0,
 											),
-										],
-									),
+										),
+//											CircularProgressIndicator(),
+										Padding(
+											padding: EdgeInsets.all(30.0),
+										),
+									],
 								),
-							],
-						),
+							),
+						],
 					),
+				),
+			),
 				],
 			),
 		);

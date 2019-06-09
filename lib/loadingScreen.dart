@@ -1,8 +1,8 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:learntech/UI/mainScreen.dart';
 import 'dart:async';
 import 'dart:math' as math;
-
 
 class Load extends StatefulWidget	{
   @override
@@ -10,14 +10,22 @@ class Load extends StatefulWidget	{
 }
 
 class _LoadingState extends State<Load> with TickerProviderStateMixin	{
-	AnimationController _animationController;
+	AnimationController _animationController, _turnAnimationController;
+	Animation _turnAnimation;
 
 	@override
   void initState() {
     super.initState();
     _animationController = AnimationController(
-				duration: const Duration(seconds: 5),
+				duration: const Duration(seconds: 10),
 				vsync: this)..repeat();
+    _turnAnimationController = AnimationController(
+			duration: const Duration(seconds: 7),
+			vsync: this);
+    _turnAnimation = Tween(
+			begin: 0.0,
+			end: 1.0,
+		).animate(_turnAnimationController);
     Future.delayed(
 			Duration(
 					seconds: 5
@@ -35,6 +43,7 @@ class _LoadingState extends State<Load> with TickerProviderStateMixin	{
 
   @override
   Widget build(BuildContext context) {
+		_turnAnimationController.forward();
     return Scaffold(
 			body: Stack(
 				children: <Widget>[
@@ -53,81 +62,37 @@ class _LoadingState extends State<Load> with TickerProviderStateMixin	{
 								angle: _animationController.value * 2.0 * math.pi,
 						),
 					),
-
-					Center(
-						child: Column(
-							children: <Widget>[
-								Expanded(
-									flex: 1,
-									child: Column(
-										mainAxisAlignment: MainAxisAlignment.end,
-										children: <Widget>[
-											Image.asset('assets/images/LeftTopArrow.png'),
-											Padding(
-												padding: EdgeInsets.only(bottom:267.0, left: 190.0),
-											),
-										],
+					FadeTransition(
+						opacity: _turnAnimation,
+						child: Center(
+							child: Container(
+								height: 155.0,
+								width: 135.0,
+								child: Align(
+									alignment: Alignment.bottomLeft,
+									child: Image.asset(
+										'assets/images/LeftTopArrow.png',
 									),
 								),
-							],
+							),
 						),
 					),
-					Center(
-								child: Column(
-									mainAxisAlignment: MainAxisAlignment.center,
-									children: <Widget>[
-										Image.asset('assets/images/RightBottomArrow.png'),
-//										Padding(
-//											padding: EdgeInsets.only(bottom: 400.0),
-//										),
-									],
+
+					FadeTransition(
+						opacity: _turnAnimation,
+						child: Center(
+							child: Container(
+								height: 150.0,
+								width: 150.0,
+								child: Align(
+									alignment: Alignment.bottomRight,
+									child: Image.asset(
+										'assets/images/RightBottomArrow.png',
+									),
 								),
+							),
 						),
-						//height: 300.0,
-//						width: 300.0,
-//						child: Column(
-//							children: <Widget>[
-//								Image.asset('assets/images/RightBottomArrow.png'),
-//								Padding(
-//									padding: EdgeInsets.only(bottom: 400.0),
-//								),
-//							],
-//						),
-//					Center(
-//						child: Column(
-//							children: <Widget>[
-//								Expanded(
-//									flex: 1,
-//									child: Column(
-//										mainAxisAlignment: MainAxisAlignment.end,
-//										children: <Widget>[
-//											Image.asset('assets/images/RightBottomArrow.png'),
-//
-////											Padding(
-////												padding: EdgeInsets.only(bottom:300.0, right: 190.0),
-////											),
-//										],
-//									),
-//								),
-//							],
-//						),
-//					),
-
-//								Image.asset(
-//										'assets/images/LeftTopArrow.png',
-//										height: 830.0,
-//										width: 950.0,
-//								),
-
-//					Container(
-//						alignment: Alignment.bottomCenter,
-//						height: 100.0,
-//						decoration: BoxDecoration(
-//							image: DecorationImage(
-//								image: ExactAssetImage('assets/images/LeftTopArrow.png'),
-//							),
-//						),
-//					),
+					),
 					Container(
 						alignment: Alignment.center,
 						decoration: BoxDecoration(

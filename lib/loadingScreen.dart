@@ -10,13 +10,13 @@ class Load extends StatefulWidget	{
 }
 
 class _LoadingState extends State<Load> with TickerProviderStateMixin	{
-	AnimationController _animationController, _fadeAnimationController, _tmAnimationController;
+	AnimationController _turnAnimationController, _fadeAnimationController, _tmAnimationController;
 	Animation _fadeAnimation, _tmAnimation;
 
 	@override
   void initState() {
     super.initState();
-    _animationController = AnimationController(
+    _turnAnimationController = AnimationController(
 			duration: const Duration(seconds: 10),
 			vsync: this)..repeat();
 
@@ -55,7 +55,7 @@ class _LoadingState extends State<Load> with TickerProviderStateMixin	{
 
 	@override
 	void dispose() {
-    _animationController.dispose();
+    _turnAnimationController.dispose();
     _tmAnimationController.dispose();
     _fadeAnimationController.dispose();
     super.dispose();
@@ -69,7 +69,7 @@ class _LoadingState extends State<Load> with TickerProviderStateMixin	{
 			body: Stack(
 				children: <Widget>[
 					AnimatedBuilder(
-						animation: _animationController,
+						animation: _turnAnimationController,
 						child: Container(
 							alignment: Alignment.center,
 							decoration: BoxDecoration(
@@ -80,7 +80,7 @@ class _LoadingState extends State<Load> with TickerProviderStateMixin	{
 						),
 						builder: (context,child) => Transform.rotate(
 								child: child,
-								angle: _animationController.value * 2.0 * math.pi,
+								angle: _turnAnimationController.value * 2.0 * math.pi,
 						),
 					),
 					FadeTransition(

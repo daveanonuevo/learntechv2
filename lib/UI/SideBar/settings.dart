@@ -59,18 +59,18 @@ class _SettingsState extends State<Settings> {
               ),
               trailing: GestureDetector(
                 onTap: () => {
-                      debugPrint("tapped"),
-                      setState(() {
-                        blDarkMode = !blDarkMode;
-                      }),
-                    },
+                  debugPrint("tapped"),
+                  setState(() {
+                    blDarkMode = !blDarkMode;
+                  }),
+                },
                 child: Switch(
                   value: blDarkMode,
                   onChanged: (value) => {
-                        setState(() {
-                          blDarkMode = !blDarkMode;
-                        }),
-                      },
+                    setState(() {
+                      blDarkMode = !blDarkMode;
+                    }),
+                  },
                 ),
               ),
             ),

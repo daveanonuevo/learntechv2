@@ -66,7 +66,7 @@ class MainPage extends StatelessWidget {
                                                 "assets/logo/WhatsApp.png")))),
                                 Text(
 //                                Title Text
-                                  "Whatssapp Guides",
+                                  "WhatsApp Guides",
                                   style: TextStyle(
                                       color: Colors.white, fontSize: 30),
                                 )

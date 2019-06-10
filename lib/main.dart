@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:learntech/UI/mainScreen.dart';
+//import 'package:learntech/UI/mainScreen.dart';
+import 'package:learntech/loadingScreen.dart';
 
 void main() => runApp(new MaterialApp(
-	home: MainPage(
+	home: Load(
 	),
 ));
 

@@ -10,8 +10,8 @@ class Load extends StatefulWidget	{
 }
 
 class _LoadingState extends State<Load> with TickerProviderStateMixin	{
-	AnimationController _animationController, _turnAnimationController, _tmAnimationController;
-	Animation _turnAnimation, _tmAnimation;
+	AnimationController _animationController, _fadeAnimationController, _tmAnimationController;
+	Animation _fadeAnimation, _tmAnimation;
 
 	@override
   void initState() {
@@ -20,18 +20,18 @@ class _LoadingState extends State<Load> with TickerProviderStateMixin	{
 			duration: const Duration(seconds: 10),
 			vsync: this)..repeat();
 
-    _turnAnimationController = AnimationController(
-			duration: const Duration(seconds: 7),
+    _fadeAnimationController = AnimationController(
+			duration: const Duration(seconds: 4),
 			vsync: this);
 
     _tmAnimationController = AnimationController(
-			duration: const Duration(seconds: 1),
+			duration: const Duration(seconds: 3),
 			vsync: this);
 
-    _turnAnimation = Tween(
+    _fadeAnimation = Tween(
 			begin: 0.0,
 			end: 1.0,
-		).animate(_turnAnimationController);
+		).animate(_fadeAnimationController);
 
     _tmAnimation = Tween(
 			begin: 0.0,
@@ -57,13 +57,14 @@ class _LoadingState extends State<Load> with TickerProviderStateMixin	{
 	void dispose() {
     _animationController.dispose();
     _tmAnimationController.dispose();
-    _turnAnimationController.dispose();
+    _fadeAnimationController.dispose();
     super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
-		_turnAnimationController.forward();
+		_fadeAnimationController.forward();
+		_tmAnimationController.forward();
     return Scaffold(
 			body: Stack(
 				children: <Widget>[
@@ -83,7 +84,7 @@ class _LoadingState extends State<Load> with TickerProviderStateMixin	{
 						),
 					),
 					FadeTransition(
-						opacity: _turnAnimation,
+						opacity: _fadeAnimation,
 						child: Center(
 							child: Container(
 								height: 155.0,
@@ -99,7 +100,7 @@ class _LoadingState extends State<Load> with TickerProviderStateMixin	{
 					),
 
 					FadeTransition(
-						opacity: _turnAnimation,
+						opacity: _fadeAnimation,
 						child: Center(
 							child: Container(
 								height: 150.0,
@@ -123,7 +124,7 @@ class _LoadingState extends State<Load> with TickerProviderStateMixin	{
 					),
 
 			FadeTransition(
-				opacity: _turnAnimation,
+				opacity: _tmAnimation,
 				child: Center(
 					child: Column(
 						children: <Widget>[
@@ -136,6 +137,7 @@ class _LoadingState extends State<Load> with TickerProviderStateMixin	{
 											"Learn Tech™",
 											style: TextStyle(
 												fontSize: 30.0,
+												color: Colors.black,
 											),
 										),
 //											CircularProgressIndicator(),

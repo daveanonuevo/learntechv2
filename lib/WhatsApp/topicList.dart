@@ -23,16 +23,18 @@ class ModuleTopic {
       fontSize: 18.0,
     );
 
-    String strPlat = (Platform.isIOS) ? "Android" : "iOS";
+    String strPlat = (
+        Platform.isAndroid
+//    true
+    ) ? "Android" : "iOS";
 
     Widget imagesBox(String imagePath) {
       if (context != null)
         return Container(
           margin: EdgeInsets.symmetric(
-            horizontal: MediaQuery.of(context).size.width / 32 * 5,
+            horizontal: (strPlat == "iOS") ? MediaQuery.of(context).size.width / 32 * 5 : MediaQuery.of(context).size.width / 32 * 3.7 ,
           ),
           height: MediaQuery.of(context).size.height / 32 * 28,
-          width: MediaQuery.of(context).size.width / 32 * 28,
           child: Image.asset(
             imagePath,
             fit: BoxFit.fitHeight,
@@ -83,7 +85,7 @@ class ModuleTopic {
                 Text("Edit your profile such as your name and photo.",
                     style: _localStyle),
                 DivideLine(),
-                imagesBox("assets/WhatsAppTopics/iOS/CreatingAnAccount.gif"),
+                imagesBox("assets/WhatsAppTopics/$strPlat/CreatingAnAccount.gif"),
                 DivideLine(),
               ],
             ),
@@ -108,7 +110,7 @@ class ModuleTopic {
                 ),
                 DivideLine(),
                 imagesBox(
-                  "assets/WhatsAppTopics/iOS/AddingContacts.gif",
+                  "assets/WhatsAppTopics/$strPlat/AddingContacts.gif",
                 ),
                 DivideLine(),
               ],
@@ -138,7 +140,7 @@ class ModuleTopic {
                   style: _localStyle,
                 ),
                 imagesBox(
-                  "assets/WhatsAppTopics/iOS/SendingMessages.gif",
+                  "assets/WhatsAppTopics/$strPlat/SendingMessages.gif",
                 ),
                 DivideLine(),
               ],
@@ -168,7 +170,7 @@ class ModuleTopic {
                   style: _localStyle,
                 ),
                 imagesBox(
-                  "assets/WhatsAppTopics/iOS/SendingVoiceMemos.gif",
+                  "assets/WhatsAppTopics/$strPlat/SendingVoiceMemos.gif",
                 ),
                 DivideLine(),
               ],
@@ -203,7 +205,7 @@ class ModuleTopic {
                   style: _localSub,
                 ),
                 imagesBox(
-                  "assets/WhatsAppTopics/iOS/SendingPhotos.gif",
+                  "assets/WhatsAppTopics/$strPlat/SendingPhotos.gif",
                 ),
                 DivideLine(),
                 Text(
@@ -211,7 +213,7 @@ class ModuleTopic {
                   style: _localSub,
                 ),
                 imagesBox(
-                  "assets/WhatsAppTopics/iOS/SendingLocation.gif",
+                  "assets/WhatsAppTopics/$strPlat/SendingLocation.gif",
                 ),
                 DivideLine(),
               ],
@@ -242,7 +244,7 @@ class ModuleTopic {
                 ),
                 DivideLine(),
                 imagesBox(
-                  "assets/WhatsAppTopics/iOS/GivingCalls.gif",
+                  "assets/WhatsAppTopics/$strPlat/GivingCalls.gif",
                 ),
                 DivideLine(),
               ],
@@ -298,7 +300,7 @@ class ModuleTopic {
                   style: _localStyle,
                 ),
                 imagesBox(
-                  "assets/WhatsAppTopics/iOS/AddingContactstoGroup.gif",
+                  "assets/WhatsAppTopics/$strPlat/AddingContactstoGroup.gif",
                 ),
                 DivideLine(),
                 Text(
@@ -311,7 +313,7 @@ class ModuleTopic {
                   style: _localStyle,
                 ),
                 imagesBox(
-                  "assets/WhatsAppTopics/iOS/CreatingGroups.gif",
+                  "assets/WhatsAppTopics/$strPlat/CreatingGroups.gif",
                 ),
                 DivideLine(),
               ],
@@ -342,7 +344,7 @@ class ModuleTopic {
                     "\n*This allows only those whom are in your contacts to know when was the last time you used WhatsApp",
                     style: _localSub),
                 imagesBox(
-                  "assets/WhatsAppTopics/iOS/LastSeen.gif",
+                  "assets/WhatsAppTopics/$strPlat/LastSeen.gif",
                 ),
                 DivideLine(),
               ],

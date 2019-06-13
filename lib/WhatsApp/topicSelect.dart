@@ -35,7 +35,7 @@ class _TopicSelectState extends State<TopicSelect> {
       setState(() {
         _backgroundViewController.animateToPage(
             _pageViewController.page.floor(),
-            duration: Duration(seconds: 1),
+            duration: Duration(milliseconds: 500),
             curve: Curves.ease);
         currentPageValue = _pageViewController.page;
       });

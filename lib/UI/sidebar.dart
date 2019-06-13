@@ -18,20 +18,20 @@ class SideBar extends StatelessWidget {
               ),
             ),
           ),
-          new ListTile(
-              leading: new Icon(
-                Icons.settings,
-                color: Colors.black,
-                size: 35,
-              ),
-              title: new Text(
-                "Settings",
-                textAlign: TextAlign.left,
-                style: new TextStyle(fontSize: 25.0),
-              ),
-              onTap: () => Navigator.of(context)
-                  .push(MaterialPageRoute(builder: (context) => Settings()))),
-          new Divider(color: Colors.grey),
+//          new ListTile(
+//              leading: new Icon(
+//                Icons.settings,
+//                color: Colors.black,
+//                size: 35,
+//              ),
+//              title: new Text(
+//                "Settings",
+//                textAlign: TextAlign.left,
+//                style: new TextStyle(fontSize: 25.0),
+//              ),
+//              onTap: () => Navigator.of(context)
+//                  .push(MaterialPageRoute(builder: (context) => Settings()))),
+//          new Divider(color: Colors.grey),
           new ListTile(
               leading: new Icon(
                   Icons.phone,

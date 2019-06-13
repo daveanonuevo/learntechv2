@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:learntech/UI/sidebar.dart';
 import 'package:learntech/WhatsApp/topicSelect.dart';
+//import 'package:learntech/WhatsApp/topicSelectTest.dart';
 
 class MainPage extends StatelessWidget {
   @override
@@ -22,7 +23,7 @@ class MainPage extends StatelessWidget {
         drawer: SideBar(),
         backgroundColor: Colors.transparent,
         body: Padding(
-          padding: const EdgeInsets.symmetric(vertical:0.0, horizontal: 35 ),
+          padding: const EdgeInsets.symmetric(vertical: 0.0, horizontal: 35),
           child: Center(
             child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -34,9 +35,10 @@ class MainPage extends StatelessWidget {
                           MaterialPageRoute(
                               builder: (context) =>
                                   TopicSelect(selectedTopic: "WhatsApp"))),
+//                                  TopicSelect2(selectedTopic: "WhatsApp"))),
                       child: Container(
 //                      Total Container
-                        height: queryData.size.height / 32 * 11 ,
+                        height: queryData.size.height / 32 * 11,
                         width: queryData.size.width,
                         decoration: BoxDecoration(
                             color: Colors.white,
@@ -59,7 +61,7 @@ class MainPage extends StatelessWidget {
                               child: Column(children: <Widget>[
                                 Container(
 //                                image placeholder
-                                    height: queryData.size.height / 32 * 6 ,
+                                    height: queryData.size.height / 32 * 6,
                                     decoration: BoxDecoration(
                                         image: DecorationImage(
                                             image: AssetImage(
@@ -87,11 +89,12 @@ class MainPage extends StatelessWidget {
                           MaterialPageRoute(
                               builder: (context) =>
                                   TopicSelect(selectedTopic: "SecurityTips")));
+//                                  TopicSelect2(selectedTopic: "SecurityTips")));
                     },
 //                      Navigator.push(context,
 //                      MaterialPageRoute(builder: (context) => TopicSelect(selectedTopic: "SecurityTips") ) ),
                     child: Container(
-                        height: queryData.size.height / 32 * 11 ,
+                        height: queryData.size.height / 32 * 11,
                         decoration: BoxDecoration(
                             color: Colors.white,
                             borderRadius:
@@ -100,7 +103,7 @@ class MainPage extends StatelessWidget {
                         child: Column(
                           children: <Widget>[
                             Container(
-                                height: queryData.size.height / 32 * 8 ,
+                                height: queryData.size.height / 32 * 8,
                                 decoration: BoxDecoration(
                                     gradient: LinearGradient(
                                         begin: Alignment.topRight,
@@ -115,7 +118,7 @@ class MainPage extends StatelessWidget {
                                 alignment: Alignment.topCenter,
                                 child: Column(children: <Widget>[
                                   Container(
-                                      height: queryData.size.height / 32 * 6 ,
+                                      height: queryData.size.height / 32 * 6,
                                       decoration: BoxDecoration(
                                           image: DecorationImage(
                                         image: AssetImage(
@@ -130,10 +133,10 @@ class MainPage extends StatelessWidget {
                                 ])),
                             Text(
                               "Tips to Remain Safe in the Internet World",
-                              style: TextStyle(color: Colors.black, fontSize: 22),
+                              style:
+                                  TextStyle(color: Colors.black, fontSize: 22),
                               textAlign: TextAlign.center,
                             ),
-
                           ],
                         )),
                   ),

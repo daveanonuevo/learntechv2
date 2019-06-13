@@ -21,7 +21,7 @@ class _LoadingState extends State<Load> with TickerProviderStateMixin	{
 			vsync: this)..repeat();
 
     _fadeAnimationController = AnimationController(
-			duration: const Duration(seconds: 4),
+			duration: const Duration(seconds: 5),
 			vsync: this);
 
     _tmAnimationController = AnimationController(
@@ -74,7 +74,7 @@ class _LoadingState extends State<Load> with TickerProviderStateMixin	{
 							alignment: Alignment.center,
 							decoration: BoxDecoration(
 								image: DecorationImage(
-									image: ExactAssetImage('assets/images/Cloud.png'),
+									image: ExactAssetImage('assets/LoadingScreen/Cloud.png'),
 								),
 							),
 						),
@@ -92,7 +92,7 @@ class _LoadingState extends State<Load> with TickerProviderStateMixin	{
 								child: Align(
 									alignment: Alignment.bottomLeft,
 									child: Image.asset(
-										'assets/images/LeftTopArrow.png',
+										'assets/LoadingScreen/LeftTopArrow.png',
 									),
 								),
 							),
@@ -108,7 +108,7 @@ class _LoadingState extends State<Load> with TickerProviderStateMixin	{
 								child: Align(
 									alignment: Alignment.bottomRight,
 									child: Image.asset(
-										'assets/images/RightBottomArrow.png',
+										'assets/LoadingScreen/RightBottomArrow.png',
 									),
 								),
 							),
@@ -118,7 +118,7 @@ class _LoadingState extends State<Load> with TickerProviderStateMixin	{
 						alignment: Alignment.center,
 						decoration: BoxDecoration(
 							image: DecorationImage(
-								image: ExactAssetImage('assets/images/IPhoneX.png'),
+								image: ExactAssetImage('assets/LoadingScreen/IPhoneX.png'),
 							),
 						),
 					),

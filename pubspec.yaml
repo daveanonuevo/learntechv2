@@ -48,15 +48,15 @@ flutter:
   # the material Icons class.
   uses-material-design: true
   assets:
-      - assets/images/wallpaper.png
-      - assets/images/SideBar_JewelChangi.png
-      - assets/images/Cloud.png
-      - assets/images/IPhoneX.png
-      - assets/images/LeftTopArrow.png
-      - assets/images/RightBottomArrow.png
-      - assets/images/AppLogo.png
-      - assets/logo/WhatsApp.png
-      - assets/logo/lock.png
+      - assets/Background/wallpaper.png
+      - assets/Side/SideBar_JewelChangi.png
+      - assets/LoadingScreen/Cloud.png
+      - assets/LoadingScreen/IPhoneX.png
+      - assets/LoadingScreen/LeftTopArrow.png
+      - assets/LoadingScreen/RightBottomArrow.png
+      - assets/LoadingScreen/AppLogo.png
+      - assets/Logo/WhatsApp.png
+      - assets/Logo/lock.png
       - assets/WhatsAppTopics/InstallingWhatsApp.jpg
       - assets/WhatsAppTopics/CreatingAnAccount.jpg
       - assets/WhatsAppTopics/AddingContacts.jpg

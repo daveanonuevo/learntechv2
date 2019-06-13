@@ -14,7 +14,7 @@ class SideBar extends StatelessWidget {
             decoration: BoxDecoration(
               image: DecorationImage(
                 fit: BoxFit.cover,
-                image: ExactAssetImage('assets/images/SideBar_JewelChangi.png'),
+                image: ExactAssetImage('assets/Side/SideBar_JewelChangi.png'),
               ),
             ),
           ),

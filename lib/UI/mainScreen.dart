@@ -11,7 +11,7 @@ class MainPage extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
           image: DecorationImage(
-        image: AssetImage("assets/images/wallpaper.png"),
+        image: AssetImage("assets/Background/wallpaper.png"),
         fit: BoxFit.cover,
       )),
       child: Scaffold(
@@ -63,7 +63,7 @@ class MainPage extends StatelessWidget {
                                     decoration: BoxDecoration(
                                         image: DecorationImage(
                                             image: AssetImage(
-                                                "assets/logo/WhatsApp.png")))),
+                                                "assets/Logo/WhatsApp.png")))),
                                 Text(
 //                                Title Text
                                   "WhatsApp Guides",
@@ -119,7 +119,7 @@ class MainPage extends StatelessWidget {
                                       decoration: BoxDecoration(
                                           image: DecorationImage(
                                         image: AssetImage(
-                                          "assets/logo/lock.png",
+                                          "assets/Logo/lock.png",
                                         ),
                                       ))),
                                   Text(

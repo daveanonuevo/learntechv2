@@ -38,7 +38,7 @@ class _SettingsState extends State<Settings> {
         children: <Widget>[
           Center(
             child: new Image.asset(
-              'assets/images/wallpaper.png',
+              'assets/Background/wallpaper.png',
               width: wallpaper.width,
               height: wallpaper.height,
               fit: BoxFit.fill,

@@ -45,13 +45,15 @@ class _TopicSelectState extends State<TopicSelect> {
       PageTransformer(pageViewBuilder: (context, visibilityResolver) {
         return PreloadPageView.builder(
           controller: _backgroundViewController,
-          preloadPagesCount: ModuleTopic.loadTopics(widget.selectedTopic == "WhatsApp"
-                  ? "WhatsApp"
-                  : "Security Tips")
+          preloadPagesCount: ModuleTopic.loadTopics(
+                  widget.selectedTopic == "WhatsApp"
+                      ? "WhatsApp"
+                      : "Security Tips")
               .length,
           itemCount: ModuleTopic.loadTopics("${widget.selectedTopic}").length,
           itemBuilder: (context, index) {
-            final topic = ModuleTopic.loadTopics("${widget.selectedTopic}")[index];
+            final topic =
+                ModuleTopic.loadTopics("${widget.selectedTopic}")[index];
             final pageVisibility =
                 visibilityResolver.resolvePageVisibility(index);
             return BackgroundImages(
@@ -86,9 +88,11 @@ class _TopicSelectState extends State<TopicSelect> {
                               ? "WhatsApp"
                               : "Security Tips")
                       .length,
-                  itemCount: ModuleTopic.loadTopics("${widget.selectedTopic}").length,
+                  itemCount:
+                      ModuleTopic.loadTopics("${widget.selectedTopic}").length,
                   itemBuilder: (context, index) {
-                    final topic = ModuleTopic.loadTopics("${widget.selectedTopic}")[index];
+                    final topic = ModuleTopic.loadTopics(
+                        "${widget.selectedTopic}")[index];
                     final pageVisibility =
                         visibilityResolver.resolvePageVisibility(index);
                     return WhatsAppTopicCards(
@@ -236,9 +240,9 @@ class _WhatsAppTopicCardsState extends State<WhatsAppTopicCards> {
           context,
           MaterialPageRoute(
               builder: (context) => DisplayTopic(
-                topic: widget.topic,
-                module: widget.module,
-                count: widget.count,
+                    topic: widget.topic,
+                    module: widget.module,
+                    count: widget.count,
                   ))),
       child: Padding(
         padding: const EdgeInsets.symmetric(

@@ -6,7 +6,7 @@ class LanguageSelection extends StatelessWidget {
     return Container(
       decoration: new BoxDecoration(
         image: new DecorationImage(
-          image: new AssetImage("assets/images/wallpaper.png"),
+          image: new AssetImage("assets/Background/wallpaper.png"),
           fit: BoxFit.cover,
         ),
       ),

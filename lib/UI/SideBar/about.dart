@@ -9,7 +9,7 @@ class About extends StatelessWidget	{
 		return Container(
 			decoration: BoxDecoration(
 				image: DecorationImage(
-					image: AssetImage("assets/images/wallpaper.png"),
+					image: AssetImage("assets/Background/wallpaper.png"),
 					fit: BoxFit.cover,
 				),
 			),

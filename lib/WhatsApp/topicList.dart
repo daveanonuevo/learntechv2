@@ -233,7 +233,7 @@ class ModuleTopic {
                 ),
                 DivideLine(),
                 Text(
-                  "Tap on the top right to display a list of you contacts",
+                  "Tap on the top right to display a list of your contacts",
                   style: _localStyle,
                 ),
                 DivideLine(),

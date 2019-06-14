@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:learntech/UI/SideBar/contactUs.dart';
-import 'package:learntech/UI/SideBar/settings.dart';
+//import 'package:learntech/UI/SideBar/settings.dart';
 import 'package:learntech/UI/SideBar/about.dart';
+import 'package:learntech/localizations.dart';
 
 class SideBar extends StatelessWidget {
   @override
@@ -39,7 +40,7 @@ class SideBar extends StatelessWidget {
                   size: 35
               ),
               title: new Text(
-                "Contact Us",
+								AppLocalizations.of(context).title,   //translations
                 textAlign: TextAlign.left,
                 style: new TextStyle(fontSize: 25.0),
               ),

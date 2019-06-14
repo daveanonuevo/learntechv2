@@ -80,8 +80,10 @@ class ModuleTopic {
             style: _localSub,
           ),
           DivideLine(),
-          Text("Edit your profile such as your name and photo.",
-              style: _localStyle),
+          Text(
+              "Edit your profile such as your name and photo.",
+              style: _localStyle,
+          ),
           DivideLine(),
           imagesBox(
               "assets/WhatsAppTopics/iOS/CreatingAnAccount.gif"
@@ -229,7 +231,7 @@ class ModuleTopic {
           ),
           DivideLine(),
           Text(
-            "Tap on the top right to display a list of you contacts",
+            "Tap on the top right to display a list of your contacts",
             style: _localStyle,
           ),
           DivideLine(),
@@ -263,7 +265,7 @@ class ModuleTopic {
           ),
           DivideLine(),
           Text(
-            "Press and hold the green button, and then swipe up to answer",
+            "Press and hold the green button, then swipe up to answer",
             style: _localStyle,
           ),
           imagesBox(
@@ -327,7 +329,7 @@ class ModuleTopic {
         imagePath: "assets/SecurityTopics/IncreasePrivacy.jpg",
         topicInfo: [
           Text(
-            "Tap on the Settings icon on the bottom right",
+            "Tap on the Settings icon, located bottom right of your phone",
             style: _localStyle,
           ),
           DivideLine(),
@@ -341,7 +343,7 @@ class ModuleTopic {
             style: _localStyle,
           ),
           Text(
-              "\n*This allows only those whom are in your contacts to know when was the last time you used WhatsApp",
+              "\n*This allows only those who are in your contacts to know when was the last time you used WhatsApp",
               style: _localSub),
           imagesBox(
             "assets/WhatsAppTopics/iOS/LastSeen.gif",
@@ -350,7 +352,7 @@ class ModuleTopic {
         ],
       ),
       ModuleTopic(
-        topicName: "Detecting Scams",
+        topicName: "Identifying Scams",
         icon: Icons.network_wifi,
         imagePath: "assets/SecurityTopics/DetectingScams.jpg",
         topicInfo: [
@@ -361,7 +363,7 @@ class ModuleTopic {
         ],
       ),
       ModuleTopic(
-        topicName: "Detecting Fake News",
+        topicName: "Identifying Fake News",
         icon: Icons.network_wifi,
         imagePath: "assets/SecurityTopics/DetectingFakeNews.jpg",
         topicInfo: [
@@ -765,7 +767,7 @@ class ModuleTopic {
         ],
       ),
       ModuleTopic(
-        topicName: "Detecting Scams",
+        topicName: "Identifying Scams",
         icon: Icons.network_wifi,
         imagePath: "assets/SecurityTopics/DetectingScams.jpg",
         topicInfo: [
@@ -804,7 +806,7 @@ class ModuleTopic {
         ],
       ),
       ModuleTopic(
-        topicName: "Detecting Fake News",
+        topicName: "Identifying Fake News",
         icon: Icons.network_wifi,
         imagePath: "assets/SecurityTopics/DetectingFakeNews.jpg",
         topicInfo: [

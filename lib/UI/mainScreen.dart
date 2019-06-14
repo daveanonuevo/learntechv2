@@ -8,13 +8,13 @@ class MainPage extends StatelessWidget {
   Widget build(BuildContext context) {
     MediaQueryData queryData;
     queryData = MediaQuery.of(context);
-
     return Container(
       decoration: BoxDecoration(
-          image: DecorationImage(
-        image: AssetImage("assets/Background/wallpaper.png"),
-        fit: BoxFit.cover,
-      )),
+        image: DecorationImage(
+          image: AssetImage("assets/Background/wallpaper.png"),
+          fit: BoxFit.cover,
+        )
+      ),
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.transparent,
@@ -68,7 +68,7 @@ class MainPage extends StatelessWidget {
                                                 "assets/Logo/WhatsApp.png")))),
                                 Text(
 //                                Title Text
-                                  "WhatsApp Guides",
+                                  "WhatsApp Guides", //this
                                   style: TextStyle(
                                       color: Colors.white, fontSize: 30),
                                 )

@@ -101,7 +101,7 @@ class About extends StatelessWidget	{
 										Padding(
 											padding: EdgeInsets.all(10.0),
 											child: Text(
-												"1. We are not affiliated, associated, authorized, endorsed by, or in any way officially connected with WhatsApp Inc., or any of its subsidiaries or its affiliates. We do not take reponsibility for decisions/actions taken by the user based solely on the information provided in this application.",
+												"1. We are not affiliated, associated, authorized, endorsed by, or in any way officially connected with WhatsApp Inc., or any of its subsidiaries or its affiliates. We do not take responsibility for decisions/actions taken by the user based solely on the information provided in this application.",
 												textAlign: TextAlign.left,
 												style: TextStyle(
 													fontSize: 20.0,

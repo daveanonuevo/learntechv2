@@ -1,8 +1,233 @@
 {
-  "@@last_modified": "2019-06-15T00:09:15.355158",
-  "title": "联系方式",
-  "@title": {
-    "type": "text",
-    "placeholders": {}
-  }
+    "@@last_modified": "2019-06-15T00:09:15.355158",
+    "contactTrans": "联系方式",
+    "@contactTrans": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "contactContentTrans": "请提供个人意见（关于应用程序)",
+    "@contactContentTrans": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "contactContentFeedbackTrans1": "反馈",
+    "@contactContentFeedbackTrans1": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "contactContentFeedbackTrans2": "名称",
+    "@contactContentFeedbackTrans2": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "contactContentFeedbackTrans3": "电子邮件地址",
+    "@contactContentFeedbackTrans3": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "contactContentFeedbackButtonTrans": "发送",
+    "@contactContentFeedbackButtonTrans": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "aboutTrans": "关于本程序",
+    "@aboutTrans": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "aboutContentTitle1Trans": "归功于：",
+    "@aboutContentTitle1Trans": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "aboutContent1Title1Trans": "1. 本程序的照片来自 Unsplash.com",
+    "@aboutContent1Title1Trans": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "aboutContent2Title1Trans": "1. 本程序如有 WhatsApp 的照片来自 whatsappbrand.com",
+    "@aboutContent2Title1Trans": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "aboutContentTitle2Trans": "免责声明：",
+    "@aboutContentTitle2Trans": {
+        "type": "text",
+        "placeholders": {}
+    },
+
+
+
+
+
+    "waTitle1DescTrans": "快，简单，安全，免费的简讯和通话",
+    "@waTitle1DescTrans": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category1Trans": "下载 WhatsApp",
+    "@waTitle1Category1Trans": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category1ContentTrans1": "找出您电话里的 App Store，然后搜索并下载 WhatsApp",
+    "@waTitle1Category1ContentTrans1": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category1ContentTrans2": "恭喜，您成功下载 WhatsApp",
+    "@waTitle1Category1ContentTrans2": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category2Trans": "开设账号",
+    "@waTitle1Category2Trans": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category2ContentTrans1": "打开 WhatsApp 并输入您的电话号码和国家代码，完成后按 \“下一步\”",
+    "@waTitle1Category2ContentTrans1": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category2ContentTrans2": "获准全部电话里所要求的权限",
+    "@waTitle1Category2ContentTrans2": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category2ContentTrans3": "更改个人户口资料（名字与照片）",
+    "@waTitle1Category2ContentTrans3": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category3Trans": "添加联系",
+    "@waTitle1Category3Trans": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category3ContentTrans1": "按右下角的按键",
+    "@waTitle1Category3ContentTrans1": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category3ContentTrans2": "按 \“添加联系人\”",
+    "@waTitle1Category3ContentTrans2": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category3ContentTrans3": "填上名字和电话号码，然后在按 \“保存\”",
+    "@waTitle1Category3ContentTrans3": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category4Trans": "发送简讯",
+    "@waTitle1Category4Trans": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category4ContentTrans1": "按右下角的按键",
+    "@waTitle1Category4ContentTrans1": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category4ContentTrans2": "按或找您想发送简讯的联络人的名字",
+    "@waTitle1Category4ContentTrans2": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category4ContentTrans3": "在手机里的底部屏幕里，请按 \“输入消息\” 在白面积里然后输入您所要发送的",
+    "@waTitle1Category4ContentTrans3": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category4ContentTrans4": "输入后，按右边的箭头发信息",
+    "@waTitle1Category4ContentTrans4": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category5Trans": "发送录音",
+    "@waTitle1Category5Trans": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category5ContentTrans1": "按右下角的按键",
+    "@waTitle1Category5ContentTrans1": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category5ContentTrans2": "按或找你想发送语音剪辑的联络人的名字",
+    "@waTitle1Category5ContentTrans2": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category5ContentTrans3": "按这右下角的麦克风图签，然后开始您想说的话",
+    "@waTitle1Category5ContentTrans3": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category5ContentTrans4": "当您完成想说的话，您可放开麦克风图签或向左滑动就可删除语音剪辑",
+    "@waTitle1Category5ContentTrans4": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category6Trans": "发送照片与短片之类",
+    "@waTitle1Category6Trans": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category6ContentTrans1": "按右下角的按键",
+    "@waTitle1Category6ContentTrans1": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category6ContentTrans2": "按或找您想联络的人",
+    "@waTitle1Category6ContentTrans2": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category6ContentTrans3": "按右边的纸夹图示",
+    "@waTitle1Category6ContentTrans3": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category6ContentTrans4": "选择要发送的文件，然后贯彻始终",
+    "@waTitle1Category6ContentTrans4": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category6ContentTrans5": "以下是发图片的例子",
+    "@waTitle1Category6ContentTrans5": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category6ContentTrans6": "以下是分享位置的例子 \n*您必须要让诚程序的到批准",
+    "@waTitle1Category6ContentTrans6": {
+        "type": "text",
+        "placeholders": {}
+    },
+
+
+
+
+
+
+
+
+    "safeTitle2Trans": "网络安全提示",
+    "@safeTitle2Trans": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "safeTitle2DescTrans": "如何在网络世界保持安全的提示",
+    "@safeTitle2DescTrans": {
+        "type": "text",
+        "placeholders": {}
+    },
+
+
+
+
+
+
+
 }

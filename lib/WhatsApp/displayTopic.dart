@@ -21,7 +21,7 @@ class DisplayTopic extends StatefulWidget {
 class _DisplayTopicState extends State<DisplayTopic> {
   @override
   Widget build(BuildContext context) {
-    print(widget.topic.topicName);
+    //print(widget.topic.topicName);
     print(widget.topic.topicInfo);
     print(widget.topic.imagePath);
     return Scaffold(

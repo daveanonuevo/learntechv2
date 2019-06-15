@@ -1,8 +1,232 @@
 {
-  "@@last_modified": "2019-06-15T00:09:15.355158",
-  "title": "Contact Us",
-  "@title": {
-    "type": "text",
-    "placeholders": {}
-  }
+    "@@last_modified": "2019-06-15T10:42:46.808978",
+    "contactTrans": "Contact Us",
+    "@contactTrans": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "contactContentTrans": "Please provide us with any feedback or comments about the app",
+    "@contactContentTrans": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "contactContentFeedbackTrans1": "Feedback",
+    "@contactContentFeedbackTrans1": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "contactContentFeedbackTrans2": "Name",
+    "@contactContentFeedbackTrans2": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "contactContentFeedbackTrans3": "Email",
+    "@contactContentFeedbackTrans3": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "contactContentFeedbackButtonTrans": "Send",
+    "@contactContentFeedbackButtonTrans": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "aboutTrans": "About",
+    "@aboutTrans": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "aboutContentTitle1Trans": "Credits:",
+    "@aboutContentTitle1Trans": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "aboutContent1Title1Trans": "1. All background images sourced from Unsplash.com",
+    "@aboutContent1Title1Trans": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "aboutContent2Title1Trans": "2. All WhatsApp images sourced from whatsappbrand.com",
+    "@aboutContent2Title1Trans": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "aboutContentTitle2Trans": "Disclaimer:",
+    "@aboutContentTitle2Trans": {
+        "type": "text",
+        "placeholders": {}
+    },
+
+
+
+
+
+    "waTitle1DescTrans": "Fast, Simple & Secure Messaging and Calling for Free",
+    "@waTitle1DescTrans": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category1Trans": "Installing WhatsApp",
+    "@waTitle1Category1Trans": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category1ContentTrans1": "Find your phone’s App Store and open it, search for WhatsApp and install",
+    "@waTitle1Category1ContentTrans1": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category1ContentTrans2": "Congratulations, you have successfully installed WhatsApp!",
+    "@waTitle1Category1ContentTrans2": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category2Trans": "Creating An Account",
+    "@waTitle1Category2Trans": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category2ContentTrans1": "Open WhatsApp and key in your phone number and country code, tap on Next when done",
+    "@waTitle1Category2ContentTrans1": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category2ContentTrans2": "Allow all permissions it requests of you to prevent the prompts from popping out again",
+    "@waTitle1Category2ContentTrans2": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category2ContentTrans3": "Edit your profile name and photo",
+    "@waTitle1Category2ContentTrans3": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category3Trans": "Adding Contacts",
+    "@waTitle1Category3Trans": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category3ContentTrans1": "Tap the Message Icon on the bottom right corner",
+    "@waTitle1Category3ContentTrans1": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category3ContentTrans2": "Tap on New Contact",
+    "@waTitle1Category3ContentTrans2": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category3ContentTrans3": "Fill in the name and number of the one you wish to contact and tap \"Save\" when done",
+    "@waTitle1Category3ContentTrans3": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category4Trans": "Sending Messages",
+    "@waTitle1Category4Trans": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category4ContentTrans1": "Tap on the Message Icon, located bottom right corner",
+    "@waTitle1Category4ContentTrans1": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category4ContentTrans2": "Tap or search for the name of the person you wish to message",
+    "@waTitle1Category4ContentTrans2": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category4ContentTrans3": "Tap on the bottom text field and type your message using the keyboard",
+    "@waTitle1Category4ContentTrans3": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category4ContentTrans4": "When you have completed typing, tap the Arrow Icon on the bottom right corner",
+    "@waTitle1Category4ContentTrans4": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category5Trans": "Sending Voice Memos",
+    "@waTitle1Category5Trans": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category5ContentTrans1": "Tap on the Message Icon, located bottom right corner",
+    "@waTitle1Category5ContentTrans1": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category5ContentTrans2": "Tap or search for the name of the person you wish to send a voice message",
+    "@waTitle1Category5ContentTrans2": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category5ContentTrans3": "Press and hold the microphone icon on the bottom right, and start speaking",
+    "@waTitle1Category5ContentTrans3": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category5ContentTrans4": "Once you have completed, release the microphone icon and your message will be sent, or swipe left for it to be discarded",
+    "@waTitle1Category5ContentTrans4": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category6Trans": "Sending Media",
+    "@waTitle1Category6Trans": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category6ContentTrans1": "Tap on the Message Icon, located bottom right corner",
+    "@waTitle1Category6ContentTrans1": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category6ContentTrans2": "Tap or search for the name of the person you wish to contact",
+    "@waTitle1Category6ContentTrans2": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category6ContentTrans3": "Tap on the paperclip that is on the right of the Message Text Field",
+    "@waTitle1Category6ContentTrans3": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category6ContentTrans4": "Select the media type you wish to send and follow through accordingly",
+    "@waTitle1Category6ContentTrans4": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category6ContentTrans5": "Here's an example of sharing a photo",
+    "@waTitle1Category6ContentTrans5": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category6ContentTrans6": "Here's an example of sharing your location \n*You may need to allow your phone permissions to do this",
+    "@waTitle1Category6ContentTrans6": {
+        "type": "text",
+        "placeholders": {}
+    },
+
+
+
+
+
+
+
+
+
+    "safeTitle2Trans": "Safety Online Tips",
+    "@safeTitle2Trans": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "safeTitle2DescTrans": "Tips to remain Safe in the Internet World",
+    "@safeTitle2DescTrans": {
+        "type": "text",
+        "placeholders": {}
+    },
+
+
+
+
+
 }

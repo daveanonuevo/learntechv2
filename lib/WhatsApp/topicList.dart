@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:learntech/WhatsApp/topicSelect.dart';
 import 'dart:io' show Platform;
+import 'package:learntech/localizations.dart';
 
 class ModuleTopic {
   String topicName;
@@ -54,38 +56,39 @@ class ModuleTopic {
     return module == "WhatsApp" //Everything till the next thing is all IOS shit
         ? [
             ModuleTopic(
-              topicName: "Installing WhatsApp",
+              topicName: AppLocalizations().waTitle1Category1Trans,
               icon: Icons.explore,
               imagePath: "assets/WhatsAppTopics/InstallingWhatsApp.jpg",
               topicInfo: [
                 Text(
-                  "Find your phone’s App Store and open it, search for WhatsApp and install",
+                  AppLocalizations().waTitle1Category1ContentTrans1,
                   style: _localStyle,
                 ),
                 imagesBox(
                     "assets/WhatsAppTopics/$strPlat/FindInstallSearch.gif"),
                 Text(
-                  "Congratulations, you now have WhatsApp installed!",
+                  AppLocalizations().waTitle1Category1ContentTrans2,
                   style: _localStyle,
                 ),
                 DivideLine(),
               ],
             ),
             ModuleTopic(
-              topicName: "Creating an Account",
+              topicName: AppLocalizations().waTitle1Category2Trans,
               icon: Icons.account_circle,
               imagePath: "assets/WhatsAppTopics/CreatingAnAccount.jpg",
               topicInfo: [
                 Text(
-                    "Open WhatsApp and key in your phone number and country code, tap on Next when done",
+                    AppLocalizations().waTitle1Category2ContentTrans1,
                     style: _localStyle),
                 DivideLine(),
                 Text(
-                  "Allow all permissions it requests of you to make life easier",
+                  AppLocalizations().waTitle1Category2ContentTrans2,
                   style: _localSub,
                 ),
                 DivideLine(),
-                Text("Edit your profile such as your name and photo.",
+                Text(
+                    AppLocalizations().waTitle1Category2ContentTrans3,
                     style: _localStyle),
                 DivideLine(),
                 imagesBox(
@@ -94,22 +97,22 @@ class ModuleTopic {
               ],
             ),
             ModuleTopic(
-              topicName: "Adding Contacts",
+              topicName: AppLocalizations().waTitle1Category3Trans,
               icon: Icons.create,
               imagePath: "assets/WhatsAppTopics/AddingContacts.jpg",
               topicInfo: [
                 Text(
-                  "Tap on the Message Icon on the top right",
+                  AppLocalizations().waTitle1Category3ContentTrans1,
                   style: _localStyle,
                 ),
                 DivideLine(),
                 Text(
-                  "Tap on New Contact",
+                  AppLocalizations().waTitle1Category3ContentTrans2,
                   style: _localStyle,
                 ),
                 DivideLine(),
                 Text(
-                  "Fill in the name and number of the one you wish to contact and click Save on the top right when done",
+                  AppLocalizations().waTitle1Category3ContentTrans3,
                   style: _localStyle,
                 ),
                 DivideLine(),
@@ -120,27 +123,27 @@ class ModuleTopic {
               ],
             ),
             ModuleTopic(
-              topicName: "Sending Messages",
+              topicName: AppLocalizations().waTitle1Category4Trans,
               icon: Icons.network_wifi,
               imagePath: "assets/WhatsAppTopics/SendingMessages.jpg",
               topicInfo: [
                 Text(
-                  "Tap on the Message Icon",
+                  AppLocalizations().waTitle1Category4ContentTrans1,
                   style: _localStyle,
                 ),
                 DivideLine(),
                 Text(
-                  "Tap on the name of the person you wish to message",
+                  AppLocalizations().waTitle1Category4ContentTrans2,
                   style: _localStyle,
                 ),
                 DivideLine(),
                 Text(
-                  "Tap on the bottom text field and type your message using the keyboard",
+                  AppLocalizations().waTitle1Category4ContentTrans3,
                   style: _localStyle,
                 ),
                 DivideLine(),
                 Text(
-                  "When you have completed typing, press the Arrow Icon on the right",
+                  AppLocalizations().waTitle1Category4ContentTrans4,
                   style: _localStyle,
                 ),
                 imagesBox(
@@ -150,27 +153,27 @@ class ModuleTopic {
               ],
             ),
             ModuleTopic(
-              topicName: "Sending Voice Memos",
+              topicName: AppLocalizations().waTitle1Category5Trans,
               icon: Icons.keyboard_voice,
               imagePath: "assets/WhatsAppTopics/SendingVoiceMemos.jpg",
               topicInfo: [
                 Text(
-                  "Tap on the Message Icon",
+                  AppLocalizations().waTitle1Category5ContentTrans1,
                   style: _localStyle,
                 ),
                 DivideLine(),
                 Text(
-                  "Tap on the name of the person you wish to contact",
+                  AppLocalizations().waTitle1Category5ContentTrans2,
                   style: _localStyle,
                 ),
                 DivideLine(),
                 Text(
-                  "Press and hold the microphone icon on the bottom right, and start to speak your message",
+                  AppLocalizations().waTitle1Category5ContentTrans3,
                   style: _localStyle,
                 ),
                 DivideLine(),
                 Text(
-                  "Once you have completed, let go of the microphone and your message will be sent, or swipe left for it to be discarded",
+                  AppLocalizations().waTitle1Category5ContentTrans4,
                   style: _localStyle,
                 ),
                 imagesBox(
@@ -180,32 +183,32 @@ class ModuleTopic {
               ],
             ),
             ModuleTopic(
-              topicName: "Sending Media",
+              topicName: AppLocalizations().waTitle1Category6Trans,
               icon: Icons.network_wifi,
               imagePath: "assets/WhatsAppTopics/SendingMedia.jpg",
               topicInfo: [
                 Text(
-                  "Tap on the Message Icon",
+                  AppLocalizations().waTitle1Category6ContentTrans1,
                   style: _localStyle,
                 ),
                 DivideLine(),
                 Text(
-                  "Tap on the name of the person you wish to contact",
+                  AppLocalizations().waTitle1Category6ContentTrans2,
                   style: _localStyle,
                 ),
                 DivideLine(),
                 Text(
-                  "Tap on the + sign that is on the left of the Message Text Field",
+                  AppLocalizations().waTitle1Category6ContentTrans3,
                   style: _localStyle,
                 ),
                 DivideLine(),
                 Text(
-                  "Select the media type you wish to send and follow through accordingly",
+                  AppLocalizations().waTitle1Category6ContentTrans4,
                   style: _localStyle,
                 ),
                 DivideLine(),
                 Text(
-                  "Here's an example of sharing a photo",
+                  AppLocalizations().waTitle1Category6ContentTrans5,
                   style: _localSub,
                 ),
                 imagesBox(
@@ -213,7 +216,7 @@ class ModuleTopic {
                 ),
                 DivideLine(),
                 Text(
-                  "Here's an example of sharing your location \n*You may need to allow your phone permissions to do this",
+                  AppLocalizations().waTitle1Category6ContentTrans6,
                   style: _localSub,
                 ),
                 imagesBox(

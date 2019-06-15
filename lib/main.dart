@@ -13,8 +13,6 @@ void main() => runApp(new MaterialApp(
 	],
 
 	supportedLocales: [Locale("en"), Locale("zh")],
-	onGenerateTitle: (BuildContext context) =>
-	AppLocalizations.of(context).title,
 
 	home: Load(
 	),

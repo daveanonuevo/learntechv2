@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 import 'dart:io';
 import 'dart:convert';
+import 'package:learntech/localizations.dart';
 
 class ContactPage extends StatefulWidget {
   @override
@@ -32,7 +33,7 @@ class _ContactPageState extends State<ContactPage> {
         child: Scaffold(
           backgroundColor: Colors.transparent,
           appBar: AppBar(
-            title: Text("Contact Us"),
+            title: Text(AppLocalizations.of(context).contactTrans),
             textTheme:
             TextTheme(title: TextStyle(color: Colors.black, fontSize: 25)),
             centerTitle: true,
@@ -67,7 +68,7 @@ class _ContactPageState extends State<ContactPage> {
                         padding: const EdgeInsets.only(
                             top: 30.0, left: 13.0, right: 13.0, bottom: 10.0),
                         child: Text(
-                          "Please provide us with any feedbacks or comments about the app",
+                          AppLocalizations.of(context).contactContentTrans,
                           style: TextStyle(
                             fontSize: 20,
                             color: Colors.black,
@@ -91,7 +92,7 @@ class _ContactPageState extends State<ContactPage> {
                             style: TextStyle(fontSize: 20),
                             cursorColor: Colors.black,
                             decoration: InputDecoration(
-                              labelText: "Feedback",
+                              labelText: AppLocalizations.of(context).contactContentFeedbackTrans1,
                               border: OutlineInputBorder(
                                 gapPadding: 2,
                                 borderRadius:
@@ -116,7 +117,7 @@ class _ContactPageState extends State<ContactPage> {
                               style: TextStyle(fontSize: 20),
                               cursorColor: Colors.black,
                               decoration: InputDecoration(
-                                  labelText: "Name",
+                                  labelText: AppLocalizations.of(context).contactContentFeedbackTrans2,
                                   border: OutlineInputBorder(
                                       gapPadding: 2,
                                       borderRadius: BorderRadius.all(
@@ -136,7 +137,7 @@ class _ContactPageState extends State<ContactPage> {
                             style: TextStyle(fontSize: 20),
                             cursorColor: Colors.black,
                             decoration: InputDecoration(
-                                labelText: "Email",
+                                labelText: AppLocalizations.of(context).contactContentFeedbackTrans3,
                                 border: OutlineInputBorder(
                                     gapPadding: 2,
                                     borderRadius:
@@ -167,7 +168,7 @@ class _ContactPageState extends State<ContactPage> {
                                 color: Color(0xFF009688)),
                             child: Center(
                                 child: Text(
-                                  "Send",
+                                  AppLocalizations.of(context).contactContentFeedbackButtonTrans,
                                   textAlign: TextAlign.center,
                                   style: TextStyle(fontSize: 20.0),
                                 )),

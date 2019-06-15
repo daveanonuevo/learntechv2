@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:learntech/UI/sidebar.dart';
 import 'package:learntech/WhatsApp/topicSelect.dart';
+import 'package:learntech/localizations.dart';
 //import 'package:learntech/WhatsApp/topicSelectTest.dart';
 
 class MainPage extends StatelessWidget {
@@ -48,7 +49,7 @@ class MainPage extends StatelessWidget {
                         child: Column(children: <Widget>[
                           Container(
 //                          Green Part
-                              height: queryData.size.height / 32 * 8,
+                              height: queryData.size.height / 32 * 8.3,  //from 8 to 8.3
                               decoration: BoxDecoration(
 //                              Green Part
                                 color: Colors.green,
@@ -75,7 +76,7 @@ class MainPage extends StatelessWidget {
                               ])),
                           Text(
 //                          White Text
-                            "Fast, Simple & Secure Messaging and Calling for Free",
+                            AppLocalizations.of(context).waTitle1DescTrans,
                             style: TextStyle(color: Colors.black, fontSize: 20),
                             textAlign: TextAlign.center,
                           )
@@ -103,7 +104,7 @@ class MainPage extends StatelessWidget {
                         child: Column(
                           children: <Widget>[
                             Container(
-                                height: queryData.size.height / 32 * 8,
+                                height: queryData.size.height / 32 * 8.3,  //from 8 to 8.3
                                 decoration: BoxDecoration(
                                     gradient: LinearGradient(
                                         begin: Alignment.topRight,
@@ -126,15 +127,15 @@ class MainPage extends StatelessWidget {
                                         ),
                                       ))),
                                   Text(
-                                    "Safety Online Tips",
+                                    AppLocalizations.of(context).safeTitle2Trans,
                                     style: TextStyle(
                                         color: Colors.white, fontSize: 30),
                                   )
                                 ])),
                             Text(
-                              "Tips to Remain Safe in the Internet World",
+                              AppLocalizations.of(context).safeTitle2DescTrans,
                               style:
-                                  TextStyle(color: Colors.black, fontSize: 22),
+                                  TextStyle(color: Colors.black, fontSize: 20),
                               textAlign: TextAlign.center,
                             ),
                           ],

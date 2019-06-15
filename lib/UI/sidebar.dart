@@ -40,7 +40,7 @@ class SideBar extends StatelessWidget {
                   size: 35
               ),
               title: new Text(
-								AppLocalizations.of(context).title,   //translations
+								AppLocalizations.of(context).contactTrans,   //translations
                 textAlign: TextAlign.left,
                 style: new TextStyle(fontSize: 25.0),
               ),
@@ -56,7 +56,7 @@ class SideBar extends StatelessWidget {
                   size: 35
               ),
               title: new Text(
-                "About",
+                AppLocalizations.of(context).aboutTrans,
                 textAlign: TextAlign.left,
                 style: new TextStyle(fontSize: 25.0),
               ),

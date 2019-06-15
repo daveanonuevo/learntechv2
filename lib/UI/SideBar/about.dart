@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:learntech/localizations.dart';
 
 class About extends StatelessWidget	{
   @override
@@ -16,7 +17,7 @@ class About extends StatelessWidget	{
 			child: Scaffold(
 				backgroundColor: Colors.transparent,
 				appBar: AppBar(
-					title: Text("About"),
+					title: Text(AppLocalizations.of(context).aboutTrans),
 					textTheme: TextTheme(title: TextStyle(color: Colors.black, fontSize: 25)),
 					centerTitle: true,
 					backgroundColor: Colors.white,
@@ -55,7 +56,7 @@ class About extends StatelessWidget	{
 										Padding(
 											padding: EdgeInsets.all(10.0),
 											child: Text(
-												"Credits:",
+												AppLocalizations.of(context).aboutContentTitle1Trans,
 												style: TextStyle(
 													//height: 1.5,
 													fontSize: 20.0,
@@ -67,7 +68,7 @@ class About extends StatelessWidget	{
 										Padding(
 											padding: EdgeInsets.all(10.0),
 											child: Text(
-												"1. All background images sourced from Unsplash.com",
+												AppLocalizations.of(context).aboutContent1Title1Trans,
 												textAlign: TextAlign.left,
 												style: TextStyle(
 													fontSize: 20.0,
@@ -78,7 +79,7 @@ class About extends StatelessWidget	{
 										Padding(
 											padding: EdgeInsets.all(10.0),
 											child: Text(
-												"2. All WhatsApp images sourced from whatsappbrand.com",
+												AppLocalizations.of(context).aboutContent2Title1Trans,
 												textAlign: TextAlign.left,
 												style: TextStyle(
 													fontSize: 20.0,
@@ -89,7 +90,7 @@ class About extends StatelessWidget	{
 										Padding(
 											padding: EdgeInsets.all(10.0),
 											child: Text(
-												"Disclaimer:",
+												AppLocalizations.of(context).aboutContentTitle2Trans,
 												style: TextStyle(
 													//height: 1.5,
 													fontSize: 20.0,

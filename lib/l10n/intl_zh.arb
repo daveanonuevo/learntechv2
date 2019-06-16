@@ -55,11 +55,26 @@
         "type": "text",
         "placeholders": {}
     },
-
-
-
-
-
+    "aboutContent1Title2Trans": "1. 我们与 WhatsApp Inc. 或其任何公司，附属公司没有任何关联，授权认可或以任何方式正式有关联。对于用户者仅根据本申请中提供的信息所做出的决定或行为，我们不承担任何责任。",
+    "@aboutContent1Title2Trans": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "aboutContent2Title2Trans": "2. 我们创建本应用程序的目的是要教新加坡的年长人士如何使用 WhatsApp 以及如何安全的上网。",
+    "@aboutContent2Title2Trans": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "aboutContentTailTrans": "这项目来自义安理工学院的学生",
+    "@aboutContentTailTrans": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Trans": "WhatsApp 指南",
+    "@waTitle1Trans": {
+        "type": "text",
+        "placeholders": {}
+    },
     "waTitle1DescTrans": "快，简单，安全，免费的简讯和通话",
     "@waTitle1DescTrans": {
         "type": "text",
@@ -130,7 +145,7 @@
         "type": "text",
         "placeholders": {}
     },
-    "waTitle1Category4ContentTrans2": "按或找您想发送简讯的联络人的名字",
+    "waTitle1Category4ContentTrans2": "找您想发送简讯联络人，并按他的名字",
     "@waTitle1Category4ContentTrans2": {
         "type": "text",
         "placeholders": {}
@@ -155,7 +170,7 @@
         "type": "text",
         "placeholders": {}
     },
-    "waTitle1Category5ContentTrans2": "按或找你想发送语音剪辑的联络人的名字",
+    "waTitle1Category5ContentTrans2": "找您想发送语音剪辑的联络人，并按他的名字",
     "@waTitle1Category5ContentTrans2": {
         "type": "text",
         "placeholders": {}
@@ -205,14 +220,76 @@
         "type": "text",
         "placeholders": {}
     },
-
-
-
-
-
-
-
-
+    "waTitle1Category7Trans": "语音通话",
+    "@waTitle1Category7Trans": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category7ContentTrans1": "按右下角的按键，然后找出您想要联络的人，并按他的名字",
+    "@waTitle1Category7ContentTrans1": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category7ContentTrans2": "在屏幕的右上册，按 \“通话\” 的图示",
+    "@waTitle1Category7ContentTrans2": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category7ContentTrans3": "可能需要权限",
+    "@waTitle1Category7ContentTrans3": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category8Trans": "接语音来电",
+    "@waTitle1Category8Trans": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category8ContentTrans1": "有来电的时候，您的电话会显示：",
+    "@waTitle1Category8ContentTrans1": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category8ContentTrans2": "按着绿色的按钮，然后向上滑动就能通话",
+    "@waTitle1Category8ContentTrans2": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category8ContentTrans3": "或按红色的按钮，就能拒绝通话",
+    "@waTitle1Category8ContentTrans3": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category9Trans": "创建群组聊天",
+    "@waTitle1Category9Trans": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category9ContentTrans1": "按右下角的按键",
+    "@waTitle1Category9ContentTrans1": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category9ContentTrans2": "按 \“新建群组\”",
+    "@waTitle1Category9ContentTrans2": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category9ContentTrans3": "添加成员",
+    "@waTitle1Category9ContentTrans3": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category9ContentTrans4": "在屏幕的右下角，按箭头以前往",
+    "@waTitle1Category9ContentTrans4": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category9ContentTrans5": "输入群组主题然后按 “勾”。您顺利创造群组聊天了！",
+    "@waTitle1Category9ContentTrans5": {
+        "type": "text",
+        "placeholders": {}
+    },
     "safeTitle2Trans": "网络安全提示",
     "@safeTitle2Trans": {
         "type": "text",
@@ -220,6 +297,49 @@
     },
     "safeTitle2DescTrans": "如何在网络世界保持安全的提示",
     "@safeTitle2DescTrans": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "safeTitle2Category1Trans": "保护个人隐私",
+    "@safeTitle2Category1Trans": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "safeTitle2Category1ContentTrans1": "在屏幕的右上角，按 \“设置\”",
+    "@safeTitle2Category1ContentTrans1": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "safeTitle2Category1ContentTrans2": "按 \“账号\” 然后再按 \“隐私\”",
+    "@safeTitle2Category1ContentTrans2": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "safeTitle2Category1ContentTrans3": "按 \“最后上线\”，然后选 \“我的联系人\”",
+    "@safeTitle2Category1ContentTrans3": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "safeTitle2Category1ContentTrans4": "\n*以上所讲的是让您的联系人知道您最后上线的时间。这些设置都能以个人调理",
+    "@safeTitle2Category1ContentTrans4": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "safeTitle2Category2Trans": "分辨出诈骗",
+    "@safeTitle2Category2Trans": {
+        "type": "text",
+        "placeholders": {}
+    },
+
+
+
+
+
+
+
+
+    "safeTitle2Category3Trans": "分辨出假讯息",
+    "@safeTitle2Category3Trans": {
         "type": "text",
         "placeholders": {}
     },

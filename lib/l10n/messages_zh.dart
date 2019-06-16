@@ -63,7 +63,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "waTitle1Category6ContentTrans1" : MessageLookupByLibrary.simpleMessage("按右下角的按键"),
     "waTitle1Category6ContentTrans2" : MessageLookupByLibrary.simpleMessage("找您想联络的人，并按他的名字"),
     "waTitle1Category6ContentTrans3" : MessageLookupByLibrary.simpleMessage("按右边的纸夹图示"),
-    "waTitle1Category6ContentTrans4" : MessageLookupByLibrary.simpleMessage("选择要发送的文件，然后贯彻始终"),  //check this
+    "waTitle1Category6ContentTrans4" : MessageLookupByLibrary.simpleMessage("选择要发送的文件，然后相应的跟进"),
     "waTitle1Category6ContentTrans5" : MessageLookupByLibrary.simpleMessage("以下是发图片的例子"),
     "waTitle1Category6ContentTrans6" : MessageLookupByLibrary.simpleMessage("以下是分享位置的例子 \n*您必须要让诚程序的到批准"),
     "waTitle1Category7Trans" : MessageLookupByLibrary.simpleMessage("语音通话"),

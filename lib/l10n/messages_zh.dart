@@ -39,7 +39,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "waTitle1Trans" : MessageLookupByLibrary.simpleMessage("WhatsApp 指南"),
     "waTitle1DescTrans" : MessageLookupByLibrary.simpleMessage("快，简单，安全，免费的简讯和通话"),
     "waTitle1Category1Trans" : MessageLookupByLibrary.simpleMessage("下载 WhatsApp"),
-    "waTitle1Category1ContentTrans1" : MessageLookupByLibrary.simpleMessage("找出您电话里的 App Store，然后搜索并下载 WhatsApp"),
+    "waTitle1Category1ContentTrans1" : MessageLookupByLibrary.simpleMessage("找出您电话里的 App Store 或 Play Store，然后搜索并下载 WhatsApp"),
     "waTitle1Category1ContentTrans2" : MessageLookupByLibrary.simpleMessage("恭喜，您成功下载 WhatsApp"),
     "waTitle1Category2Trans" : MessageLookupByLibrary.simpleMessage("开设账号"),
     "waTitle1Category2ContentTrans1" : MessageLookupByLibrary.simpleMessage("打开 WhatsApp 并输入您的电话号码和国家代码，完成后按 \“下一步\”"),
@@ -88,12 +88,10 @@ class MessageLookup extends MessageLookupByLibrary {
     "safeTitle2Category1ContentTrans3" : MessageLookupByLibrary.simpleMessage("按 \“最后上线\”，然后选 \“我的联系人\”"),
     "safeTitle2Category1ContentTrans4" : MessageLookupByLibrary.simpleMessage("\n*以上所讲的是让您的联系人知道您最后上线的时间。这些设置都能以个人调理"),
     "safeTitle2Category2Trans" : MessageLookupByLibrary.simpleMessage("分辨出诈骗"),
-
-
-
-
-
+    "safeTitle2Category2ContentTrans1" : MessageLookupByLibrary.simpleMessage("如果您收到来历不明的信息说您赢钱或在幸运抽奖赢了奖品，千万不要上当。查出是否您有参加过任何抽奖已证实信息是真的。"),
+    "safeTitle2Category2ContentTrans2" : MessageLookupByLibrary.simpleMessage("信息里不应该要您付手续费得到那笔奖金或提供任何个人资料，如：信用卡或密码等。骗子会通过这种方式来骗钱。天下没有免费的午餐！"),
     "safeTitle2Category3Trans" : MessageLookupByLibrary.simpleMessage("分辨出假讯息"),
-
+    "safeTitle2Category3ContentTrans1" : MessageLookupByLibrary.simpleMessage("当您收到亲戚朋友的来信带有资讯，一定要确认资讯来历的可靠性。如果资讯的内容令人难以相信，必须先确认这讯息是真实的才转发信息给别人。"),
+    "safeTitle2Category3ContentTrans2" : MessageLookupByLibrary.simpleMessage("如果讯息是假的，请通知您的亲戚朋友删除掉讯息并别再转发给别人了！"),
   };
 }

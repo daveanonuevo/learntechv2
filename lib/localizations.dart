@@ -73,7 +73,7 @@ class AppLocalizations {
 		return Intl.message('Installing WhatsApp', name: 'waTitle1Category1Trans');
 	}
 	String get waTitle1Category1ContentTrans1 {
-		return Intl.message('Find your phone’s App Store and open it, search for WhatsApp and install', name: 'waTitle1Category1ContentTrans1');
+		return Intl.message('Find your phone’s App Store or Play Store and open it, search for WhatsApp and install', name: 'waTitle1Category1ContentTrans1');
 	}
 	String get waTitle1Category1ContentTrans2 {
 		return Intl.message('Congratulations, you have successfully installed WhatsApp!', name: 'waTitle1Category1ContentTrans2');
@@ -175,7 +175,7 @@ class AppLocalizations {
 		return Intl.message('Press and hold the green button, and then swipe up to answer', name: 'waTitle1Category8ContentTrans2');
 	}
 	String get waTitle1Category8ContentTrans3 {
-		return Intl.message('Or press the red button to decline', name: 'waTitle1Category8ContentTrans3');
+		return Intl.message('Or press and swipe up the red telephone to decline', name: 'waTitle1Category8ContentTrans3');
 	}
 	String get waTitle1Category9Trans {
 		return Intl.message('Creating Group Chats', name: 'waTitle1Category9Trans');
@@ -219,17 +219,21 @@ class AppLocalizations {
 	String get safeTitle2Category2Trans {
 		return Intl.message('Identifying Scams', name: 'safeTitle2Category2Trans');
 	}
-
-
-
-
-
-
+	String get safeTitle2Category2ContentTrans1 {
+		return Intl.message('When receiving messages from unknown senders indicating you have won money/lucky draw, always check if you had indeed participated in a lucky draw or an event related to winning a prize.', name: 'safeTitle2Category2ContentTrans1');
+	}
+	String get safeTitle2Category2ContentTrans2 {
+		return Intl.message('You SHOULD not be asked for personal information such as your credit card number etc. Prerequisites like requiring you to pay before you can claim your prize are fake. Do not fall victim into such messages as they are scamming you. Ignoring such messages will be the best response to such situations. Nothing is free in this world!', name: 'safeTitle2Category2ContentTrans2');
+	}
 	String get safeTitle2Category3Trans {
 		return Intl.message('Identifying Fake News', name: 'safeTitle2Category3Trans');
 	}
-
-	//cont. if correct translations
+	String get safeTitle2Category3ContentTrans1 {
+		return Intl.message('When you receive news related messages from your friends or others, read it carefully and check if it’s authentic.', name: 'safeTitle2Category3ContentTrans1');
+	}
+	String get safeTitle2Category3ContentTrans2 {
+		return Intl.message('If it sounds too good to be true, it’s probably fake! Do not forward fake news to others as that can cause distress. Alert the individual that the message sent by him/her is fake and be advised to delete the message. This prevents the message from being spread further.', name: 'safeTitle2Category3ContentTrans2');
+	}
 }
 
 class AppLocalizationsDelegate

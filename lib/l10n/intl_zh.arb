@@ -85,7 +85,7 @@
         "type": "text",
         "placeholders": {}
     },
-    "waTitle1Category1ContentTrans1": "找出您电话里的 App Store，然后搜索并下载 WhatsApp",
+    "waTitle1Category1ContentTrans1": "找出您电话里的 App Store 或 Play Store，然后搜索并下载 WhatsApp",
     "@waTitle1Category1ContentTrans1": {
         "type": "text",
         "placeholders": {}
@@ -330,24 +330,29 @@
         "type": "text",
         "placeholders": {}
     },
-
-
-
-
-
-
-
-
+    "safeTitle2Category2ContentTrans1": "如果您收到来历不明的信息说您赢钱或在幸运抽奖赢了奖品，千万不要上当。查出是否您有参加过任何抽奖已证实信息是真的。",
+    "@safeTitle2Category2ContentTrans1": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "safeTitle2Category2ContentTrans2": "信息里不应该要您付手续费得到那笔奖金或提供任何个人资料，如：信用卡或密码等。骗子会通过这种方式来骗钱。天下没有免费的午餐！",
+    "@safeTitle2Category2ContentTrans2": {
+        "type": "text",
+        "placeholders": {}
+    },
     "safeTitle2Category3Trans": "分辨出假讯息",
     "@safeTitle2Category3Trans": {
         "type": "text",
         "placeholders": {}
     },
-
-
-
-
-
-
-
+    "safeTitle2Category3ContentTrans1": "当您收到亲戚朋友的来信带有资讯，一定要确认资讯来历的可靠性。如果资讯的内容令人难以相信，必须先确认这讯息是真实的才转发信息给别人。",
+    "@safeTitle2Category3ContentTrans1": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "safeTitle2Category3ContentTrans2": "如果讯息是假的，请通知您的亲戚朋友删除掉讯息并别再转发给别人了！",
+    "@safeTitle2Category3ContentTrans2": {
+        "type": "text",
+        "placeholders": {}
+    },
 }

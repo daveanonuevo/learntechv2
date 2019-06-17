@@ -85,7 +85,7 @@
         "type": "text",
         "placeholders": {}
     },
-    "waTitle1Category1ContentTrans1": "Find your phone’s App Store and open it, search for WhatsApp and install",
+    "waTitle1Category1ContentTrans1": "Find your phone’s App Store or Play Store and open it, search for WhatsApp and install",
     "@waTitle1Category1ContentTrans1": {
         "type": "text",
         "placeholders": {}
@@ -255,7 +255,7 @@
         "type": "text",
         "placeholders": {}
     },
-    "waTitle1Category8ContentTrans3": "Or press the red button to decline",
+    "waTitle1Category8ContentTrans3": "Or press and swipe up the red telephone to decline",
     "@waTitle1Category8ContentTrans3": {
         "type": "text",
         "placeholders": {}
@@ -330,31 +330,29 @@
         "type": "text",
         "placeholders": {}
     },
-
-
-
-
-
-
+    "safeTitle2Category2ContentTrans1": "When receiving messages from unknown senders indicating you have won money/lucky draw, always check if you had indeed participated in a lucky draw or an event related to winning a prize.",
+    "@safeTitle2Category2ContentTrans1": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "safeTitle2Category2ContentTrans2": "You SHOULD not be asked for personal information such as your credit card number etc. Prerequisites like requiring you to pay before you can claim your prize are fake. Do not fall victim into such messages as they are scamming you. Ignoring such messages will be the best response to such situations. Nothing is free in this world!",
+    "@safeTitle2Category2ContentTrans2": {
+        "type": "text",
+        "placeholders": {}
+    },
     "safeTitle2Category3Trans": "Identifying Fake News",
     "@safeTitle2Category3Trans": {
         "type": "text",
         "placeholders": {}
     },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    "safeTitle2Category3ContentTrans1": "When you receive news related messages from your friends or others, read it carefully and check if it’s authentic.",
+    "@safeTitle2Category3ContentTrans1": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "safeTitle2Category3ContentTrans2": "If it sounds too good to be true, it’s probably fake! Do not forward fake news to others as that can cause distress. Alert the individual that the message sent by him/her is fake and be advised to delete the message. This prevents the message from being spread further.",
+    "@safeTitle2Category3ContentTrans2": {
+        "type": "text",
+        "placeholders": {}
+    },
 }

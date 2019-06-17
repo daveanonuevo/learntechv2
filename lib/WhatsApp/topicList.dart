@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:learntech/WhatsApp/topicSelect.dart';
 import 'dart:io' show Platform;
 import 'package:learntech/localizations.dart';
 
@@ -239,11 +238,6 @@ class ModuleTopic {
                   AppLocalizations().waTitle1Category7ContentTrans2,
                   style: _localStyle,
                 ),
-//                DivideLine(),
-//                Text(
-//                  "Tap on the name of the person you wish to contact",  //irrelevant
-//                  style: _localStyle,
-//                ),
                 DivideLine(),
                 Text(
                   AppLocalizations().waTitle1Category7ContentTrans3,
@@ -361,8 +355,20 @@ class ModuleTopic {
               icon: Icons.network_wifi,
               imagePath: "assets/SecurityTopics/DetectingScams.jpg",
               topicInfo: [
-                imagesBox(
-                  "assets/pikachu.gif",
+                Text(
+                  AppLocalizations().safeTitle2Category2ContentTrans1,
+                  style: _localStyle
+                ),
+                DivideLine(),
+                Container(
+                  child: Image.asset(
+                    "assets/SecurityTopics/Scam.jpg",
+                  ),
+                ),
+                DivideLine(),
+                Text(
+                  AppLocalizations().safeTitle2Category2ContentTrans2,
+                  style: _localStyle
                 ),
                 DivideLine(),
               ],
@@ -372,8 +378,20 @@ class ModuleTopic {
               icon: Icons.network_wifi,
               imagePath: "assets/SecurityTopics/DetectingFakeNews.jpg",
               topicInfo: [
-                imagesBox(
-                  "assets/pikachu.gif",
+                Text(
+                    AppLocalizations().safeTitle2Category3ContentTrans1,
+                    style: _localStyle
+                ),
+                DivideLine(),
+                Container(
+                  child: Image.asset(
+                    "assets/SecurityTopics/FakeNews.jpg",
+                  ),
+                ),
+                DivideLine(),
+                Text(
+                    AppLocalizations().safeTitle2Category3ContentTrans2,
+                    style: _localStyle
                 ),
                 DivideLine(),
               ],

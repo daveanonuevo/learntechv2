@@ -73,6 +73,8 @@ flutter:
     - assets/SecurityTopics/IncreasePrivacy.jpg
     - assets/SecurityTopics/DetectingScams.jpg
     - assets/SecurityTopics/DetectingFakeNews.jpg
+    - assets/SecurityTopics/Scam.jpg
+    - assets/SecurityTopics/FakeNews.jpg
     - assets/WhatsAppTopics/iOS/FindInstallSearch.gif
     - assets/WhatsAppTopics/iOS/CreatingAnAccount.gif
     - assets/WhatsAppTopics/iOS/AddingContacts.gif
@@ -87,14 +89,14 @@ flutter:
     - assets/WhatsAppTopics/Android/FindInstallSearch.gif
     - assets/WhatsAppTopics/Android/CreatingAnAccount.gif
     - assets/WhatsAppTopics/Android/AddingContacts.gif
-    #    - assets/WhatsAppTopics/Android/SendingMessages.gif
+#   - assets/WhatsAppTopics/Android/SendingMessages.gif
     - assets/WhatsAppTopics/Android/SendingVoiceMemos.gif
     - assets/WhatsAppTopics/Android/SendingPhotos.gif
-  #    - assets/WhatsAppTopics/Android/SendingLocation.gif
+#   - assets/WhatsAppTopics/Android/SendingLocation.gif
     - assets/WhatsAppTopics/Android/GivingCalls.gif
     - assets/WhatsAppTopics/Android/AddingContactstoGroup.gif
-  #    - assets/WhatsAppTopics/Android/CreatingGroups.gif
-  #    - assets/WhatsAppTopics/Android/LastSeen.gif
+#   - assets/WhatsAppTopics/Android/CreatingGroups.gif
+#   - assets/WhatsAppTopics/Android/LastSeen.gif
 
 
 

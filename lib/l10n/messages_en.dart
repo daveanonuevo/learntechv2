@@ -73,7 +73,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "waTitle1Category8Trans" : MessageLookupByLibrary.simpleMessage("Answering Voice Calls"),
     "waTitle1Category8ContentTrans1" : MessageLookupByLibrary.simpleMessage("Your phone will look like this when you receive a call"),
     "waTitle1Category8ContentTrans2" : MessageLookupByLibrary.simpleMessage("Press and hold the green button, and then swipe up to answer"),
-    "waTitle1Category8ContentTrans3" : MessageLookupByLibrary.simpleMessage("Or press the red button to decline"),
+    "waTitle1Category8ContentTrans3" : MessageLookupByLibrary.simpleMessage("Or press and swipe up the red telephone to decline"),
     "waTitle1Category9Trans" : MessageLookupByLibrary.simpleMessage("Creating Group Chats"),
     "waTitle1Category9ContentTrans1" : MessageLookupByLibrary.simpleMessage("Tap on the Message Icon, located bottom right corner"),
     "waTitle1Category9ContentTrans2" : MessageLookupByLibrary.simpleMessage("Tap on New Group"),
@@ -88,7 +88,10 @@ class MessageLookup extends MessageLookupByLibrary {
     "safeTitle2Category1ContentTrans3" : MessageLookupByLibrary.simpleMessage("Tap Last Seen, Select My Contacts"),
     "safeTitle2Category1ContentTrans4" : MessageLookupByLibrary.simpleMessage("\n*This allows only those who are in your contacts to know when was the last time you used WhatsApp and settings are of personal preference"),
     "safeTitle2Category2Trans" : MessageLookupByLibrary.simpleMessage("Identifying Scams"),
+    "safeTitle2Category2ContentTrans1" : MessageLookupByLibrary.simpleMessage("When receiving messages from unknown senders indicating you have won money/lucky draw, always check if you had indeed participated in a lucky draw or an event related to winning a prize."),
+		"safeTitle2Category2ContentTrans2" : MessageLookupByLibrary.simpleMessage("You SHOULD not be asked for personal information such as your credit card number etc. Prerequisites like requiring you to pay before you can claim your prize are fake. Do not fall victim into such messages as they are scamming you. Ignoring such messages will be the best response to such situations. Nothing is free in this world!"),
     "safeTitle2Category3Trans" : MessageLookupByLibrary.simpleMessage("Identifying Fake News"),
-
+    "safeTitle2Category3ContentTrans1" : MessageLookupByLibrary.simpleMessage("When you receive news related messages from your friends or others, read it carefully and check if it’s authentic."),
+    "safeTitle2Category3ContentTrans2" : MessageLookupByLibrary.simpleMessage("If it sounds too good to be true, it’s probably fake! Do not forward fake news to others as that can cause distress. Alert the individual that the message sent by him/her is fake and be advised to delete the message. This prevents the message from being spread further."),
   };
 }

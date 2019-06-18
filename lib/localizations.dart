@@ -37,7 +37,22 @@ class AppLocalizations {
 		return Intl.message('Email', name: 'contactContentFeedbackTrans3');
 	}
 	String get contactContentFeedbackButtonTrans {
-		return Intl.message('Email', name: 'contactContentFeedbackButtonTrans');
+		return Intl.message('Send', name: 'contactContentFeedbackButtonTrans');
+	}
+	String get contactSnackBarFeedback {
+	  return Intl.message('Missing Feedback', name: 'contactSnackBarFeedback');
+	}
+	String get contactSnackBarName {
+	  return Intl.message('Missing Name', name: 'contactSnackBarName');
+	}
+	String get contactSnackBarEmail {
+	  return Intl.message('Missing Email', name: 'contactSnackBarEmail');
+	}
+	String get contactSnackBarFeedbackSuccess {
+	  return Intl.message('Feedback Success', name: 'contactSnackBarFeedbackSuccess');
+	}
+	String get contactSnackBarFeedbackFail {
+	  return Intl.message('Feedback Failed', name: 'contactSnackBarFeedbackFail');
 	}
 	String get aboutTrans {
 		return Intl.message('About', name: 'aboutTrans');

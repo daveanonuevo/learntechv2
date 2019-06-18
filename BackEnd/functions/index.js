@@ -26,7 +26,7 @@ app.get('/', (req, res) => {
 app.post('/', jsonParser, function (req, res) {
 
     const mailOptions = {
-        from: "davenpnss@gmail.com",
+        from: "nssgenics@gmail.com",
         to: req.body.email,
         // to: "ryannpnss@gmail.com",
         subject: APP_NAME,
@@ -35,7 +35,7 @@ app.post('/', jsonParser, function (req, res) {
             "<br>Message:<br> " + req.body.message,
     };
     const mailOptions1 = {
-        from: "davenpnss@gmail.com",
+        from: "nssgenics@gmail.com",
         to: "davenpnss@gmail.com",
         // to: "ryannpnss@gmail.com",
         subject: APP_NAME,
@@ -44,7 +44,7 @@ app.post('/', jsonParser, function (req, res) {
             "<br>Message:<br> " + req.body.message,
     };
     const mailOptions2 = {
-        from: "davenpnss@gmail.com",
+        from: "nssgenics@gmail.com",
         to: "ryannpnss@gmail.com",
         // to: "ryannpnss@gmail.com",
         subject: APP_NAME,
@@ -53,7 +53,7 @@ app.post('/', jsonParser, function (req, res) {
             "<br>Message:<br> " + req.body.message,
     };
     const mailOptions3 = {
-        from: "davenpnss@gmail.com",
+        from: "nssgenics@gmail.com",
         to: "yuangengnpnss@gmail.com",
         // to: "ryannpnss@gmail.com",
         subject: APP_NAME,
@@ -63,7 +63,7 @@ app.post('/', jsonParser, function (req, res) {
     };
 
     const mailOptions4 = {
-        from: "davenpnss@gmail.com",
+        from: "nssgenics@gmail.com",
         to: "dave7999matthew+AppBackUpLogs@gmail.com",
         // to: "ryannpnss@gmail.com",
         subject: APP_NAME,
@@ -124,7 +124,7 @@ exports.widgets = functions.https.onRequest((app));
 const mailTransport = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: "@gmail.com",
+        user: "nssgenics@gmail.com",
         pass: "",
     },
 });

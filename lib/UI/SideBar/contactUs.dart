@@ -22,6 +22,7 @@ class _ContactPageState extends State<ContactPage> {
   final _focusEmail = FocusNode();
   final _focusMessage = FocusNode();
 
+  final _scaffoldKey = new GlobalKey<ScaffoldState>();
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -31,6 +32,7 @@ class _ContactPageState extends State<ContactPage> {
               fit: BoxFit.cover,
             )),
         child: Scaffold(
+          key: _scaffoldKey,
           backgroundColor: Colors.transparent,
           appBar: AppBar(
             title: Text(AppLocalizations.of(context).contactTrans),
@@ -38,14 +40,6 @@ class _ContactPageState extends State<ContactPage> {
             TextTheme(title: TextStyle(color: Colors.black, fontSize: 25)),
             centerTitle: true,
             backgroundColor: Colors.white,
-//            leading: new IconButton(
-////                icon: Icon(
-////                  Icons.arrow_back,
-////                ),
-////                color: Colors.black,
-////                onPressed: () {
-////                },
-////                tooltip: "Go back"),
             iconTheme: IconThemeData(
               color: Colors.black,
             ),
@@ -149,15 +143,27 @@ class _ContactPageState extends State<ContactPage> {
                         padding: const EdgeInsets.symmetric(vertical: 19.0),
                         child: GestureDetector(
                           onTap: () {
-                            var data = jsonEncode({
-                              'name': '${_nameController.text}',
-                              'email': '${_emailController.text}',
-                              'message': '${_messageController.text}'
-                            });
-                            apiRequest(_urlAPI, data);
-                            _nameController.text = "";
-                            _emailController.text = "";
-                            _messageController.text = "";
+                            if(_messageController.text.isEmpty)
+                              _scaffoldKey.currentState.showSnackBar(SnackBar(content: Text(AppLocalizations.of(context).contactSnackBarFeedback)));
+                            else if (_nameController.text.isEmpty)
+                              _scaffoldKey.currentState.showSnackBar(SnackBar(content: Text(AppLocalizations.of(context).contactSnackBarName)));
+                            else if (_emailController.text.isEmpty)
+                              _scaffoldKey.currentState.showSnackBar(SnackBar(content: Text(AppLocalizations.of(context).contactSnackBarEmail)));
+                            else{
+                              var data = jsonEncode({
+                                'name': '${_nameController.text}',
+                                'email': '${_emailController.text}',
+                                'message': '${_messageController.text}'
+                              });
+                              apiRequest(_urlAPI, data).then((reply) =>
+                              (reply == resSuc) ?   _scaffoldKey.currentState.showSnackBar(SnackBar(content: Text(AppLocalizations.of(context).contactSnackBarFeedbackSuccess))) :
+                              _scaffoldKey.currentState.showSnackBar(SnackBar(content: Text(AppLocalizations.of(context).contactSnackBarFeedbackFail)))
+                              );
+                              _nameController.text = "";
+                              _emailController.text = "";
+                              _messageController.text = "";
+                              
+                            }
                           },
                           child: Container(
                             height: 50,
@@ -182,6 +188,7 @@ class _ContactPageState extends State<ContactPage> {
         ));
   }
 }
+final String resSuc = "Success";
 
 Future<String> apiRequest(String url, String jsonMap) async {
   HttpClient httpClient = new HttpClient();
@@ -189,7 +196,6 @@ Future<String> apiRequest(String url, String jsonMap) async {
   request.headers.set('content-type', 'application/json');
   request.add(utf8.encode(jsonMap));
   HttpClientResponse response = await request.close();
-  // todo - you should check the response.statusCode
   String reply = await response.transform(utf8.decoder).join();
   httpClient.close();
   return reply;

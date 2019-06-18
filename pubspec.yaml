@@ -86,6 +86,10 @@ flutter:
     - assets/WhatsAppTopics/iOS/AddingContactstoGroup.gif
     - assets/WhatsAppTopics/iOS/CreatingGroups.gif
     - assets/WhatsAppTopics/iOS/LastSeen.gif
+    - assets/WhatsAppTopics/iOS/ReceivingCall.jpg
+    - assets/WhatsAppTopics/iOS/Answering.gif
+    - assets/WhatsAppTopics/iOS/Declining.gif
+    - assets/WhatsAppTopics/iOS/ReportBlock.gif
     - assets/WhatsAppTopics/Android/FindInstallSearch.gif
     - assets/WhatsAppTopics/Android/CreatingAnAccount.gif
     - assets/WhatsAppTopics/Android/AddingContacts.gif
@@ -97,6 +101,7 @@ flutter:
     - assets/WhatsAppTopics/Android/AddingContactstoGroup.gif
 #   - assets/WhatsAppTopics/Android/CreatingGroups.gif
 #   - assets/WhatsAppTopics/Android/LastSeen.gif
+    - assets/WhatsAppTopics/Android/ReportBlock.gif
 
 
 

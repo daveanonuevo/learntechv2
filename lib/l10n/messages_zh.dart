@@ -42,7 +42,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "aboutContent2Title2Trans" : MessageLookupByLibrary.simpleMessage("2. 我们创建本应用程序的目的是要教新加坡的年长人士如何使用 WhatsApp 以及如何安全的上网。"),
     "aboutContentTailTrans" : MessageLookupByLibrary.simpleMessage("这项目来自义安理工学院的学生"),
     "waTitle1Trans" : MessageLookupByLibrary.simpleMessage("WhatsApp 指南"),
-    "waTitle1DescTrans" : MessageLookupByLibrary.simpleMessage("快，简单，安全，免费的简讯和通话"),
+    "waTitle1DescTrans" : MessageLookupByLibrary.simpleMessage("快速与简单，安全以免费的简讯和通话"),
     "waTitle1Category1Trans" : MessageLookupByLibrary.simpleMessage("下载 WhatsApp"),
     "waTitle1Category1ContentTrans1" : MessageLookupByLibrary.simpleMessage("找出您电话里的 App Store 或 Play Store，然后搜索并下载 WhatsApp"),
     "waTitle1Category1ContentTrans2" : MessageLookupByLibrary.simpleMessage("恭喜，您成功下载 WhatsApp"),

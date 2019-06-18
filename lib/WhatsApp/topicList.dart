@@ -64,7 +64,7 @@ class ModuleTopic {
                   style: _localStyle,
                 ),
                 imagesBox(
-                    "assets/WhatsAppTopics/$strPlat/FindInstallSearch.gif"),  //Android gif corrupted waiting for axel to crop
+                    "assets/WhatsAppTopics/Android/FindInstallSearch.gif"),  //Android gif corrupted waiting for axel to crop
                 Text(
                   AppLocalizations().waTitle1Category1ContentTrans2,
                   style: _localStyle,
@@ -91,7 +91,7 @@ class ModuleTopic {
                     style: _localStyle),
                 DivideLine(),
                 imagesBox(
-                    "assets/WhatsAppTopics/$strPlat/CreatingAnAccount.gif"),  //both deployed
+                    "assets/WhatsAppTopics/Android/CreatingAnAccount.gif"),  //both deployed
                 DivideLine(),
               ],
             ),
@@ -116,7 +116,7 @@ class ModuleTopic {
                 ),
                 DivideLine(),
                 imagesBox(
-                  "assets/WhatsAppTopics/$strPlat/AddingContacts.gif",  //both deployed
+                  "assets/WhatsAppTopics/Android/AddingContacts.gif",  //both deployed
                 ),
                 DivideLine(),
               ],
@@ -146,7 +146,7 @@ class ModuleTopic {
                   style: _localStyle,
                 ),
                 imagesBox(
-                  "assets/WhatsAppTopics/$strPlat/SendingMessages.gif", //Android not deployed
+                  "assets/WhatsAppTopics/Android/SendingMessages.gif", //Android not deployed
                 ),
                 DivideLine(),
               ],
@@ -176,7 +176,7 @@ class ModuleTopic {
                   style: _localStyle,
                 ),
                 imagesBox(
-                  "assets/WhatsAppTopics/$strPlat/SendingVoiceMemos.gif",  //Both deployed
+                  "assets/WhatsAppTopics/Android/SendingVoiceMemos.gif",  //Both deployed
                 ),
                 DivideLine(),
               ],
@@ -211,7 +211,7 @@ class ModuleTopic {
                   style: _localSub,
                 ),
                 imagesBox(
-                  "assets/WhatsAppTopics/$strPlat/SendingPhotos.gif",  //Both deployed
+                  "assets/WhatsAppTopics/Android/SendingPhotos.gif",  //Both deployed
                 ),
                 DivideLine(),
                 Text(
@@ -219,7 +219,7 @@ class ModuleTopic {
                   style: _localSub,
                 ),
                 imagesBox(
-                  "assets/WhatsAppTopics/$strPlat/SendingLocation.gif",  //Android haven't deploy
+                  "assets/WhatsAppTopics/Android/SendingLocation.gif",  //Android haven't deploy
                 ),
                 DivideLine(),
               ],
@@ -245,7 +245,7 @@ class ModuleTopic {
                 ),
                 DivideLine(),
                 imagesBox(
-                  "assets/WhatsAppTopics/$strPlat/GivingCalls.gif",   //Both Deployed
+                  "assets/WhatsAppTopics/Android/GivingCalls.gif",   //Both Deployed
                 ),
                 DivideLine(),
               ],
@@ -260,7 +260,7 @@ class ModuleTopic {
                   style: _localStyle,
                 ),
                 imagesBox(
-                  "assets/WhatsAppTopics/$strPlat/ReceivingCall.jpg", //picture(Zub haven't do)
+                  "assets/WhatsAppTopics/Android/ReceivingCall.jpg", //picture(Zub haven't do)(later I do)
                 ),
                 DivideLine(),
                 Text(
@@ -268,7 +268,7 @@ class ModuleTopic {
                   style: _localStyle,
                 ),
                 imagesBox(
-                  "assets/WhatsAppTopics/$strPlat/Answering.gif",  //gif green button up (zub haven't do)
+                  "assets/WhatsAppTopics/Android/Answering.gif",  //gif green button up (zub haven't do)
                 ),
                 DivideLine(),
                 Text(
@@ -276,7 +276,7 @@ class ModuleTopic {
                   style: _localStyle,
                 ),
                 imagesBox(
-                  "assets/WhatsAppTopics/$strPlat/Declining.gif",   //gif red button up (zub haven't do)
+                  "assets/WhatsAppTopics/Android/Declining.gif",   //gif red button up (zub haven't do)
                 ),
                 DivideLine(),
               ],
@@ -301,7 +301,7 @@ class ModuleTopic {
                   style: _localStyle,
                 ),
                 imagesBox(
-                  "assets/WhatsAppTopics/$strPlat/AddingContactstoGroup.gif",  //Both deployed
+                  "assets/WhatsAppTopics/Android/AddingContactstoGroup.gif",  //Both deployed
                 ),
                 DivideLine(),
                 Text(
@@ -314,7 +314,7 @@ class ModuleTopic {
                   style: _localStyle,
                 ),
                 imagesBox(
-                  "assets/WhatsAppTopics/$strPlat/CreatingGroups.gif",
+                  "assets/WhatsAppTopics/Android/CreatingGroups.gif",  //Android haven't deploy
                 ),
                 DivideLine(),
               ],
@@ -345,7 +345,7 @@ class ModuleTopic {
                     AppLocalizations().safeTitle2Category1ContentTrans4,
                     style: _localSub),
                 imagesBox(
-                  "assets/WhatsAppTopics/$strPlat/LastSeen.gif",
+                  "assets/WhatsAppTopics/Android/LastSeen.gif",   //Android Haven't deploy
                 ),
                 DivideLine(),
               ],

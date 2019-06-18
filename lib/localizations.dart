@@ -54,15 +54,18 @@ class AppLocalizations {
 	String get aboutContentTitle2Trans {
 		return Intl.message('Disclaimer:', name: 'aboutContentTitle2Trans');
 	}
-
-
-
-
-
-
-
-
-
+	String get aboutContent1Title2Trans {
+		return Intl.message('1. We are not affiliated, associated, authorized, endorsed by, or in any way officially connected with WhatsApp Inc., or any of its subsidiaries or its affiliates. We do not take responsibility for decisions/actions taken by the user based solely on the information provided in this application.', name: 'aboutContent1Title2Trans');
+	}
+	String get aboutContent2Title2Trans {
+		return Intl.message('2. We created this application with the sole intention of teaching the elderly in Singapore how to use WhatsApp and ways to be safe online.', name: 'aboutContent2Title2Trans');
+	}
+	String get aboutContentTailTrans {
+		return Intl.message('A project by Students of Ngee Ann Polytechnic', name: 'aboutContentTailTrans');
+	}
+	String get waTitle1Trans {
+		return Intl.message('WhatsApp Guides', name: 'waTitle1Trans');
+	}
 	String get waTitle1DescTrans {
 		return Intl.message('Fast, Simple & Secure Messaging and Calling for Free', name: 'waTitle1DescTrans');
 	}
@@ -70,7 +73,7 @@ class AppLocalizations {
 		return Intl.message('Installing WhatsApp', name: 'waTitle1Category1Trans');
 	}
 	String get waTitle1Category1ContentTrans1 {
-		return Intl.message('Find your phone’s App Store and open it, search for WhatsApp and install', name: 'waTitle1Category1ContentTrans1');
+		return Intl.message('Find your phone’s App Store or Play Store and open it, search for WhatsApp and install', name: 'waTitle1Category1ContentTrans1');
 	}
 	String get waTitle1Category1ContentTrans2 {
 		return Intl.message('Congratulations, you have successfully installed WhatsApp!', name: 'waTitle1Category1ContentTrans2');
@@ -106,7 +109,7 @@ class AppLocalizations {
 		return Intl.message('Tap on the Message Icon, located bottom right corner', name: 'waTitle1Category4ContentTrans1');
 	}
 	String get waTitle1Category4ContentTrans2 {
-		return Intl.message('Tap or search for the name of the person you wish to message', name: 'waTitle1Category4ContentTrans2');
+		return Intl.message('Search for the name of the person you wish to message and tap on it', name: 'waTitle1Category4ContentTrans2');
 	}
 	String get waTitle1Category4ContentTrans3 {
 		return Intl.message('Tap on the bottom text field and type your message using the keyboard', name: 'waTitle1Category4ContentTrans3');
@@ -121,7 +124,7 @@ class AppLocalizations {
 		return Intl.message('Tap on the Message Icon, located bottom right corner', name: 'waTitle1Category5ContentTrans1');
 	}
 	String get waTitle1Category5ContentTrans2 {
-		return Intl.message('Tap or search for the name of the person you wish to send a voice message', name: 'waTitle1Category5ContentTrans2');
+		return Intl.message('Search for the name of the person you wish to send a voice message and tap on it', name: 'waTitle1Category5ContentTrans2');
 	}
 	String get waTitle1Category5ContentTrans3 {
 		return Intl.message('Press and hold the microphone icon on the bottom right, and start speaking', name: 'waTitle1Category5ContentTrans3');
@@ -136,7 +139,7 @@ class AppLocalizations {
 		return Intl.message('Tap on the Message Icon, located bottom right corner', name: 'waTitle1Category6ContentTrans1');
 	}
 	String get waTitle1Category6ContentTrans2 {
-		return Intl.message('Tap or search for the name of the person you wish to contact', name: 'waTitle1Category6ContentTrans2');
+		return Intl.message('Search for the name of the person you wish to contact and tap on it', name: 'waTitle1Category6ContentTrans2');
 	}
 	String get waTitle1Category6ContentTrans3 {
 		return Intl.message('Tap on the paperclip that is on the right of the Message Text Field', name: 'waTitle1Category6ContentTrans3');
@@ -150,21 +153,87 @@ class AppLocalizations {
 	String get waTitle1Category6ContentTrans6 {
 		return Intl.message('Here\'s an example of sharing your location \n*You may need to allow your phone permissions to do this', name: 'waTitle1Category6ContentTrans6');
 	}
-
-
-
-
-
-
+	String get waTitle1Category7Trans {
+		return Intl.message('Giving Voice Calls', name: 'waTitle1Category7Trans');
+	}
+	String get waTitle1Category7ContentTrans1 {
+		return Intl.message('Tap on the Message Icon, located bottom right corner and search for the name of the person you wished to call and tap on it', name: 'waTitle1Category7ContentTrans1');
+	}
+	String get waTitle1Category7ContentTrans2 {
+		return Intl.message('Tap on the Telephone Icon located at the top of the screen', name: 'waTitle1Category7ContentTrans2');
+	}
+	String get waTitle1Category7ContentTrans3 {
+		return Intl.message('You may need to allow permissions', name: 'waTitle1Category7ContentTrans3');
+	}
+	String get waTitle1Category8Trans {
+		return Intl.message('Answering Voice Calls', name: 'waTitle1Category8Trans');
+	}
+	String get waTitle1Category8ContentTrans1 {
+		return Intl.message('Your phone will look like this when you receive a call', name: 'waTitle1Category8ContentTrans1');
+	}
+	String get waTitle1Category8ContentTrans2 {
+		return Intl.message('Press and hold the green button, and then swipe up to answer', name: 'waTitle1Category8ContentTrans2');
+	}
+	String get waTitle1Category8ContentTrans3 {
+		return Intl.message('Or press and swipe up the red telephone to decline', name: 'waTitle1Category8ContentTrans3');
+	}
+	String get waTitle1Category9Trans {
+		return Intl.message('Creating Group Chats', name: 'waTitle1Category9Trans');
+	}
+	String get waTitle1Category9ContentTrans1 {
+		return Intl.message('Tap on the Message Icon, located bottom right corner', name: 'waTitle1Category9ContentTrans1');
+	}
+	String get waTitle1Category9ContentTrans2 {
+		return Intl.message('Tap on New Group', name: 'waTitle1Category9ContentTrans2');
+	}
+	String get waTitle1Category9ContentTrans3 {
+		return Intl.message('Select all the contacts you wish to be inside the group', name: 'waTitle1Category9ContentTrans3');
+	}
+	String get waTitle1Category9ContentTrans4 {
+		return Intl.message('Tap on the arrow, located bottom right corner, to proceed', name: 'waTitle1Category9ContentTrans4');
+	}
+	String get waTitle1Category9ContentTrans5 {
+		return Intl.message('Give the group a name and tap the "tick" to finish', name: 'waTitle1Category9ContentTrans5');
+	}
 	String get safeTitle2Trans {
 		return Intl.message('Safety Online Tips', name: 'safeTitle2Trans');
 	}
 	String get safeTitle2DescTrans {
 		return Intl.message('Tips to remain safe in the Internet World', name: 'safeTitle2DescTrans');
 	}
-
-
-	//cont. if correct translations
+	String get safeTitle2Category1Trans {
+		return Intl.message('Protecting your Privacy', name: 'safeTitle2Category1Trans');
+	}
+	String get safeTitle2Category1ContentTrans1 {
+		return Intl.message('Tap on the Settings icon, located top right of your phone', name: 'safeTitle2Category1ContentTrans1');
+	}
+	String get safeTitle2Category1ContentTrans2 {
+		return Intl.message('Tap Account then Privacy', name: 'safeTitle2Category1ContentTrans2');
+	}
+	String get safeTitle2Category1ContentTrans3 {
+		return Intl.message('Tap Last Seen, Select My Contacts', name: 'safeTitle2Category1ContentTrans3');
+	}
+	String get safeTitle2Category1ContentTrans4 {
+		return Intl.message('\n*This allows only those who are in your contacts to know when was the last time you used WhatsApp and settings are of personal preference', name: 'safeTitle2Category1ContentTrans4');
+	}
+	String get safeTitle2Category2Trans {
+		return Intl.message('Identifying Scams', name: 'safeTitle2Category2Trans');
+	}
+	String get safeTitle2Category2ContentTrans1 {
+		return Intl.message('When receiving messages from unknown senders indicating you have won money/lucky draw, always check if you had indeed participated in a lucky draw or an event related to winning a prize.', name: 'safeTitle2Category2ContentTrans1');
+	}
+	String get safeTitle2Category2ContentTrans2 {
+		return Intl.message('You SHOULD not be asked for personal information such as your credit card number etc. Prerequisites like requiring you to pay before you can claim your prize are fake. Do not fall victim into such messages as they are scamming you. Ignoring such messages will be the best response to such situations. Nothing is free in this world!', name: 'safeTitle2Category2ContentTrans2');
+	}
+	String get safeTitle2Category3Trans {
+		return Intl.message('Identifying Fake News', name: 'safeTitle2Category3Trans');
+	}
+	String get safeTitle2Category3ContentTrans1 {
+		return Intl.message('When you receive news related messages from your friends or others, read it carefully and check if it’s authentic.', name: 'safeTitle2Category3ContentTrans1');
+	}
+	String get safeTitle2Category3ContentTrans2 {
+		return Intl.message('If it sounds too good to be true, it’s probably fake! Do not forward fake news to others as that can cause distress. Alert the individual that the message sent by him/her is fake and be advised to delete the message. This prevents the message from being spread further.', name: 'safeTitle2Category3ContentTrans2');
+	}
 }
 
 class AppLocalizationsDelegate

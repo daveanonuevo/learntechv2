@@ -28,17 +28,21 @@ class About extends StatelessWidget	{
 				body: Stack(
 					children: <Widget>[
 						Center(
-							child: Padding(
-								padding: EdgeInsets.all(10.0),
-								child: Text(
-									"A project by Students of Ngee Ann Polytechnic",
-									style: TextStyle(
-										height: 40.0,
+							child: Column(
+								mainAxisAlignment: MainAxisAlignment.end,
+								children: <Widget>[
+									Text(
+										AppLocalizations.of(context).aboutContentTailTrans,
+										style: TextStyle(
 										fontSize: 15.0,
-										color: Colors.white,
+											color: Colors.white,
+										),
+										textAlign: TextAlign.center,
 									),
-									textAlign: TextAlign.center,
-								),
+									Padding(
+										padding: EdgeInsets.all(20.0),
+									),
+								],
 							),
 						),
 						Center(
@@ -102,7 +106,7 @@ class About extends StatelessWidget	{
 										Padding(
 											padding: EdgeInsets.all(10.0),
 											child: Text(
-												"1. We are not affiliated, associated, authorized, endorsed by, or in any way officially connected with WhatsApp Inc., or any of its subsidiaries or its affiliates. We do not take responsibility for decisions/actions taken by the user based solely on the information provided in this application.",
+												AppLocalizations.of(context).aboutContent1Title2Trans,
 												textAlign: TextAlign.left,
 												style: TextStyle(
 													fontSize: 20.0,
@@ -113,7 +117,7 @@ class About extends StatelessWidget	{
 										Padding(
 											padding: EdgeInsets.all(10.0),
 											child: Text(
-												"2. We created this application with the sole intention of teaching the elderly in Singapore how to use WhatsApp and ways to be safe online.",
+												AppLocalizations.of(context).aboutContent2Title2Trans,
 												textAlign: TextAlign.left,
 												style: TextStyle(
 													fontSize: 20.0,

@@ -55,11 +55,26 @@
         "type": "text",
         "placeholders": {}
     },
-
-
-
-
-
+    "aboutContent1Title2Trans": "1. 我们与 WhatsApp Inc. 或其任何公司，附属公司没有任何关联，授权认可或以任何方式正式有关联。对于用户者仅根据本申请中提供的信息所做出的决定或行为，我们不承担任何责任。",
+    "@aboutContent1Title2Trans": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "aboutContent2Title2Trans": "2. 我们创建本应用程序的目的是要教新加坡的年长人士如何使用 WhatsApp 以及如何安全的上网。",
+    "@aboutContent2Title2Trans": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "aboutContentTailTrans": "这项目来自义安理工学院的学生",
+    "@aboutContentTailTrans": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Trans": "WhatsApp 指南",
+    "@waTitle1Trans": {
+        "type": "text",
+        "placeholders": {}
+    },
     "waTitle1DescTrans": "快，简单，安全，免费的简讯和通话",
     "@waTitle1DescTrans": {
         "type": "text",
@@ -70,7 +85,7 @@
         "type": "text",
         "placeholders": {}
     },
-    "waTitle1Category1ContentTrans1": "找出您电话里的 App Store，然后搜索并下载 WhatsApp",
+    "waTitle1Category1ContentTrans1": "找出您电话里的 App Store 或 Play Store，然后搜索并下载 WhatsApp",
     "@waTitle1Category1ContentTrans1": {
         "type": "text",
         "placeholders": {}
@@ -130,7 +145,7 @@
         "type": "text",
         "placeholders": {}
     },
-    "waTitle1Category4ContentTrans2": "按或找您想发送简讯的联络人的名字",
+    "waTitle1Category4ContentTrans2": "找您想发送简讯联络人，并按他的名字",
     "@waTitle1Category4ContentTrans2": {
         "type": "text",
         "placeholders": {}
@@ -155,7 +170,7 @@
         "type": "text",
         "placeholders": {}
     },
-    "waTitle1Category5ContentTrans2": "按或找你想发送语音剪辑的联络人的名字",
+    "waTitle1Category5ContentTrans2": "找您想发送语音剪辑的联络人，并按他的名字",
     "@waTitle1Category5ContentTrans2": {
         "type": "text",
         "placeholders": {}
@@ -190,7 +205,7 @@
         "type": "text",
         "placeholders": {}
     },
-    "waTitle1Category6ContentTrans4": "选择要发送的文件，然后贯彻始终",
+    "waTitle1Category6ContentTrans4": "选择要发送的文件，然后相应的跟进",
     "@waTitle1Category6ContentTrans4": {
         "type": "text",
         "placeholders": {}
@@ -205,14 +220,76 @@
         "type": "text",
         "placeholders": {}
     },
-
-
-
-
-
-
-
-
+    "waTitle1Category7Trans": "语音通话",
+    "@waTitle1Category7Trans": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category7ContentTrans1": "按右下角的按键，然后找出您想要联络的人，并按他的名字",
+    "@waTitle1Category7ContentTrans1": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category7ContentTrans2": "在屏幕的右上册，按 \“通话\” 的图示",
+    "@waTitle1Category7ContentTrans2": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category7ContentTrans3": "可能需要权限",
+    "@waTitle1Category7ContentTrans3": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category8Trans": "接语音来电",
+    "@waTitle1Category8Trans": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category8ContentTrans1": "有来电的时候，您的电话会显示：",
+    "@waTitle1Category8ContentTrans1": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category8ContentTrans2": "按着绿色的按钮，然后向上滑动就能通话",
+    "@waTitle1Category8ContentTrans2": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category8ContentTrans3": "或按红色的按钮，就能拒绝通话",
+    "@waTitle1Category8ContentTrans3": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category9Trans": "创建群组聊天",
+    "@waTitle1Category9Trans": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category9ContentTrans1": "按右下角的按键",
+    "@waTitle1Category9ContentTrans1": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category9ContentTrans2": "按 \“新建群组\”",
+    "@waTitle1Category9ContentTrans2": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category9ContentTrans3": "添加成员",
+    "@waTitle1Category9ContentTrans3": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category9ContentTrans4": "在屏幕的右下角，按箭头以前往",
+    "@waTitle1Category9ContentTrans4": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category9ContentTrans5": "输入群组主题然后按 “勾”。您顺利创造群组聊天了！",
+    "@waTitle1Category9ContentTrans5": {
+        "type": "text",
+        "placeholders": {}
+    },
     "safeTitle2Trans": "网络安全提示",
     "@safeTitle2Trans": {
         "type": "text",
@@ -223,11 +300,59 @@
         "type": "text",
         "placeholders": {}
     },
-
-
-
-
-
-
-
+    "safeTitle2Category1Trans": "保护个人隐私",
+    "@safeTitle2Category1Trans": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "safeTitle2Category1ContentTrans1": "在屏幕的右上角，按 \“设置\”",
+    "@safeTitle2Category1ContentTrans1": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "safeTitle2Category1ContentTrans2": "按 \“账号\” 然后再按 \“隐私\”",
+    "@safeTitle2Category1ContentTrans2": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "safeTitle2Category1ContentTrans3": "按 \“最后上线\”，然后选 \“我的联系人\”",
+    "@safeTitle2Category1ContentTrans3": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "safeTitle2Category1ContentTrans4": "\n*以上所讲的是让您的联系人知道您最后上线的时间。这些设置都能以个人调理",
+    "@safeTitle2Category1ContentTrans4": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "safeTitle2Category2Trans": "分辨出诈骗",
+    "@safeTitle2Category2Trans": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "safeTitle2Category2ContentTrans1": "如果您收到来历不明的信息说您赢钱或在幸运抽奖赢了奖品，千万不要上当。查出是否您有参加过任何抽奖已证实信息是真的。",
+    "@safeTitle2Category2ContentTrans1": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "safeTitle2Category2ContentTrans2": "信息里不应该要您付手续费得到那笔奖金或提供任何个人资料，如：信用卡或密码等。骗子会通过这种方式来骗钱。天下没有免费的午餐！",
+    "@safeTitle2Category2ContentTrans2": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "safeTitle2Category3Trans": "分辨出假讯息",
+    "@safeTitle2Category3Trans": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "safeTitle2Category3ContentTrans1": "当您收到亲戚朋友的来信带有资讯，一定要确认资讯来历的可靠性。如果资讯的内容令人难以相信，必须先确认这讯息是真实的才转发信息给别人。",
+    "@safeTitle2Category3ContentTrans1": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "safeTitle2Category3ContentTrans2": "如果讯息是假的，请通知您的亲戚朋友删除掉讯息并别再转发给别人了！",
+    "@safeTitle2Category3ContentTrans2": {
+        "type": "text",
+        "placeholders": {}
+    },
 }

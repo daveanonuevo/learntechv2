@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:learntech/WhatsApp/topicSelect.dart';
 import 'dart:io' show Platform;
 import 'package:learntech/localizations.dart';
 
@@ -226,27 +225,22 @@ class ModuleTopic {
               ],
             ),
             ModuleTopic(
-              topicName: "Giving Voice Calls",
+              topicName: AppLocalizations().waTitle1Category7Trans,
               icon: Icons.keyboard_voice,
               imagePath: "assets/WhatsAppTopics/ManagingCalls.jpg",
               topicInfo: [
                 Text(
-                  "Tap on the Calls Icon located at the bottom of the screen",
+                  AppLocalizations().waTitle1Category7ContentTrans1,
                   style: _localStyle,
                 ),
                 DivideLine(),
                 Text(
-                  "Tap on the top right to display a list of your contacts",
+                  AppLocalizations().waTitle1Category7ContentTrans2,
                   style: _localStyle,
                 ),
                 DivideLine(),
                 Text(
-                  "Tap on the name of the person you wish to contact",
-                  style: _localStyle,
-                ),
-                DivideLine(),
-                Text(
-                  "You may need to allow permissions",
+                  AppLocalizations().waTitle1Category7ContentTrans3,
                   style: _localSub,
                 ),
                 DivideLine(),
@@ -257,12 +251,12 @@ class ModuleTopic {
               ],
             ),
             ModuleTopic(
-              topicName: "Answering Voice Calls",
+              topicName: AppLocalizations().waTitle1Category8Trans,
               icon: Icons.keyboard_voice,
               imagePath: "assets/WhatsAppTopics/AnsweringCalls.jpg",
               topicInfo: [
                 Text(
-                  "Your phone will look like this when you receive a call",
+                  AppLocalizations().waTitle1Category8ContentTrans1,
                   style: _localStyle,
                 ),
                 imagesBox(
@@ -270,7 +264,7 @@ class ModuleTopic {
                 ),
                 DivideLine(),
                 Text(
-                  "Press and hold the green button, and then swipe up to answer",
+                  AppLocalizations().waTitle1Category8ContentTrans2,
                   style: _localStyle,
                 ),
                 imagesBox(
@@ -278,7 +272,7 @@ class ModuleTopic {
                 ),
                 DivideLine(),
                 Text(
-                  "Or press the red button to decline",
+                  AppLocalizations().waTitle1Category8ContentTrans3,
                   style: _localStyle,
                 ),
                 imagesBox(
@@ -288,22 +282,22 @@ class ModuleTopic {
               ],
             ),
             ModuleTopic(
-              topicName: "Creating Group Chats",
+              topicName: AppLocalizations().waTitle1Category9Trans,
               icon: Icons.keyboard_voice,
               imagePath: "assets/WhatsAppTopics/CreatingGroupChats.jpg",
               topicInfo: [
                 Text(
-                  "Tap on the Message Icon",
+                  AppLocalizations().waTitle1Category9ContentTrans1,
                   style: _localStyle,
                 ),
                 DivideLine(),
                 Text(
-                  "Tap on New Group",
+                  AppLocalizations().waTitle1Category9ContentTrans2,
                   style: _localStyle,
                 ),
                 DivideLine(),
                 Text(
-                  "Select all the contacts you wish to be inside the group",
+                  AppLocalizations().waTitle1Category9ContentTrans3,
                   style: _localStyle,
                 ),
                 imagesBox(
@@ -311,12 +305,12 @@ class ModuleTopic {
                 ),
                 DivideLine(),
                 Text(
-                  "Tap on the arrow to proceed",
+                  AppLocalizations().waTitle1Category9ContentTrans4,
                   style: _localStyle,
                 ),
                 DivideLine(),
                 Text(
-                  "Give the group a name and then tap the arrow to finish",
+                  AppLocalizations().waTitle1Category9ContentTrans5,
                   style: _localStyle,
                 ),
                 imagesBox(
@@ -329,26 +323,26 @@ class ModuleTopic {
         : //Bottom is returned if WhatsApp isn't selected
         [
             ModuleTopic(
-              topicName: "Protecting your Privacy",
+              topicName: AppLocalizations().safeTitle2Category1Trans,
               icon: Icons.network_wifi,
               imagePath: "assets/SecurityTopics/IncreasePrivacy.jpg",
               topicInfo: [
                 Text(
-                  "Tap on the Settings icon on the bottom right",
+                  AppLocalizations().safeTitle2Category1ContentTrans1,
                   style: _localStyle,
                 ),
                 DivideLine(),
                 Text(
-                  "Tap Account then Privacy",
+                  AppLocalizations().safeTitle2Category1ContentTrans2,
                   style: _localStyle,
                 ),
                 DivideLine(),
                 Text(
-                  "Tap Last Seen, Select My Contacts",
+                  AppLocalizations().safeTitle2Category1ContentTrans3,
                   style: _localStyle,
                 ),
                 Text(
-                    "\n*This allows only those whom are in your contacts to know when was the last time you used WhatsApp",
+                    AppLocalizations().safeTitle2Category1ContentTrans4,
                     style: _localSub),
                 imagesBox(
                   "assets/WhatsAppTopics/$strPlat/LastSeen.gif",
@@ -357,23 +351,47 @@ class ModuleTopic {
               ],
             ),
             ModuleTopic(
-              topicName: "Detecting Scams",
+              topicName: AppLocalizations().safeTitle2Category2Trans,
               icon: Icons.network_wifi,
               imagePath: "assets/SecurityTopics/DetectingScams.jpg",
               topicInfo: [
-                imagesBox(
-                  "assets/pikachu.gif",
+                Text(
+                  AppLocalizations().safeTitle2Category2ContentTrans1,
+                  style: _localStyle
+                ),
+                DivideLine(),
+                Container(
+                  child: Image.asset(
+                    "assets/SecurityTopics/Scam.jpg",
+                  ),
+                ),
+                DivideLine(),
+                Text(
+                  AppLocalizations().safeTitle2Category2ContentTrans2,
+                  style: _localStyle
                 ),
                 DivideLine(),
               ],
             ),
             ModuleTopic(
-              topicName: "Detecting Fake News",
+              topicName: AppLocalizations().safeTitle2Category3Trans,
               icon: Icons.network_wifi,
               imagePath: "assets/SecurityTopics/DetectingFakeNews.jpg",
               topicInfo: [
-                imagesBox(
-                  "assets/pikachu.gif",
+                Text(
+                    AppLocalizations().safeTitle2Category3ContentTrans1,
+                    style: _localStyle
+                ),
+                DivideLine(),
+                Container(
+                  child: Image.asset(
+                    "assets/SecurityTopics/FakeNews.jpg",
+                  ),
+                ),
+                DivideLine(),
+                Text(
+                    AppLocalizations().safeTitle2Category3ContentTrans2,
+                    style: _localStyle
                 ),
                 DivideLine(),
               ],

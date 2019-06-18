@@ -55,9 +55,26 @@
         "type": "text",
         "placeholders": {}
     },
-
-
-
+    "aboutContent1Title2Trans": "1. We are not affiliated, associated, authorized, endorsed by, or in any way officially connected with WhatsApp Inc., or any of its subsidiaries or its affiliates. We do not take responsibility for decisions/actions taken by the user based solely on the information provided in this application.",
+    "@aboutContent1Title2Trans": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "aboutContent2Title2Trans": "2. We created this application with the sole intention of teaching the elderly in Singapore how to use WhatsApp and ways to be safe online.",
+    "@aboutContent2Title2Trans": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "aboutContentTailTrans": "A project by Students of Ngee Ann Polytechnic",
+    "@aboutContentTailTrans": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Trans": "WhatsApp Guides",
+    "@waTitle1Trans": {
+        "type": "text",
+        "placeholders": {}
+    },
     "waTitle1DescTrans": "Fast, Simple & Secure Messaging and Calling for Free",
     "@waTitle1DescTrans": {
         "type": "text",
@@ -68,7 +85,7 @@
         "type": "text",
         "placeholders": {}
     },
-    "waTitle1Category1ContentTrans1": "Find your phone’s App Store and open it, search for WhatsApp and install",
+    "waTitle1Category1ContentTrans1": "Find your phone’s App Store or Play Store and open it, search for WhatsApp and install",
     "@waTitle1Category1ContentTrans1": {
         "type": "text",
         "placeholders": {}
@@ -128,7 +145,7 @@
         "type": "text",
         "placeholders": {}
     },
-    "waTitle1Category4ContentTrans2": "Tap or search for the name of the person you wish to message",
+    "waTitle1Category4ContentTrans2": "Search for the name of the person you wish to message and tap on it",
     "@waTitle1Category4ContentTrans2": {
         "type": "text",
         "placeholders": {}
@@ -153,7 +170,7 @@
         "type": "text",
         "placeholders": {}
     },
-    "waTitle1Category5ContentTrans2": "Tap or search for the name of the person you wish to send a voice message",
+    "waTitle1Category5ContentTrans2": "Search for the name of the person you wish to send a voice message and tap on it",
     "@waTitle1Category5ContentTrans2": {
         "type": "text",
         "placeholders": {}
@@ -178,7 +195,7 @@
         "type": "text",
         "placeholders": {}
     },
-    "waTitle1Category6ContentTrans2": "Tap or search for the name of the person you wish to contact",
+    "waTitle1Category6ContentTrans2": "Search for the name of the person you wish to contact and tap on it",
     "@waTitle1Category6ContentTrans2": {
         "type": "text",
         "placeholders": {}
@@ -203,11 +220,76 @@
         "type": "text",
         "placeholders": {}
     },
-
-
-
-
-
+    "waTitle1Category7Trans": "Giving Voice Calls",
+    "@waTitle1Category7Trans": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category7ContentTrans1": "Tap on the Message Icon, located bottom right corner and search for the name of the person you wished to call and tap on it",
+    "@waTitle1Category7ContentTrans1": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category7ContentTrans2": "Tap on the Telephone Icon located at the top of the screen",
+    "@waTitle1Category7ContentTrans2": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category7ContentTrans3": "You may need to allow permissions",
+    "@waTitle1Category7ContentTrans3": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category8Trans": "Answering Voice Calls",
+    "@waTitle1Category8Trans": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category8ContentTrans1": "Your phone will look like this when you receive a call",
+    "@waTitle1Category8ContentTrans1": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category8ContentTrans2": "Press and hold the green button, and then swipe up to answer",
+    "@waTitle1Category8ContentTrans2": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category8ContentTrans3": "Or press and swipe up the red telephone to decline",
+    "@waTitle1Category8ContentTrans3": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category9Trans": "Creating Group Chats",
+    "@waTitle1Category9Trans": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category9ContentTrans1": "Tap on the Message Icon, located bottom right corner",
+    "@waTitle1Category9ContentTrans1": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category9ContentTrans2": "Tap on New Group",
+    "@waTitle1Category9ContentTrans2": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category9ContentTrans3": "Select all the contacts you wish to be inside the group",
+    "@waTitle1Category9ContentTrans3": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category9ContentTrans4": "Tap on the arrow, located bottom right corner, to proceed",
+    "@waTitle1Category9ContentTrans4": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category9ContentTrans5": "Give the group a name and tap the \"tick\" to finish",
+    "@waTitle1Category9ContentTrans5": {
+        "type": "text",
+        "placeholders": {}
+    },
     "safeTitle2Trans": "Safety Online Tips",
     "@safeTitle2Trans": {
         "type": "text",
@@ -218,20 +300,59 @@
         "type": "text",
         "placeholders": {}
     },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    "safeTitle2Category1Trans": "Protecting your Privacy",
+    "@safeTitle2Category1Trans": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "safeTitle2Category1ContentTrans1": "Tap on the Settings icon, located top right of your phone",
+    "@safeTitle2Category1ContentTrans1": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "safeTitle2Category1ContentTrans2": "Tap Account then Privacy",
+    "@safeTitle2Category1ContentTrans2": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "safeTitle2Category1ContentTrans3": "Tap Last Seen, Select My Contacts",
+    "@safeTitle2Category1ContentTrans3": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "safeTitle2Category1ContentTrans4": "\n*This allows only those who are in your contacts to know when was the last time you used WhatsApp and settings are of personal preference",
+    "@safeTitle2Category1ContentTrans4": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "safeTitle2Category2Trans": "Identifying Scams",
+    "@safeTitle2Category2Trans": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "safeTitle2Category2ContentTrans1": "When receiving messages from unknown senders indicating you have won money/lucky draw, always check if you had indeed participated in a lucky draw or an event related to winning a prize.",
+    "@safeTitle2Category2ContentTrans1": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "safeTitle2Category2ContentTrans2": "You SHOULD not be asked for personal information such as your credit card number etc. Prerequisites like requiring you to pay before you can claim your prize are fake. Do not fall victim into such messages as they are scamming you. Ignoring such messages will be the best response to such situations. Nothing is free in this world!",
+    "@safeTitle2Category2ContentTrans2": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "safeTitle2Category3Trans": "Identifying Fake News",
+    "@safeTitle2Category3Trans": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "safeTitle2Category3ContentTrans1": "When you receive news related messages from your friends or others, read it carefully and check if it’s authentic.",
+    "@safeTitle2Category3ContentTrans1": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "safeTitle2Category3ContentTrans2": "If it sounds too good to be true, it’s probably fake! Do not forward fake news to others as that can cause distress. Alert the individual that the message sent by him/her is fake and be advised to delete the message. This prevents the message from being spread further.",
+    "@safeTitle2Category3ContentTrans2": {
+        "type": "text",
+        "placeholders": {}
+    },
 }

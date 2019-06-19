@@ -88,10 +88,13 @@ class AppLocalizations {
 		return Intl.message('Installing WhatsApp', name: 'waTitle1Category1Trans');
 	}
 	String get waTitle1Category1ContentTrans1 {
-		return Intl.message('Find your phone’s App Store or Play Store and open it, search for WhatsApp and install', name: 'waTitle1Category1ContentTrans1');
+		return Intl.message('Find your phone’s App Store or Play Store and open it', name: 'waTitle1Category1ContentTrans1');
 	}
 	String get waTitle1Category1ContentTrans2 {
-		return Intl.message('Congratulations, you have successfully installed WhatsApp!', name: 'waTitle1Category1ContentTrans2');
+		return Intl.message('Search for WhatsApp and install', name: 'waTitle1Category1ContentTrans2');
+	}
+	String get waTitle1Category1ContentTrans3 {
+		return Intl.message('Congratulations, you have successfully installed WhatsApp!', name: 'waTitle1Category1ContentTrans3');
 	}
 	String get waTitle1Category2Trans {
 		return Intl.message('Creating An Account', name: 'waTitle1Category2Trans');

@@ -85,13 +85,18 @@
         "type": "text",
         "placeholders": {}
     },
-    "waTitle1Category1ContentTrans1": "找出您电话里的 App Store 或 Play Store，然后搜索并下载 WhatsApp",
+    "waTitle1Category1ContentTrans1": "找出您电话里的 App Store 或 Play Store",
     "@waTitle1Category1ContentTrans1": {
         "type": "text",
         "placeholders": {}
     },
-    "waTitle1Category1ContentTrans2": "恭喜，您成功下载 WhatsApp",
+    "waTitle1Category1ContentTrans2": "然后搜索并下载 WhatsApp",
     "@waTitle1Category1ContentTrans2": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category1ContentTrans3": "恭喜，您成功下载 WhatsApp",
+    "@waTitle1Category1ContentTrans3": {
         "type": "text",
         "placeholders": {}
     },

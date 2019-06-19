@@ -63,6 +63,7 @@ flutter:
     - assets/WhatsAppTopics/InstallingWhatsApp.jpg
     - assets/WhatsAppTopics/CreatingAnAccount.jpg
     - assets/WhatsAppTopics/AddingContacts.jpg
+    - assets/WhatsAppTopics/AnsweringCalls.jpg
     - assets/WhatsAppTopics/SendingMessages.jpg
     - assets/WhatsAppTopics/SendingVoiceMemos.jpg
     - assets/WhatsAppTopics/SendingMedia.jpg
@@ -88,17 +89,17 @@ flutter:
 #    - assets/WhatsAppTopics/iOS/Answering.gif
 #    - assets/WhatsAppTopics/iOS/Declining.gif
 #    - assets/WhatsAppTopics/iOS/ReportBlock.gif
-    - assets/WhatsAppTopics/Android/FindInstallSearch.gif
+    - assets/WhatsAppTopics/Android/FindInstallSearch1.png
+    - assets/WhatsAppTopics/Android/FindInstallSearch2.jpg
     - assets/WhatsAppTopics/Android/CreatingAnAccount.gif
     - assets/WhatsAppTopics/Android/AddingContacts.gif
     - assets/WhatsAppTopics/Android/SendingMessages.gif
     - assets/WhatsAppTopics/Android/SendingVoiceMemos.gif
     - assets/WhatsAppTopics/Android/SendingPhotos.gif
-    - assets/WhatsAppTopics/Android/SendingLocation.gif
+#    - assets/WhatsAppTopics/Android/SendingLocation.gif
     - assets/WhatsAppTopics/Android/GivingCalls.gif
     - assets/WhatsAppTopics/Android/ReceivingCall.jpg
     - assets/WhatsAppTopics/Android/AddingContactstoGroup.gif
-    - assets/WhatsAppTopics/Android/CreatingGroups.gif
     - assets/WhatsAppTopics/Android/Declining.gif
     - assets/WhatsAppTopics/Android/Answering.gif
     - assets/WhatsAppTopics/Android/LastSeen.gif

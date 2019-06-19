@@ -63,10 +63,26 @@ class ModuleTopic {
                   AppLocalizations().waTitle1Category1ContentTrans1,
                   style: _localStyle,
                 ),
-                imagesBox(
-                    "assets/WhatsAppTopics/Android/FindInstallSearch.gif"),  //Android gif corrupted waiting for axel to crop
+                DivideLine(),
+                Container(
+                  child: Image.asset(
+                    "assets/WhatsAppTopics/Android/FindInstallSearch1.png",
+                  ),
+                ),
+                DivideLine(),
                 Text(
                   AppLocalizations().waTitle1Category1ContentTrans2,
+                  style: _localStyle,
+                ),
+                DivideLine(),
+                Container(
+                  child: Image.asset(
+                    "assets/WhatsAppTopics/Android/FindInstallSearch2.jpg",
+                  ),
+                ),
+                DivideLine(),
+                Text(
+                  AppLocalizations().waTitle1Category1ContentTrans3,
                   style: _localStyle,
                 ),
                 DivideLine(),
@@ -214,14 +230,14 @@ class ModuleTopic {
                   "assets/WhatsAppTopics/Android/SendingPhotos.gif",  //Both deployed
                 ),
                 DivideLine(),
-                Text(
-                  AppLocalizations().waTitle1Category6ContentTrans6,
-                  style: _localSub,
-                ),
-                imagesBox(
-                  "assets/WhatsAppTopics/Android/SendingLocation.gif",  //Android haven't deploy
-                ),
-                DivideLine(),
+//                Text(
+//                  AppLocalizations().waTitle1Category6ContentTrans6,
+//                  style: _localSub,
+//                ),
+//                imagesBox(
+//                  "assets/WhatsAppTopics/Android/SendingLocation.gif",
+//                ),
+//                DivideLine(),
               ],
             ),
             ModuleTopic(
@@ -260,7 +276,7 @@ class ModuleTopic {
                   style: _localStyle,
                 ),
                 imagesBox(
-                  "assets/WhatsAppTopics/Android/ReceivingCall.jpg", //picture(Zub haven't do)(later I do)
+                  "assets/WhatsAppTopics/Android/ReceivingCall.jpg",
                 ),
                 DivideLine(),
                 Text(
@@ -268,7 +284,7 @@ class ModuleTopic {
                   style: _localStyle,
                 ),
                 imagesBox(
-                  "assets/WhatsAppTopics/Android/Answering.gif",  //gif green button up (zub haven't do)
+                  "assets/WhatsAppTopics/Android/Answering.gif",
                 ),
                 DivideLine(),
                 Text(
@@ -276,7 +292,7 @@ class ModuleTopic {
                   style: _localStyle,
                 ),
                 imagesBox(
-                  "assets/WhatsAppTopics/Android/Declining.gif",   //gif red button up (zub haven't do)
+                  "assets/WhatsAppTopics/Android/Declining.gif",
                 ),
                 DivideLine(),
               ],
@@ -312,9 +328,6 @@ class ModuleTopic {
                 Text(
                   AppLocalizations().waTitle1Category9ContentTrans5,
                   style: _localStyle,
-                ),
-                imagesBox(
-                  "assets/WhatsAppTopics/Android/CreatingGroups.gif",  //Android haven't deploy
                 ),
                 DivideLine(),
               ],

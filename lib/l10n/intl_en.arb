@@ -85,13 +85,18 @@
         "type": "text",
         "placeholders": {}
     },
-    "waTitle1Category1ContentTrans1": "Find your phone’s App Store or Play Store and open it, search for WhatsApp and install",
+    "waTitle1Category1ContentTrans1": "Find your phone’s App Store or Play Store and open it",
     "@waTitle1Category1ContentTrans1": {
         "type": "text",
         "placeholders": {}
     },
-    "waTitle1Category1ContentTrans2": "Congratulations, you have successfully installed WhatsApp!",
+    "waTitle1Category1ContentTrans2": "Search for WhatsApp and install",
     "@waTitle1Category1ContentTrans2": {
+        "type": "text",
+        "placeholders": {}
+    },
+    "waTitle1Category1ContentTrans3": "Congratulations, you have successfully installed WhatsApp!",
+    "@waTitle1Category1ContentTrans3": {
         "type": "text",
         "placeholders": {}
     },

@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:learntech/loadingScreen.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:learntech/localizations.dart';
-//import 'package:learntech/locale/locales.dart';
 
 void main() => runApp(new MaterialApp(
 	localizationsDelegates: [

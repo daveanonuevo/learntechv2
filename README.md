@@ -53,4 +53,4 @@ xavierteh01@hotmail.com
 
 
 © [**NSS Genics 2019**](mailto:nssgenics@connect.np.edu.sg)  
-Representing the course of **Network Systems & Security* of __Ngee Ann Polytechnic__  
+Representing the course of **Network Systems & Security** of __Ngee Ann Polytechnic__  

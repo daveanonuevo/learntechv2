@@ -52,5 +52,5 @@ xavierteh01@hotmail.com
 [GitHub](https://github.com/ronaldomole)  
 
 
-© NSS Genics 2019  
+© [**NSS Genics 2019**](mailto:nssgenics@connect.np.edu.sg)  
 Representing the course of **Network Systems & Security* of __Ngee Ann Polytechnic__  

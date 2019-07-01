@@ -37,7 +37,7 @@ Feel free to open issues, make pull requests or contact one of the coders or me.
 ## Main Contributors
 
 -_Code Lead_
-[Dave Anonuevo](www.daveanonuevo.com)
+[Dave Anonuevo](www.daveanonuevo.com)  
 dave7999matthew@gmail.com  
 [GitHub](www.github.com/daveanonuevo)  
 

@@ -36,17 +36,17 @@ Feel free to open issues, make pull requests or contact one of the coders or me.
 
 ## Main Contributors
 
--_Code Lead_
+-_Code Lead_  
 [Dave Anonuevo](www.daveanonuevo.com)  
 dave7999matthew@gmail.com  
 [GitHub](www.github.com/daveanonuevo)  
 
--_Coder_
+-_Coder_  
 Yuan Geng Tay  
 tayyuangeng@gmail.com  
 [GitHub](https://github.com/TayYuanGeng)  
 
--_Coder_
+-_Coder_  
 Xavier Teh  
 xavierteh01@hotmail.com  
 [GitHub](https://github.com/ronaldomole)  

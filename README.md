@@ -4,13 +4,13 @@ A project by NSS Genics, aimed at elderlies, to teach the usage of WhatsApp and 
 
 ## Introduction
 
-This project was started in conjunction of Singapore's Infocomm Media Development Authority's Silver Infocomm Initiative.
-Aimed to teach elderlies how to use commonly used Technologies as well as to ensure safety online.
-We have used and test this app with the Old Folks at the All Saints Home, Tampines.
+This project was started in conjunction of Singapore's Infocomm Media Development Authority's Silver Infocomm Initiative.  
+Aimed to teach elderlies how to use commonly used Technologies as well as to ensure safety online.  
+We have used and test this app with the Old Folks at the All Saints Home, Tampines.  
 
 ## Files to take note of
 
-Information on topics are stored in a class "ModuleTopic" in [topicList.dart](/lib/WhatsApp/topicList.dart)
+Information on topics are stored in a class "ModuleTopic" in [topicList.dart](/lib/WhatsApp/topicList.dart)  
 ```
 
   ModuleTopic(
@@ -20,37 +20,37 @@ Information on topics are stored in a class "ModuleTopic" in [topicList.dart](/l
       @required this.topicInfo});
 ```
 
-Localization Files and Translations are in the folder [l10n](/lib/l10n), available in English and Chinese
-__Credits to [Yuan Geng](https://github.com/TayYuanGeng) and [Axel Seetoh]() for translations__
+Localization Files and Translations are in the folder [l10n](/lib/l10n), available in English and Chinese  
+__Credits to [Yuan Geng](https://github.com/TayYuanGeng) and [Axel Seetoh]() for translations__  
 
-[Learn Tech loading screen](lib/loadingScreen.dart)
-__Credits to [Yuan Geng](https://github.com/TayYuanGeng) and [Ryan Ching]() for Animation Designing__
+[Learn Tech loading screen](lib/loadingScreen.dart)  
+__Credits to [Yuan Geng](https://github.com/TayYuanGeng) and [Ryan Ching]() for Animation Designing__  
 
-[WhatsApp Info and Topic Display](/lib/WhatsApp)
+[WhatsApp Info and Topic Display](/lib/WhatsApp)  
 
 
 ## Instructions
 
-Feel free to open issues, make pull requests or contact one of the coders or me.
+Feel free to open issues, make pull requests or contact one of the coders or me.  
 
 
 ## Main Contributors
 
 -_Code Lead_
-[Dave Anonuevo]
-dave7999matthew@gmail.com
-[GitHub](www.github.com/daveanonuevo)
+[Dave Anonuevo](www.daveanonuevo.com)
+dave7999matthew@gmail.com  
+[GitHub](www.github.com/daveanonuevo)  
 
 -_Coder_
-Yuan Geng Tay
-tayyuangeng@gmail.com
-[GitHub](https://github.com/TayYuanGeng)
+Yuan Geng Tay  
+tayyuangeng@gmail.com  
+[GitHub](https://github.com/TayYuanGeng)  
 
 -_Coder_
-Xavier Teh
-xavierteh01@hotmail.com
-[GitHub](https://github.com/ronaldomole)
+Xavier Teh  
+xavierteh01@hotmail.com  
+[GitHub](https://github.com/ronaldomole)  
 
 
-© NSS Genics 2019
-Representing the course of **Network Systems & Security* of __Ngee Ann Polytechnic__
+© NSS Genics 2019  
+Representing the course of **Network Systems & Security* of __Ngee Ann Polytechnic__  

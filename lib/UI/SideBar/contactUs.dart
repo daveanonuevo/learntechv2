@@ -196,7 +196,7 @@ Future<String> apiRequest(String url, String jsonMap) async {
   request.headers.set('content-type', 'application/json');
   request.add(utf8.encode(jsonMap));
   HttpClientResponse response = await request.close();
-  String reply = await response.transform(utf8.decoder).join();
+  String reply = utf8.decoder.bind(response).toString();
   httpClient.close();
   return reply;
 }

@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:io' show Platform;
 import 'package:learntech/localizations.dart';
-import 'dart:io';
-
 
 class ModuleTopic {
   String topicName;
@@ -58,7 +56,7 @@ class ModuleTopic {
         ? [
             ModuleTopic(
               topicName: AppLocalizations().waTitle1Category1Trans,
-              icon: Icons.explore, 
+              icon: Icons.explore,
               imagePath: "assets/WhatsAppTopics/InstallingWhatsApp.jpg",
               topicInfo: [
                 Text(
@@ -66,22 +64,22 @@ class ModuleTopic {
                   style: _localStyle,
                 ),
                 DivideLine(),
-//                Container(
-//                  child: Image.asset(
-//                    "assets/WhatsAppTopics/Android/FindInstallSearch1.png",
-//                  ),
-//                ),
+                Container(
+                  child: Image.asset(
+                    "assets/WhatsAppTopics/Android/FindInstallSearch1.png",
+                  ),
+                ),
                 DivideLine(),
                 Text(
                   AppLocalizations().waTitle1Category1ContentTrans2,
                   style: _localStyle,
                 ),
                 DivideLine(),
-//                Container(
-//                  child: Image.asset(
-//                    "assets/WhatsAppTopics/Android/FindInstallSearch2.jpg",
-//                  ),
-//                ),
+                Container(
+                  child: Image.asset(
+                    "assets/WhatsAppTopics/Android/FindInstallSearch2.jpg",
+                  ),
+                ),
                 DivideLine(),
                 Text(
                   AppLocalizations().waTitle1Category1ContentTrans3,
@@ -108,12 +106,8 @@ class ModuleTopic {
                     AppLocalizations().waTitle1Category2ContentTrans3,
                     style: _localStyle),
                 DivideLine(),
-                Image.network(
-                  "https://firebasestorage.googleapis.com/v0/b/learntech-d9387.appspot.com/o/CreatingAnAccount.gif?alt=media&token=a332b72d-9d3c-4867-aba6-9b5426779455",
-                  gaplessPlayback: true,
-                ),
-                // imagesBox(
-                //     "assets/WhatsAppTopics/Android/CreatingAnAccount.gif"),  //both deployed
+                imagesBox(
+                    "assets/WhatsAppTopics/Android/CreatingAnAccount.gif"),  //both deployed
                 DivideLine(),
               ],
             ),
@@ -137,13 +131,9 @@ class ModuleTopic {
                   style: _localStyle,
                 ),
                 DivideLine(),
-                Image.network(
-                  "https://firebasestorage.googleapis.com/v0/b/learntech-d9387.appspot.com/o/AddingContacts.gif?alt=media&token=3e9cf01d-751d-46f3-9e45-98208698abde",
-                  gaplessPlayback: true,
+                imagesBox(
+                  "assets/WhatsAppTopics/Android/AddingContacts.gif",  //both deployed
                 ),
-                // imagesBox(
-                //   "assets/WhatsAppTopics/Android/AddingContacts.gif",  //both deployed
-                // ),
                 DivideLine(),
               ],
             ),
@@ -171,13 +161,9 @@ class ModuleTopic {
                   AppLocalizations().waTitle1Category4ContentTrans4,
                   style: _localStyle,
                 ),
-                Image.network(
-                  "https://firebasestorage.googleapis.com/v0/b/learntech-d9387.appspot.com/o/SendingMessages.gif?alt=media&token=91c9209e-4a06-43c7-982b-94b123906755",
-                  gaplessPlayback: true,
+                imagesBox(
+                  "assets/WhatsAppTopics/Android/SendingMessages.gif", //Android not deployed
                 ),
-                // imagesBox(
-                //   "assets/WhatsAppTopics/Android/SendingMessages.gif", //Android not deployed
-                // ),
                 DivideLine(),
               ],
             ),
@@ -205,13 +191,9 @@ class ModuleTopic {
                   AppLocalizations().waTitle1Category5ContentTrans4,
                   style: _localStyle,
                 ),
-                Image.network(
-                  "https://firebasestorage.googleapis.com/v0/b/learntech-d9387.appspot.com/o/SendingVoiceMemos.gif?alt=media&token=ae4c9e21-b1f0-4fb5-b8a2-04adb7963542",
-                  gaplessPlayback: true,
+                imagesBox(
+                  "assets/WhatsAppTopics/Android/SendingVoiceMemos.gif",  //Both deployed
                 ),
-                // imagesBox(
-                //   "assets/WhatsAppTopics/Android/SendingVoiceMemos.gif",  //Both deployed
-                // ),
                 DivideLine(),
               ],
             ),
@@ -244,13 +226,9 @@ class ModuleTopic {
                   AppLocalizations().waTitle1Category6ContentTrans5,
                   style: _localSub,
                 ),
-                Image.network(
-                  "https://firebasestorage.googleapis.com/v0/b/learntech-d9387.appspot.com/o/SendingPhotos.gif?alt=media&token=b6f657cc-39e2-4152-a0e1-4e74a64f231e",
-                  gaplessPlayback: true,
+                imagesBox(
+                  "assets/WhatsAppTopics/Android/SendingPhotos.gif",  //Both deployed
                 ),
-                // imagesBox(
-                //   "assets/WhatsAppTopics/Android/SendingPhotos.gif",  //Both deployed
-                // ),
                 DivideLine(),
 //                Text(
 //                  AppLocalizations().waTitle1Category6ContentTrans6,
@@ -282,13 +260,9 @@ class ModuleTopic {
                   style: _localSub,
                 ),
                 DivideLine(),
-                Image.network(
-                  "https://firebasestorage.googleapis.com/v0/b/learntech-d9387.appspot.com/o/GivingCalls.gif?alt=media&token=73a63db2-30ba-481b-b645-f9703b881ae0",
-                  gaplessPlayback: true,
+                imagesBox(
+                  "assets/WhatsAppTopics/Android/GivingCalls.gif",   //Both Deployed
                 ),
-                // imagesBox(
-                //   "assets/WhatsAppTopics/Android/GivingCalls.gif",   //Both Deployed
-                // ),
                 DivideLine(),
               ],
             ),
@@ -309,25 +283,17 @@ class ModuleTopic {
                   AppLocalizations().waTitle1Category8ContentTrans2,
                   style: _localStyle,
                 ),
-                Image.network(
-                  "https://firebasestorage.googleapis.com/v0/b/learntech-d9387.appspot.com/o/Answering.gif?alt=media&token=5fc72568-5c7e-4039-b38f-df940a7b9a92",
-                  gaplessPlayback: true,
+                imagesBox(
+                  "assets/WhatsAppTopics/Android/Answering.gif",
                 ),
-                // imagesBox(
-                //   "assets/WhatsAppTopics/Android/Answering.gif",
-                // ),
                 DivideLine(),
                 Text(
                   AppLocalizations().waTitle1Category8ContentTrans3,
                   style: _localStyle,
                 ),
-                Image.network(
-                  "https://firebasestorage.googleapis.com/v0/b/learntech-d9387.appspot.com/o/Declining.gif?alt=media&token=705ea02d-91ee-4bc1-a65f-4964b05ecd8c",
-                  gaplessPlayback: true,
+                imagesBox(
+                  "assets/WhatsAppTopics/Android/Declining.gif",
                 ),
-                // imagesBox(
-                //   "assets/WhatsAppTopics/Android/Declining.gif",
-                // ),
                 DivideLine(),
               ],
             ),
@@ -350,13 +316,9 @@ class ModuleTopic {
                   AppLocalizations().waTitle1Category9ContentTrans3,
                   style: _localStyle,
                 ),
-                Image.network(
-                  "https://firebasestorage.googleapis.com/v0/b/learntech-d9387.appspot.com/o/AddingContactstoGroup.gif?alt=media&token=ac64d7ce-2850-4aaf-8ad0-60ba7ba41091",
-                  gaplessPlayback: true,
+                imagesBox(
+                  "assets/WhatsAppTopics/Android/AddingContactstoGroup.gif",  //Both deployed
                 ),
-                // imagesBox(
-                //   "assets/WhatsAppTopics/Android/AddingContactstoGroup.gif",  //Both deployed
-                // ),
                 DivideLine(),
                 Text(
                   AppLocalizations().waTitle1Category9ContentTrans4,
@@ -395,9 +357,9 @@ class ModuleTopic {
                 Text(
                     AppLocalizations().safeTitle2Category1ContentTrans4,
                     style: _localSub),
-                // imagesBox(
-                //   "assets/WhatsAppTopics/Android/LastSeen.gif",   //Android Haven't deploy
-                // ),
+                imagesBox(
+                  "assets/WhatsAppTopics/Android/LastSeen.gif",   //Android Haven't deploy
+                ),
                 DivideLine(),
               ],
             ),

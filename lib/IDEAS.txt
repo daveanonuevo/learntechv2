@@ -1,8 +1,0 @@
-TODO
-important things to settle
-TODO
-
-1) Topic Select to Topic Display transition
-2) Topic Display
-3) Feedback form API
-4)

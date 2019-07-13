@@ -4,17 +4,10 @@ A project by NSS Genics, aimed at elderlies, to teach the usage of WhatsApp and 
 
 ## Getting Started
 
-<<<<<<< HEAD
 This project was started in conjunction of Singapore's Infocomm Media Development Authority's Silver Infocomm Initiative.  
 Aimed to teach elderlies how to use commonly used Technologies as well as to ensure safety online.  
-We have used and test this app with the Old Folks at the All Saints Home, Tampines.  
-=======
-This project is a starting point for a Flutter application.
->>>>>>> parent of 77c8fa5... Update README.md
+We have used and tested this app with the Old Folks at the All Saints Home, Tampines.  
 
-A few resources to get you started if this is your first Flutter project:
-
-<<<<<<< HEAD
 Information on topics are stored in a class "ModuleTopic" in [topicList.dart](/lib/WhatsApp/topicList.dart)  
 ```
 

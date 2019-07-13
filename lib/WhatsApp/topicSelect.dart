@@ -4,7 +4,6 @@ import 'package:learntech/WhatsApp/displayTopic.dart';
 import 'package:learntech/localizations.dart';
 import 'topicList.dart';
 import 'dart:ui';
-import 'package:preload_page_view/preload_page_view.dart';
 import 'package:learntech/WhatsApp/uiCopy.dart';
 
 class TopicSelect extends StatefulWidget {
@@ -21,7 +20,7 @@ class _TopicSelectState extends State<TopicSelect> {
 
   List imagePaths = new List();
 
-  final PreloadPageController _pageViewController = PreloadPageController(
+  final PageController _pageViewController = PageController(
     viewportFraction: 0.85,
     initialPage: 0,
   );
@@ -51,13 +50,8 @@ class _TopicSelectState extends State<TopicSelect> {
                 ),
                 body: PageTransformer(
                     pageViewBuilder: (context, visibilityResolver) {
-                  return PreloadPageView.builder(
+                  return PageView.builder(
                     controller: _pageViewController,
-                    preloadPagesCount: ModuleTopic.loadTopics(
-                            widget.selectedTopic == "WhatsApp"
-                                ? "WhatsApp"
-                                : "Security Tips")
-                        .length,
                     itemCount: ModuleTopic.loadTopics("${widget.selectedTopic}")
                         .length,
                     itemBuilder: (context, index) {

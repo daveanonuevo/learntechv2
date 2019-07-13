@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:io' show Platform;
 import 'package:learntech/localizations.dart';
-//import 'dart:typed_data';
-import 'dart:async';
 import 'dart:io';
 
 

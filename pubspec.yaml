@@ -94,7 +94,7 @@ flutter:
 #    - assets/WhatsAppTopics/Android/SendingMessages.gif
 #    - assets/WhatsAppTopics/Android/SendingVoiceMemos.gif
 #    - assets/WhatsAppTopics/Android/SendingPhotos.gif
-##    - assets/WhatsAppTopics/Android/SendingLocation.gif
+#    - assets/WhatsAppTopics/Android/SendingLocation.gif
 #    - assets/WhatsAppTopics/Android/GivingCalls.gif
 #    - assets/WhatsAppTopics/Android/ReceivingCall.jpg
 #    - assets/WhatsAppTopics/Android/AddingContactstoGroup.gif

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-//import 'package:learntech/UI/mainScreen.dart';
 import 'package:learntech/loadingScreen.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:learntech/localizations.dart';

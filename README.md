@@ -1,15 +1,20 @@
-# Learn Tech
+# learntech
 
 A project by NSS Genics, aimed at elderlies, to teach the usage of WhatsApp and how to stay safe online.
 
-## Introduction
+## Getting Started
 
+<<<<<<< HEAD
 This project was started in conjunction of Singapore's Infocomm Media Development Authority's Silver Infocomm Initiative.  
 Aimed to teach elderlies how to use commonly used Technologies as well as to ensure safety online.  
 We have used and test this app with the Old Folks at the All Saints Home, Tampines.  
+=======
+This project is a starting point for a Flutter application.
+>>>>>>> parent of 77c8fa5... Update README.md
 
-## Files to take note of
+A few resources to get you started if this is your first Flutter project:
 
+<<<<<<< HEAD
 Information on topics are stored in a class "ModuleTopic" in [topicList.dart](/lib/WhatsApp/topicList.dart)  
 ```
 
@@ -53,4 +58,12 @@ xavierteh01@hotmail.com
 
 
 © [**NSS Genics 2019**](mailto:nssgenics@connect.np.edu.sg)  
-Representing the course of **Network Systems & Security** of __Ngee Ann Polytechnic__  
+Representing the course of **Network Systems & Security* of __Ngee Ann Polytechnic__  
+=======
+- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+
+For help getting started with Flutter, view our 
+[online documentation](https://flutter.dev/docs), which offers tutorials, 
+samples, guidance on mobile development, and a full API reference.
+>>>>>>> parent of 77c8fa5... Update README.md

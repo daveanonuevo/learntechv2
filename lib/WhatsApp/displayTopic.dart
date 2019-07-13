@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:learntech/WhatsApp/topicList.dart';
 
 class DisplayTopic extends StatefulWidget {
-
   DisplayTopic(
       {Key key,
       @required this.topic,
@@ -45,7 +44,6 @@ class _DisplayTopicState extends State<DisplayTopic> {
         padding: const EdgeInsets.all(8.0),
         sliver: SliverList(
           delegate: SliverChildListDelegate(
-
             ModuleTopic.loadTopics(widget.module, context)[widget.count].topicInfo,
           ),
         ),

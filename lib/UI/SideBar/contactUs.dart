@@ -149,6 +149,8 @@ class _ContactPageState extends State<ContactPage> {
                               _scaffoldKey.currentState.showSnackBar(SnackBar(content: Text(AppLocalizations.of(context).contactSnackBarName)));
                             else if (_emailController.text.isEmpty)
                               _scaffoldKey.currentState.showSnackBar(SnackBar(content: Text(AppLocalizations.of(context).contactSnackBarEmail)));
+                            else if (!_emailController.text.contains('@'))
+                               _scaffoldKey.currentState.showSnackBar(SnackBar(content: Text(AppLocalizations.of(context).contactSnackBarEmailError)));
                             else{
                               var data = jsonEncode({
                                 'name': '${_nameController.text}',

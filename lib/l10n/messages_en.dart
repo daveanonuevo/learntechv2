@@ -31,6 +31,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "contactSnackBarFeedback" :  MessageLookupByLibrary.simpleMessage("Please enter your feedback!"),
     "contactSnackBarName" :  MessageLookupByLibrary.simpleMessage("Please enter your name!"),
     "contactSnackBarEmail" :  MessageLookupByLibrary.simpleMessage("Please enter your email!"),
+    "contactSnackBarEmailError" :  MessageLookupByLibrary.simpleMessage("Invalid Email Address!"),
     "contactSnackBarFeedbackSuccess" :  MessageLookupByLibrary.simpleMessage("Thank you for your feedback!"),
     "contactSnackBarFeedbackFail" :  MessageLookupByLibrary.simpleMessage("Unable to receive feedback, please try again later!"),
     "aboutTrans" : MessageLookupByLibrary.simpleMessage("About"),

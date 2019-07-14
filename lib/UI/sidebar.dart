@@ -30,6 +30,7 @@ class SideBar extends StatelessWidget {
 //                textAlign: TextAlign.left,
 //                style: new TextStyle(fontSize: 25.0),
 //              ),
+//              ),
 //              onTap: () => Navigator.of(context)
 //                  .push(MaterialPageRoute(builder: (context) => Settings()))),
 //          new Divider(color: Colors.grey),

@@ -22,11 +22,12 @@ class _DisplayTopicState extends State<DisplayTopic> {
   Widget build(BuildContext context) {
     print(widget.topic.topicInfo);
     return Scaffold(
-      backgroundColor: Colors.black38,
+      backgroundColor: Colors.white,
       appBar: AppBar(
-        backgroundColor: Colors.black12,
+        backgroundColor: Colors.white,
         title: Text(
             widget.topic.topicName,
+          style: TextStyle(color: Colors.black),
           ),
       ),
       body: ListView(

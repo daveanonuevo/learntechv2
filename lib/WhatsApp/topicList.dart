@@ -16,12 +16,12 @@ class ModuleTopic {
     TextStyle _localStyle = TextStyle(
       fontFamily: "san francisco",
       fontSize: 35.0,
-      color: Colors.white,
+      color: Colors.black,
     );
     TextStyle _localSub = TextStyle(
       fontFamily: "roboto",
       fontSize: 25.0,
-      color: Colors.white,
+      color: Colors.black26,
     );
 
     String strPlat = (Platform.isAndroid
@@ -411,7 +411,7 @@ class DivideLine extends StatelessWidget {
             border: Border(
               bottom: createBorderSide(
                 context,
-                color: Colors.white,
+                color: Colors.black45,
               ),
             ),
           ),

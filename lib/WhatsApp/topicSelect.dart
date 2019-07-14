@@ -18,7 +18,7 @@ class _TopicSelectState extends State<TopicSelect> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.white,
       body: Stack(
         fit: StackFit.expand,
         children: <Widget>[
@@ -26,13 +26,13 @@ class _TopicSelectState extends State<TopicSelect> {
             child: BackdropFilter(
               filter: ImageFilter.blur(sigmaX: 4.0, sigmaY: 4.0),
               child: Scaffold(
-                backgroundColor: Colors.black38,
+                backgroundColor: Colors.white,
                 appBar: AppBar(
                   title: Text(widget.selectedTopic == "WhatsApp"
                       ? AppLocalizations.of(context).waTitle1Trans
                       : AppLocalizations.of(context).safeTitle2Trans),
                   leading: IconButton(
-                    icon: Icon(Icons.arrow_back),
+                    icon: Icon(Icons.arrow_back, color: Colors.black,),
                     onPressed: () => Navigator.pop(context, false),
                   ),
                   backgroundColor: Colors.transparent,
@@ -40,7 +40,7 @@ class _TopicSelectState extends State<TopicSelect> {
                 ),
                 body: ListView.separated(
                   separatorBuilder: (context, index) => Divider(
-                    color: Colors.white,
+                    color: Colors.black,
                     indent: 72,
                   ),
                   itemCount:
@@ -102,13 +102,13 @@ class WhatsAppTopicCards extends StatelessWidget {
         trailing: Icon(
           Icons.arrow_forward_ios,
           size: 55,
-          color: Colors.white,
+          color: Colors.black,
         ),
         title: Text(
           topic.topicName,
-          style: TextStyle(color: Colors.white, fontSize: 27.6),
+          style: TextStyle(color: Colors.black, fontSize: 27.6),
         ),
-        leading: Icon(topic.icon, size: 55, color: Colors.white),
+        leading: Icon(topic.icon, size: 55, color: Colors.black),
       ),
     );
   }

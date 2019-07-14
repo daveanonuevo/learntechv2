@@ -4,7 +4,6 @@ import 'package:learntech/WhatsApp/displayTopic.dart';
 import 'package:learntech/localizations.dart';
 import 'topicList.dart';
 import 'dart:ui';
-import 'package:learntech/WhatsApp/uiCopy.dart';
 
 class TopicSelect extends StatefulWidget {
   final String selectedTopic;
@@ -102,14 +101,14 @@ class WhatsAppTopicCards extends StatelessWidget {
       child: ListTile(
         trailing: Icon(
           Icons.arrow_forward_ios,
-          size: 24,
+          size: 55,
           color: Colors.white,
         ),
         title: Text(
           topic.topicName,
           style: TextStyle(color: Colors.white, fontSize: 24),
         ),
-        leading: Icon(topic.icon, size: 24, color: Colors.white),
+        leading: Icon(topic.icon, size: 55, color: Colors.white),
       ),
     );
   }

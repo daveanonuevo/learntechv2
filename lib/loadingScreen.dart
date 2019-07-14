@@ -66,92 +66,99 @@ class _LoadingState extends State<Load> with TickerProviderStateMixin	{
 		_fadeAnimationController.forward();
 		_tmAnimationController.forward();
     return Scaffold(
-			body: Stack(
-				children: <Widget>[
-					AnimatedBuilder(
-						animation: _turnAnimationController,
-						child: Container(
-							alignment: Alignment.center,
-							decoration: BoxDecoration(
-								image: DecorationImage(
-									image: ExactAssetImage('assets/LoadingScreen/Cloud.png'),
-								),
-							),
-						),
-						builder: (context,child) => Transform.rotate(
-								child: child,
-								angle: _turnAnimationController.value * 2.0 * math.pi,
-						),
-					),
-					FadeTransition(
-						opacity: _fadeAnimation,
-						child: Center(
-							child: Container(
-								height: 155.0,
-								width: 135.0,
-								child: Align(
-									alignment: Alignment.bottomLeft,
-									child: Image.asset(
-										'assets/LoadingScreen/LeftTopArrow.png',
-									),
-								),
-							),
-						),
-					),
+			body: GestureDetector(
+				onTap: () => Navigator.push(
+					context,
+					MaterialPageRoute(
+						builder: (context) => MainPage(),
+					),),
+			  child: Stack(
+			  	children: <Widget>[
+			  		AnimatedBuilder(
+			  			animation: _turnAnimationController,
+			  			child: Container(
+			  				alignment: Alignment.center,
+			  				decoration: BoxDecoration(
+			  					image: DecorationImage(
+			  						image: ExactAssetImage('assets/LoadingScreen/Cloud.png'),
+			  					),
+			  				),
+			  			),
+			  			builder: (context,child) => Transform.rotate(
+			  					child: child,
+			  					angle: _turnAnimationController.value * 2.0 * math.pi,
+			  			),
+			  		),
+			  		FadeTransition(
+			  			opacity: _fadeAnimation,
+			  			child: Center(
+			  				child: Container(
+			  					height: 155.0,
+			  					width: 135.0,
+			  					child: Align(
+			  						alignment: Alignment.bottomLeft,
+			  						child: Image.asset(
+			  							'assets/LoadingScreen/LeftTopArrow.png',
+			  						),
+			  					),
+			  				),
+			  			),
+			  		),
 
-					FadeTransition(
-						opacity: _fadeAnimation,
-						child: Center(
-							child: Container(
-								height: 150.0,
-								width: 150.0,
-								child: Align(
-									alignment: Alignment.bottomRight,
-									child: Image.asset(
-										'assets/LoadingScreen/RightBottomArrow.png',
-									),
-								),
-							),
-						),
-					),
-					Container(
-						alignment: Alignment.center,
-						decoration: BoxDecoration(
-							image: DecorationImage(
-								image: ExactAssetImage('assets/LoadingScreen/IPhoneX.png'),
-							),
-						),
-					),
+			  		FadeTransition(
+			  			opacity: _fadeAnimation,
+			  			child: Center(
+			  				child: Container(
+			  					height: 150.0,
+			  					width: 150.0,
+			  					child: Align(
+			  						alignment: Alignment.bottomRight,
+			  						child: Image.asset(
+			  							'assets/LoadingScreen/RightBottomArrow.png',
+			  						),
+			  					),
+			  				),
+			  			),
+			  		),
+			  		Container(
+			  			alignment: Alignment.center,
+			  			decoration: BoxDecoration(
+			  				image: DecorationImage(
+			  					image: ExactAssetImage('assets/LoadingScreen/IPhoneX.png'),
+			  				),
+			  			),
+			  		),
 
-			FadeTransition(
-				opacity: _tmAnimation,
-				child: Center(
-					child: Column(
-						children: <Widget>[
-							Expanded(
-								flex: 1,
-								child: Column(
-									mainAxisAlignment: MainAxisAlignment.end,
-									children: <Widget>[
-										Text(
-											"Learn Tech™",
-											style: TextStyle(
-												fontSize: 30.0,
-												color: Colors.black,
-											),
-										),
+			  FadeTransition(
+			  	opacity: _tmAnimation,
+			  	child: Center(
+			  		child: Column(
+			  			children: <Widget>[
+			  				Expanded(
+			  					flex: 1,
+			  					child: Column(
+			  						mainAxisAlignment: MainAxisAlignment.end,
+			  						children: <Widget>[
+			  							Text(
+			  								"Learn Tech™",
+			  								style: TextStyle(
+			  									fontSize: 30.0,
+			  									color: Colors.black,
+			  								),
+			  							),
 //											CircularProgressIndicator(),
-										Padding(
-											padding: EdgeInsets.all(30.0),
-										),
-									],
-								),
-							),
-						],
-					),
-				),
-			),
-				],
+			  							Padding(
+			  								padding: EdgeInsets.all(30.0),
+			  							),
+			  						],
+			  					),
+			  				),
+			  			],
+			  		),
+			  	),
+			  ),
+			  	],
+			  ),
 			),
 		);
   }

@@ -20,7 +20,7 @@ class ModuleTopic {
     );
     TextStyle _localSub = TextStyle(
       fontFamily: "roboto",
-      fontSize: 20.0,
+      fontSize: 25.0,
       color: Colors.white,
     );
 

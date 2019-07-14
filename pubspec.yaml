@@ -50,29 +50,34 @@ flutter:
   uses-material-design: true
   assets:
     - assets/Background/wallpaper.png
-    - assets/Side/SideBar_JewelChangi.png
     - assets/LoadingScreen/Cloud.png
     - assets/LoadingScreen/IPhoneX.png
     - assets/LoadingScreen/LeftTopArrow.png
     - assets/LoadingScreen/RightBottomArrow.png
     - assets/Logo/AppLogo.png
-    - assets/Logo/WhatsApp.png
     - assets/Logo/lock.png
+    - assets/Logo/WhatsApp.png
+    - assets/Side/SideBar_JewelChangi.png
+    - assets/SecurityTopics/DetectingFakeNews.jpg
+    - assets/SecurityTopics/DetectingScams.jpg
+    - assets/SecurityTopics/FakeNews.jpg
+    - assets/SecurityTopics/IncreasePrivacy.jpg
+    - assets/SecurityTopics/Scam.jpg
+    - assets/WhatsAppTopics/Android/AddingContacts.gif
+    - assets/WhatsAppTopics/Android/AddingContactstoGroup.gif
+    - assets/WhatsAppTopics/Android/Answering.gif
+    - assets/WhatsAppTopics/Android/CreatingAnAccount.gif
+    - assets/WhatsAppTopics/Android/Declining.gif
     - assets/WhatsAppTopics/Android/FindInstallSearch1.png
     - assets/WhatsAppTopics/Android/FindInstallSearch2.jpg
-    - assets/WhatsAppTopics/Android/CreatingAnAccount.gif
-    - assets/WhatsAppTopics/Android/AddingContacts.gif
-    - assets/WhatsAppTopics/Android/SendingMessages.gif
-    - assets/WhatsAppTopics/Android/SendingVoiceMemos.gif
-    - assets/WhatsAppTopics/Android/SendingPhotos.gif
-    - assets/WhatsAppTopics/Android/SendingLocation.gif
     - assets/WhatsAppTopics/Android/GivingCalls.gif
-    - assets/WhatsAppTopics/Android/ReceivingCall.jpg
-    - assets/WhatsAppTopics/Android/AddingContactstoGroup.gif
-    - assets/WhatsAppTopics/Android/Declining.gif
-    - assets/WhatsAppTopics/Android/Answering.gif
     - assets/WhatsAppTopics/Android/LastSeen.gif
+    - assets/WhatsAppTopics/Android/ReceivingCall.jpg
     - assets/WhatsAppTopics/Android/ReportBlock.gif
+    - assets/WhatsAppTopics/Android/SendingLocation.gif
+    - assets/WhatsAppTopics/Android/SendingMessages.gif
+    - assets/WhatsAppTopics/Android/SendingPhotos.gif
+    - assets/WhatsAppTopics/Android/SendingVoiceMemos.gif
 
 
 

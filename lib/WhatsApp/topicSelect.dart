@@ -107,9 +107,9 @@ class WhatsAppTopicCards extends StatelessWidget {
         ),
         title: Text(
           topic.topicName,
-          style: TextStyle(color: Colors.white, fontSize: 24),
+          style: TextStyle(color: Colors.white, fontSize: 27.6),
         ),
-        leading: Icon(topic.icon, size: 24, color: Colors.white),
+        leading: Icon(topic.icon, size: 28, color: Colors.white),
       ),
     );
   }

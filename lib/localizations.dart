@@ -48,6 +48,9 @@ class AppLocalizations {
 	String get contactSnackBarEmail {
 	  return Intl.message('Missing Email', name: 'contactSnackBarEmail');
 	}
+  String get contactSnackBarEmailError {
+	  return Intl.message('Invalid Email Address!', name: 'contactSnackBarEmailError');
+	}
 	String get contactSnackBarFeedbackSuccess {
 	  return Intl.message('Feedback Success', name: 'contactSnackBarFeedbackSuccess');
 	}

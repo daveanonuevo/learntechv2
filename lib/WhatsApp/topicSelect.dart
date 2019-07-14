@@ -32,7 +32,7 @@ class _TopicSelectState extends State<TopicSelect> {
                       ? AppLocalizations.of(context).waTitle1Trans
                       : AppLocalizations.of(context).safeTitle2Trans),
                   leading: IconButton(
-                    icon: Icon(Icons.arrow_back, color: Colors.black,),
+                    icon: Icon(Icons.arrow_back, color: Colors.black, size: 40.0,),
                     onPressed: () => Navigator.pop(context, false),
                   ),
                   backgroundColor: Colors.transparent,

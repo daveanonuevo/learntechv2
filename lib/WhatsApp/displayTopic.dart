@@ -24,11 +24,15 @@ class _DisplayTopicState extends State<DisplayTopic> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back, color: Colors.black, size: 40.0),
+          onPressed: () => Navigator.pop(context, false),
+        ),
         backgroundColor: Colors.white,
         title: Text(
             widget.topic.topicName,
-          style: TextStyle(color: Colors.black),
-          ),
+          style: TextStyle(color: Colors.black, fontSize: 30.0),
+        ),
       ),
       body: ListView(
         children: ModuleTopic.loadTopics(widget.module, context)[widget.count].topicInfo,

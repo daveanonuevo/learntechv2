@@ -21,33 +21,17 @@ class _DisplayTopicState extends State<DisplayTopic> {
   @override
   Widget build(BuildContext context) {
     print(widget.topic.topicInfo);
-    print(widget.topic.imagePath);
     return Scaffold(
-        body: CustomScrollView(slivers: <Widget>[
-      SliverAppBar(
-        pinned: true,
-        expandedHeight: 250.0,
-        centerTitle: false,
-        flexibleSpace: FlexibleSpaceBar(
-          centerTitle: true,
-          title: Text(
+      backgroundColor: Colors.black38,
+      appBar: AppBar(
+        backgroundColor: Colors.black12,
+        title: Text(
             widget.topic.topicName,
-            textAlign: TextAlign.center,
           ),
-          background: Image.asset(
-            widget.topic.imagePath,
-            fit: BoxFit.cover,
-          ),
-        ),
       ),
-      SliverPadding(
-        padding: const EdgeInsets.all(8.0),
-        sliver: SliverList(
-          delegate: SliverChildListDelegate(
-            ModuleTopic.loadTopics(widget.module, context)[widget.count].topicInfo,
-          ),
-        ),
+      body: ListView(
+        children: ModuleTopic.loadTopics(widget.module, context)[widget.count].topicInfo,
       )
-    ]));
+    );
   }
 }

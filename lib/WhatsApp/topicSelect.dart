@@ -109,7 +109,6 @@ class WhatsAppTopicCards extends StatelessWidget {
           style: TextStyle(color: Colors.white, fontSize: 27.6),
         ),
         leading: Icon(topic.icon, size: 55, color: Colors.white),
-        //leading: Icon(topic.icon, size: 28, color: Colors.white),
       ),
     );
   }

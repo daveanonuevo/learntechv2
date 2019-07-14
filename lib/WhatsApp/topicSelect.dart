@@ -16,15 +16,6 @@ class TopicSelect extends StatefulWidget {
 }
 
 class _TopicSelectState extends State<TopicSelect> {
-  var currentPageValue = 0.0;
-
-  List imagePaths = new List();
-
-  final PageController _pageViewController = PageController(
-    viewportFraction: 0.85,
-    initialPage: 0,
-  );
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -36,7 +27,7 @@ class _TopicSelectState extends State<TopicSelect> {
             child: BackdropFilter(
               filter: ImageFilter.blur(sigmaX: 4.0, sigmaY: 4.0),
               child: Scaffold(
-                backgroundColor: Colors.transparent,
+                backgroundColor: Colors.black38,
                 appBar: AppBar(
                   title: Text(widget.selectedTopic == "WhatsApp"
                       ? AppLocalizations.of(context).waTitle1Trans
@@ -48,28 +39,25 @@ class _TopicSelectState extends State<TopicSelect> {
                   backgroundColor: Colors.transparent,
                   elevation: 0.0,
                 ),
-                body: PageTransformer(
-                    pageViewBuilder: (context, visibilityResolver) {
-                  return PageView.builder(
-                    controller: _pageViewController,
-                    itemCount: ModuleTopic.loadTopics("${widget.selectedTopic}")
-                        .length,
-                    itemBuilder: (context, index) {
-                      final topic = ModuleTopic.loadTopics(
-                          "${widget.selectedTopic}")[index];
-                      final pageVisibility =
-                          visibilityResolver.resolvePageVisibility(index);
-                      return WhatsAppTopicCards(
-                        topic: topic,
-                        pageVisibility: pageVisibility,
-                        module: widget.selectedTopic == "WhatsApp"
-                            ? "WhatsApp"
-                            : "Security Tips",
-                        count: index,
-                      );
-                    },
-                  );
-                }),
+                body: ListView.separated(
+                  separatorBuilder: (context, index) => Divider(
+                    color: Colors.white,
+                    indent: 72,
+                  ),
+                  itemCount:
+                      ModuleTopic.loadTopics("${widget.selectedTopic}").length,
+                  itemBuilder: (context, index) {
+                    final topic = ModuleTopic.loadTopics(
+                        "${widget.selectedTopic}")[index];
+                    return WhatsAppTopicCards(
+                      topic: topic,
+                      module: widget.selectedTopic == "WhatsApp"
+                          ? "WhatsApp"
+                          : "Security Tips",
+                      count: index,
+                    );
+                  },
+                ),
               ),
             ),
           ),
@@ -78,99 +66,148 @@ class _TopicSelectState extends State<TopicSelect> {
     );
   }
 }
+//ListView.separated(
+//separatorBuilder: (context, index) => Divider(
+//color: Colors.black,
+//),
+//itemCount: 20,
+//itemBuilder: (context, index) => Padding(
+//padding: EdgeInsets.all(8.0),
+//child: Center(child: Text("Index $index")),
+//),
+//)
 
-class WhatsAppTopicCards extends StatefulWidget {
+class WhatsAppTopicCards extends StatelessWidget {
+  final ModuleTopic topic;
+  final String module;
+  final int count;
+
   WhatsAppTopicCards({
     @required this.topic,
-    @required this.pageVisibility,
     @required this.module,
     @required this.count,
   });
 
-  final ModuleTopic topic;
-  final PageVisibility pageVisibility;
-  final String module;
-  final int count;
-
-  @override
-  _WhatsAppTopicCardsState createState() => _WhatsAppTopicCardsState();
-}
-
-class _WhatsAppTopicCardsState extends State<WhatsAppTopicCards> {
-  @override
-  void initState() {
-    super.initState();
-  }
-
-  _buildTextContainer(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.fromLTRB(0.0, 00.0, 0.0, 0.0),
-      child: Center(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Text(
-              widget.topic.topicName,
-              style: TextStyle(
-                color: Colors.white70,
-                fontWeight: FontWeight.w500,
-                letterSpacing: 2.0,
-                fontSize: 24.0,
-              ),
-              textAlign: TextAlign.center,
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-
   @override
   Widget build(BuildContext context) {
-    var image = Image.asset(
-      widget.topic.imagePath,
-      fit: BoxFit.cover,
-    );
-    var imageOverlayGradient = DecoratedBox(
-      decoration: BoxDecoration(
-        gradient: LinearGradient(
-          begin: FractionalOffset.bottomCenter,
-          end: FractionalOffset.topCenter,
-          colors: [
-            const Color(0xA0000000),
-            const Color(0x00000000),
-          ],
-        ),
-      ),
-    );
-    return GestureDetector(
+       return GestureDetector(
       onTap: () => Navigator.push(
           context,
           MaterialPageRoute(
               builder: (context) => DisplayTopic(
-                    topic: widget.topic,
-                    module: widget.module,
-                    count: widget.count,
+                    topic: topic,
+                    module: module,
+                    count: count,
                   ))),
-      child: Padding(
-        padding: const EdgeInsets.symmetric(
-          vertical: 50.0,
-          horizontal: 8.0,
+      child: ListTile(
+        trailing: Icon(
+          Icons.arrow_forward_ios,
+          size: 24,
+          color: Colors.white,
         ),
-        child: Material(
-          clipBehavior: Clip.antiAlias,
-          elevation: 4.0,
-          borderRadius: BorderRadius.all(Radius.circular(20)),
-          child: Stack(
-            fit: StackFit.expand,
-            children: [
-              image,
-              imageOverlayGradient,
-              _buildTextContainer(context),
-            ],
-          ),
+        title: Text(
+          topic.topicName,
+          style: TextStyle(color: Colors.white, fontSize: 24),
         ),
+        leading: Icon(topic.icon, size: 24, color: Colors.white),
       ),
     );
   }
 }
+
+//
+//class WhatsAppTopicCards extends StatefulWidget {
+//  WhatsAppTopicCards({
+//    @required this.topic,
+//    @required this.pageVisibility,
+//    @required this.module,
+//    @required this.count,
+//  });
+//
+//  final ModuleTopic topic;
+//  final PageVisibility pageVisibility;
+//  final String module;
+//  final int count;
+//
+//  @override
+//  _WhatsAppTopicCardsState createState() => _WhatsAppTopicCardsState();
+//}
+//
+//class _WhatsAppTopicCardsState extends State<WhatsAppTopicCards> {
+//  @override
+//  void initState() {
+//    super.initState();
+//  }
+//
+//  _buildTextContainer(BuildContext context) {
+//    return Padding(
+//      padding: const EdgeInsets.fromLTRB(0.0, 00.0, 0.0, 0.0),
+//      child: Center(
+//        child: Column(
+//          mainAxisSize: MainAxisSize.min,
+//          children: [
+//            Text(
+//              widget.topic.topicName,
+//              style: TextStyle(
+//                color: Colors.white70,
+//                fontWeight: FontWeight.w500,
+//                letterSpacing: 2.0,
+//                fontSize: 24.0,
+//              ),
+//              textAlign: TextAlign.center,
+//            ),
+//          ],
+//        ),
+//      ),
+//    );
+//  }
+//
+//  @override
+//  Widget build(BuildContext context) {
+//    var image = Image.asset(
+//      widget.topic.imagePath,
+//      fit: BoxFit.cover,
+//    );
+//    var imageOverlayGradient = DecoratedBox(
+//      decoration: BoxDecoration(
+//        gradient: LinearGradient(
+//          begin: FractionalOffset.bottomCenter,
+//          end: FractionalOffset.topCenter,
+//          colors: [
+//            const Color(0xA0000000),
+//            const Color(0x00000000),
+//          ],
+//        ),
+//      ),
+//    );
+//    return GestureDetector(
+//      onTap: () => Navigator.push(
+//          context,
+//          MaterialPageRoute(
+//              builder: (context) => DisplayTopic(
+//                    topic: widget.topic,
+//                    module: widget.module,
+//                    count: widget.count,
+//                  ))),
+//      child: Padding(
+//        padding: const EdgeInsets.symmetric(
+//          vertical: 50.0,
+//          horizontal: 8.0,
+//        ),
+//        child: Material(
+//          clipBehavior: Clip.antiAlias,
+//          elevation: 4.0,
+//          borderRadius: BorderRadius.all(Radius.circular(20)),
+//          child: Stack(
+//            fit: StackFit.expand,
+//            children: [
+//              image,
+//              imageOverlayGradient,
+//              _buildTextContainer(context),
+//            ],
+//          ),
+//        ),
+//      ),
+//    );
+//  }
+//}

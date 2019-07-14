@@ -15,12 +15,12 @@ class ModuleTopic {
   static List loadTopics(String module, [BuildContext context]) {
     TextStyle _localStyle = TextStyle(
       fontFamily: "san francisco",
-      fontSize: 32.0,
+      fontSize: 35.0,
       color: Colors.white,
     );
     TextStyle _localSub = TextStyle(
       fontFamily: "roboto",
-      fontSize: 18.0,
+      fontSize: 20.0,
       color: Colors.white,
     );
 
@@ -56,7 +56,7 @@ class ModuleTopic {
         ? [
             ModuleTopic(
               topicName: AppLocalizations().waTitle1Category1Trans,
-              icon: Icons.explore,
+              icon: Icons.get_app,
               topicInfo: [
                 Text(
                   AppLocalizations().waTitle1Category1ContentTrans1,
@@ -111,7 +111,7 @@ class ModuleTopic {
             ),
             ModuleTopic(
               topicName: AppLocalizations().waTitle1Category3Trans,
-              icon: Icons.create,
+              icon: Icons.contact_phone,
               topicInfo: [
                 Text(
                   AppLocalizations().waTitle1Category3ContentTrans1,
@@ -136,7 +136,7 @@ class ModuleTopic {
             ),
             ModuleTopic(
               topicName: AppLocalizations().waTitle1Category4Trans,
-              icon: Icons.network_wifi,
+              icon: Icons.send,
               topicInfo: [
                 Text(
                   AppLocalizations().waTitle1Category4ContentTrans1,
@@ -194,7 +194,7 @@ class ModuleTopic {
             ),
             ModuleTopic(
               topicName: AppLocalizations().waTitle1Category6Trans,
-              icon: Icons.network_wifi,
+              icon: Icons.perm_media,
               topicInfo: [
                 Text(
                   AppLocalizations().waTitle1Category6ContentTrans1,
@@ -236,7 +236,7 @@ class ModuleTopic {
             ),
             ModuleTopic(
               topicName: AppLocalizations().waTitle1Category7Trans,
-              icon: Icons.keyboard_voice,
+              icon: Icons.phone_in_talk,
               topicInfo: [
                 Text(
                   AppLocalizations().waTitle1Category7ContentTrans1,
@@ -261,7 +261,7 @@ class ModuleTopic {
             ),
             ModuleTopic(
               topicName: AppLocalizations().waTitle1Category8Trans,
-              icon: Icons.keyboard_voice,
+              icon: Icons.local_phone,
               topicInfo: [
                 Text(
                   AppLocalizations().waTitle1Category8ContentTrans1,
@@ -291,7 +291,7 @@ class ModuleTopic {
             ),
             ModuleTopic(
               topicName: AppLocalizations().waTitle1Category9Trans,
-              icon: Icons.keyboard_voice,
+              icon: Icons.group,
               topicInfo: [
                 Text(
                   AppLocalizations().waTitle1Category9ContentTrans1,
@@ -328,7 +328,7 @@ class ModuleTopic {
         [
             ModuleTopic(
               topicName: AppLocalizations().safeTitle2Category1Trans,
-              icon: Icons.network_wifi,
+              icon: Icons.security,
               topicInfo: [
                 Text(
                   AppLocalizations().safeTitle2Category1ContentTrans1,
@@ -355,17 +355,15 @@ class ModuleTopic {
             ),
             ModuleTopic(
               topicName: AppLocalizations().safeTitle2Category2Trans,
-              icon: Icons.network_wifi,
+              icon: Icons.warning,
               topicInfo: [
                 Text(
                   AppLocalizations().safeTitle2Category2ContentTrans1,
                   style: _localStyle
                 ),
                 DivideLine(),
-                Container(
-                  child: Image.asset(
-                    "assets/SecurityTopics/Scam.jpg",
-                  ),
+                Image.asset(
+                  "assets/SecurityTopics/Scam.jpg",
                 ),
                 DivideLine(),
                 Text(
@@ -377,17 +375,15 @@ class ModuleTopic {
             ),
             ModuleTopic(
               topicName: AppLocalizations().safeTitle2Category3Trans,
-              icon: Icons.network_wifi,
+              icon: Icons.announcement,
               topicInfo: [
                 Text(
                     AppLocalizations().safeTitle2Category3ContentTrans1,
                     style: _localStyle
                 ),
                 DivideLine(),
-                Container(
-                  child: Image.asset(
-                    "assets/SecurityTopics/FakeNews.jpg",
-                  ),
+                Image.asset(
+                  "assets/SecurityTopics/FakeNews.jpg",
                 ),
                 DivideLine(),
                 Text(
@@ -415,7 +411,7 @@ class DivideLine extends StatelessWidget {
             border: Border(
               bottom: createBorderSide(
                 context,
-                color: Colors.black,
+                color: Colors.white,
               ),
             ),
           ),

@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:learntech/WhatsApp/Quiz/fakeNewsQuiz.dart';
+import 'package:learntech/WhatsApp/Quiz/privacyQuiz.dart';
+import 'package:learntech/WhatsApp/Quiz/scamsQuiz.dart';
 import 'dart:io' show Platform;
 import 'package:learntech/localizations.dart';
 
@@ -52,7 +55,7 @@ class ModuleTopic {
       return Text("Context is null, please report to administrator");
     }
 
-    return module == "WhatsApp" //Everything till the next thing is all IOS shit
+    return module == "WhatsApp" //Everything till the next thing is all IOS
         ? [
             ModuleTopic(
               topicName: AppLocalizations().waTitle1Category1Trans,
@@ -351,6 +354,35 @@ class ModuleTopic {
                   "assets/WhatsAppTopics/Android/LastSeen.gif",   //Android Haven't deploy
                 ),
                 DivideLine(),
+                Center(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: <Widget>[
+                      MaterialButton(
+                        child: Text(
+                          "Ready for a quiz?",
+                          style: TextStyle(
+                            fontSize: 30.0,
+                          ),
+                        ),
+                        height:90.0,
+                        highlightElevation: 8,
+                        color: Colors.amberAccent,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        onPressed: () {
+                          Navigator.push(
+                            context, MaterialPageRoute(
+                              builder: (context) => PrivacyQuiz()
+                            ),
+                          );
+                        },
+                      ), 
+                    ],
+                  ),
+                ),
+                DivideLine(),
               ],
             ),
             ModuleTopic(
@@ -369,6 +401,45 @@ class ModuleTopic {
                 Text(
                   AppLocalizations().safeTitle2Category2ContentTrans2,
                   style: _localStyle
+                ),
+                DivideLine(),
+                Text(
+                  AppLocalizations().safeTitle2Category2ContentTrans3,
+                  style: _localStyle
+                ),
+                DivideLine(),
+                Text(
+                  AppLocalizations().safeTitle2Category2ContentTrans4,
+                  style: _localStyle
+                ),
+                DivideLine(),
+                Center(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: <Widget>[
+                      MaterialButton(
+                        child: Text(
+                          "Ready for a quiz?",
+                          style: TextStyle(
+                            fontSize: 30.0,
+                          ),
+                        ),
+                        height:90.0,
+                        highlightElevation: 8,
+                        color: Colors.amberAccent,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        onPressed: () {
+                          Navigator.push(
+                            context, MaterialPageRoute(
+                              builder: (context) => ScamsQuiz()
+                            ),
+                          );
+                        },
+                      ), 
+                    ],
+                  ),
                 ),
                 DivideLine(),
               ],
@@ -391,13 +462,42 @@ class ModuleTopic {
                     style: _localStyle
                 ),
                 DivideLine(),
+                Center(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: <Widget>[
+                      MaterialButton(
+                        child: Text(
+                          "Ready for a quiz?",
+                          style: TextStyle(
+                            fontSize: 30.0,
+                          ),
+                        ),
+                        height:90.0,
+                        highlightElevation: 8,
+                        color: Colors.amberAccent,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        onPressed: () {
+                          Navigator.push(
+                            context, MaterialPageRoute(
+                              builder: (context) => FakeNewsQuiz()
+                            ),
+                          );
+                        },
+                      ), 
+                    ],
+                  ),
+                ),
+                DivideLine(),
               ],
             ),
           ];
   }
 }
 
-// Cause Divide() SUCKS LOL, forked from it xd wrecks
+// Cause Divide() .... LOL, forked from it xd wrecks
 class DivideLine extends StatelessWidget {
   @override
   Widget build(BuildContext context) {

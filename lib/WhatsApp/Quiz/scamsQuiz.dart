@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learntech/localizations.dart';
 
 import '../displayTopic.dart';
 import '../topicList.dart';
@@ -31,15 +32,15 @@ class _ScamsQuizState extends State<ScamsQuiz> {
         context: context,
         builder: (BuildContext context){
           return AlertDialog(
-            title: Text("Congratulations!", style: TextStyle(color: Colors.black, fontWeight: FontWeight.w900, fontSize: 30.0),),
+            title: Text(AppLocalizations().safeTitle2Category3QuizReturnTrans1, style: TextStyle(color: Colors.black, fontWeight: FontWeight.w900, fontSize: 30.0),),
             content: Text(
-              "You have correctly answered the question. Be smart and watch out for scams!\nPress next to be redirected to the next content.",
+              AppLocalizations().safeTitle2Category3QuizReturnTrans2,
               style: TextStyle(color: Colors.black, fontSize: 30.0),
             ),
             actions: <Widget>[
               RaisedButton(
                 child: Text(
-                  "Next",
+                  AppLocalizations().safeTitle2Category3QuizReturnTrans3,
                   style: TextStyle(color: Colors.black, fontSize: 30.0),
                 ),
                  onPressed:() {
@@ -57,7 +58,7 @@ class _ScamsQuizState extends State<ScamsQuiz> {
               ),
               RaisedButton(
                 child: Text(
-                  "Cancel",
+                  AppLocalizations().safeTitle2Category3QuizReturnTrans4,
                   style: TextStyle(color: Colors.black, fontSize: 30.0),
                 ),
                 onPressed:() {
@@ -74,9 +75,9 @@ class _ScamsQuizState extends State<ScamsQuiz> {
           context: context,
           builder: (BuildContext context){
             return AlertDialog(
-              title: Text("Please Select An Answer!", style: TextStyle(color: Colors.black, fontWeight: FontWeight.w900, fontSize: 30.0),),
+              title: Text(AppLocalizations().safeTitle2Category3QuizReturnTrans9, style: TextStyle(color: Colors.black, fontWeight: FontWeight.w900, fontSize: 30.0),),
               content: Text(
-                "Nice try, you can't find any answers here!",
+                AppLocalizations().safeTitle2Category3QuizReturnTrans10,
                 style: TextStyle(color: Colors.black, fontSize: 30.0),
               ),
               actions: <Widget>[
@@ -99,9 +100,9 @@ class _ScamsQuizState extends State<ScamsQuiz> {
         context: context,
         builder: (BuildContext context){
           return AlertDialog(
-            title: Text("Oops!", style: TextStyle(color: Colors.black, fontWeight: FontWeight.w900, fontSize: 30.0),),
+            title: Text(AppLocalizations().safeTitle2Category3QuizReturnTrans7, style: TextStyle(color: Colors.black, fontWeight: FontWeight.w900, fontSize: 30.0),),
             content: Text(
-              "You have answered wrongly. Please try again!",
+              AppLocalizations().safeTitle2Category3QuizReturnTrans8,
               style: TextStyle(color: Colors.black, fontSize: 30.0),
             ),
             actions: <Widget>[
@@ -131,7 +132,7 @@ class _ScamsQuizState extends State<ScamsQuiz> {
             ),
             backgroundColor: Colors.white,
             title: Text(
-              "Scams Quiz",
+              AppLocalizations().safeTitle2Category3QuizReturnTrans17,
               style: TextStyle(color: Colors.black, fontSize: 30.0),
             )),
         body: Column(children: <Widget>[
@@ -139,7 +140,7 @@ class _ScamsQuizState extends State<ScamsQuiz> {
             padding:
                 const EdgeInsets.symmetric(vertical: 5.0, horizontal: 10.0),
             child: Text(
-              "What's a sign that something is a scam? (Select all appropriate answers)",
+              AppLocalizations().safeTitle2Category3QuizReturnTrans18,
               style: TextStyle(color: Colors.black, fontSize: 30.0),
             ),
           ),
@@ -148,7 +149,7 @@ class _ScamsQuizState extends State<ScamsQuiz> {
             children: <Widget>[
               CheckboxListTile(
                   title: Text(
-                    'It comes from an unknown sender',
+                    AppLocalizations().safeTitle2Category3QuizReturnTrans19,
                     style: new TextStyle(color: Colors.black, fontSize: 30.0),
                   ),
                   value: checkBoxValue1,
@@ -157,24 +158,20 @@ class _ScamsQuizState extends State<ScamsQuiz> {
               Divider(height: 5.0, color: Colors.black),
               CheckboxListTile(
                   title: Text(
-                    'It asks for credit card details',
+                    AppLocalizations().safeTitle2Category3QuizReturnTrans20,
                     style: new TextStyle(color: Colors.black, fontSize: 30.0),
                   ),
                   value: checkBoxValue2,
                   onChanged: _value2Changed,              
-                  // value: 2,
-                  // onChanged: _checkBox
               ),
               Divider(height: 5.0, color: Colors.black),
               CheckboxListTile(
                   title: Text(
-                    'It\'s too good to be true',
+                    AppLocalizations().safeTitle2Category3QuizReturnTrans21,
                     style: new TextStyle(color: Colors.black, fontSize: 30.0),
                   ),
                   value: checkBoxValue3,
                   onChanged: _value3Changed,
-                  // value: 3,
-                  // onChanged: _checkBox
               ),
               Divider(height: 5.0, color: Colors.black),
             ],
@@ -188,7 +185,7 @@ class _ScamsQuizState extends State<ScamsQuiz> {
             child: RaisedButton(
               color: Colors.white30,
               child: Text(
-                "Submit!",
+                AppLocalizations().safeTitle2Category3QuizTrans4,
                 style: TextStyle(color: Colors.black, fontSize: 30.0),
               ),
               onPressed: () {

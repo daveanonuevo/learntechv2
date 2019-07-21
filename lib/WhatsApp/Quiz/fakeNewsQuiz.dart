@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:learntech/UI/mainScreen.dart';
+import 'package:learntech/localizations.dart';
 
 import '../displayTopic.dart';
 import '../topicList.dart';
@@ -30,15 +31,15 @@ class _FakeNewsQuizState extends State<FakeNewsQuiz> {
         context: context,
         builder: (BuildContext context){
           return AlertDialog(
-            title: Text("Congratulations!", style: TextStyle(color: Colors.black, fontWeight: FontWeight.w900, fontSize: 30.0),),
+            title: Text(AppLocalizations().safeTitle2Category3QuizReturnTrans1, style: TextStyle(color: Colors.black, fontWeight: FontWeight.w900, fontSize: 30.0),),
             content: Text(
-              "You have correctly answered the question. Remember to watch out for fake news!\nWell done, you have finished reading all topics!\nPress end to be redirected to the main page.",
+              AppLocalizations().safeTitle2Category3QuizReturnTrans5,
               style: TextStyle(color: Colors.black, fontSize: 30.0),
             ),
             actions: <Widget>[
               RaisedButton(
                 child: Text(
-                  "End",
+                  AppLocalizations().safeTitle2Category3QuizReturnTrans6,
                   style: TextStyle(color: Colors.black, fontSize: 30.0),
                 ),
                 onPressed:() {
@@ -51,7 +52,7 @@ class _FakeNewsQuizState extends State<FakeNewsQuiz> {
               ),
               RaisedButton(
                 child: Text(
-                  "Cancel",
+                  AppLocalizations().safeTitle2Category3QuizReturnTrans4,
                   style: TextStyle(color: Colors.black, fontSize: 30.0),
                 ),
                 onPressed:() {
@@ -68,9 +69,9 @@ class _FakeNewsQuizState extends State<FakeNewsQuiz> {
           context: context,
           builder: (BuildContext context){
             return AlertDialog(
-              title: Text("Oops!", style: TextStyle(color: Colors.black, fontWeight: FontWeight.w900, fontSize: 30.0),),
+              title: Text(AppLocalizations().safeTitle2Category3QuizReturnTrans7, style: TextStyle(color: Colors.black, fontWeight: FontWeight.w900, fontSize: 30.0),),
               content: Text(
-                "You have answered wrongly. Please try again!",
+                AppLocalizations().safeTitle2Category3QuizReturnTrans8,
                 style: TextStyle(color: Colors.black, fontSize: 30.0),
               ),
               actions: <Widget>[
@@ -93,9 +94,9 @@ class _FakeNewsQuizState extends State<FakeNewsQuiz> {
         context: context,
         builder: (BuildContext context){
           return AlertDialog(
-            title: Text("Please Select An Answer!", style: TextStyle(color: Colors.black, fontWeight: FontWeight.w900, fontSize: 30.0),),
+            title: Text(AppLocalizations().safeTitle2Category3QuizReturnTrans9, style: TextStyle(color: Colors.black, fontWeight: FontWeight.w900, fontSize: 30.0),),
             content: Text(
-              "Nice try, you can't find any answers here!",
+              AppLocalizations().safeTitle2Category3QuizReturnTrans10,
               style: TextStyle(color: Colors.black, fontSize: 30.0),
             ),
             actions: <Widget>[
@@ -121,7 +122,7 @@ class _FakeNewsQuizState extends State<FakeNewsQuiz> {
         AppBar(
           backgroundColor: Colors.white,
           title: Text(
-            "Fake News Quiz",
+            AppLocalizations().safeTitle2Category3TitleQuizTrans,
             style: TextStyle(
               fontSize: 30.0,
               color: Colors.black,
@@ -136,7 +137,7 @@ class _FakeNewsQuizState extends State<FakeNewsQuiz> {
             padding:
                 const EdgeInsets.symmetric(vertical: 5.0, horizontal: 10.0),
             child: Text(
-              "When receiving fake news you should share it.",
+              AppLocalizations().safeTitle2Category3QuizTrans1,
               style: TextStyle(color: Colors.black, fontSize: 30.0),
             ),
         ),
@@ -145,7 +146,7 @@ class _FakeNewsQuizState extends State<FakeNewsQuiz> {
             children: <Widget>[
               RadioListTile(
                   title: Text(
-                    'True',
+                    AppLocalizations().safeTitle2Category3QuizTrans2,
                     style: new TextStyle(color: Colors.black, fontSize: 30.0),
                   ),
                   groupValue: radioValue,
@@ -155,7 +156,7 @@ class _FakeNewsQuizState extends State<FakeNewsQuiz> {
               Divider(height: 5.0, color: Colors.black),
               RadioListTile(
                   title: Text(
-                    'False',
+                    AppLocalizations().safeTitle2Category3QuizTrans3,
                     style: new TextStyle(color: Colors.black, fontSize: 30.0),
                   ),
                   groupValue: radioValue,
@@ -171,7 +172,7 @@ class _FakeNewsQuizState extends State<FakeNewsQuiz> {
                 child: RaisedButton(
                   color: Colors.white30,
                   child: Text(
-                    "Submit!",
+                    AppLocalizations().safeTitle2Category3QuizTrans4,
                     style: TextStyle(color: Colors.black, fontSize: 30.0),
                   ),
                   onPressed: () {

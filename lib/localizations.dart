@@ -261,6 +261,87 @@ class AppLocalizations {
 	String get safeTitle2Category3ContentTrans2 {
 		return Intl.message('If it sounds too good to be true, it’s probably fake! Do not forward fake news to others as that can cause distress. Alert the individual that the message sent by him/her is fake and be advised to delete the message. This prevents the message from being spread further.', name: 'safeTitle2Category3ContentTrans2');
 	}
+  String get safeTitle2Category3TitleQuizTrans {
+		return Intl.message('Fake News Quiz', name: 'safeTitle2Category3TitleQuizTrans');
+	}
+  String get safeTitle2Category3QuizTrans1 {
+		return Intl.message('When receiving fake news you should share it.', name: 'safeTitle2Category3QuizTrans1');
+	}
+  String get safeTitle2Category3QuizTrans2 {
+		return Intl.message('True', name: 'safeTitle2Category3QuizTrans2');
+	}
+  String get safeTitle2Category3QuizTrans3 {
+		return Intl.message('False', name: 'safeTitle2Category3QuizTrans3');
+	}
+  String get safeTitle2Category3QuizTrans4 {
+		return Intl.message('Submit', name: 'safeTitle2Category3QuizTrans4');
+	}
+  String get safeTitle2Category3QuizReturnTrans1 {
+		return Intl.message('Congratulations!', name: 'safeTitle2Category3QuizReturnTrans1');
+	}
+  String get safeTitle2Category3QuizReturnTrans2 {
+		return Intl.message('You have correctly answered the question. Be smart and watch out for scams!\nPress next to be redirected to the next content.', name: 'safeTitle2Category3QuizReturnTrans2');
+	}
+  String get safeTitle2Category3QuizReturnTrans3 {
+		return Intl.message('Next', name: 'safeTitle2Category3QuizReturnTrans3');
+	}
+  String get safeTitle2Category3QuizReturnTrans4 {
+		return Intl.message('Cancel', name: 'safeTitle2Category3QuizReturnTrans4');
+	}
+  String get safeTitle2Category3QuizReturnTrans5 {
+		return Intl.message('You have correctly answered the question. Remember to watch out for fake news!\nWell done, you have finished reading all topics!\nPress end to be redirected to the main page.', name: 'safeTitle2Category3QuizReturnTrans5');
+	}
+  String get safeTitle2Category3QuizReturnTrans6 {
+		return Intl.message('End', name: 'safeTitle2Category3QuizReturnTrans6');
+	}
+  String get safeTitle2Category3QuizReturnTrans7 {
+		return Intl.message('Oops', name: 'safeTitle2Category3QuizReturnTrans7');
+	}
+  String get safeTitle2Category3QuizReturnTrans8 {
+		return Intl.message('You have answered wrongly. Please try again!', name: 'safeTitle2Category3QuizReturnTrans8');
+	}
+  String get safeTitle2Category3QuizReturnTrans9 {
+		return Intl.message('Please Select An Answer!', name: 'safeTitle2Category3QuizReturnTrans9');
+	}
+  String get safeTitle2Category3QuizReturnTrans10 {
+		return Intl.message('Nice try, you can\'t find any answers here!', name: 'safeTitle2Category3QuizReturnTrans10');
+	}
+  String get safeTitle2Category3QuizReturnTrans11 {
+		return Intl.message('You have correctly answered the question. Remember to manage your own privacy!\nPress next to be redirected to the next content.', name: 'safeTitle2Category3QuizReturnTrans11');
+	}
+  String get safeTitle2Category3QuizReturnTrans12 {
+		return Intl.message('Privacy Quiz', name: 'safeTitle2Category3QuizReturnTrans12');
+	}
+  String get safeTitle2Category3QuizReturnTrans13 {
+		return Intl.message('If you want to set your last seen to allow only people you know, which of the following would you choose?', name: 'safeTitle2Category3QuizReturnTrans13');
+	}
+  String get safeTitle2Category3QuizReturnTrans14 {
+		return Intl.message('Everyone', name: 'safeTitle2Category3QuizReturnTrans14');
+	}
+  String get safeTitle2Category3QuizReturnTrans15 {
+		return Intl.message('My Contacts', name: 'safeTitle2Category3QuizReturnTrans15');
+	}
+  String get safeTitle2Category3QuizReturnTrans16 {
+		return Intl.message('Nobody', name: 'safeTitle2Category3QuizReturnTrans16');
+	}
+  String get safeTitle2Category3QuizReturnTrans17 {
+		return Intl.message('Scams Quiz', name: 'safeTitle2Category3QuizReturnTrans17');
+	}
+  String get safeTitle2Category3QuizReturnTrans18 {
+		return Intl.message('What\'s a sign that something is a scam? (Select all appropriate answers)', name: 'safeTitle2Category3QuizReturnTrans18');
+	}
+  String get safeTitle2Category3QuizReturnTrans19 {
+		return Intl.message('It comes from an unknown sender', name: 'safeTitle2Category3QuizReturnTrans19');
+	}
+  String get safeTitle2Category3QuizReturnTrans20 {
+		return Intl.message('It asks for credit card details', name: 'safeTitle2Category3QuizReturnTrans20');
+	}
+  String get safeTitle2Category3QuizReturnTrans21 {
+		return Intl.message('It\'s too good to be true', name: 'safeTitle2Category3QuizReturnTrans21');
+	}
+  String get safeTitle2Category3QuizReturnTrans22 {
+		return Intl.message('Ready for a quiz?', name: 'safeTitle2Category3QuizReturnTrans22');
+	}
 }
 
 class AppLocalizationsDelegate

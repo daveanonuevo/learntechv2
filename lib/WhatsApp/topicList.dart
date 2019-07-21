@@ -368,7 +368,7 @@ class ModuleTopic {
                     children: <Widget>[
                       MaterialButton(
                         child: Text(
-                          "Ready for a quiz?",
+                          AppLocalizations().safeTitle2Category3QuizReturnTrans22,
                           style: TextStyle(
                             fontSize: 30.0,
                           ),
@@ -427,7 +427,7 @@ class ModuleTopic {
                     children: <Widget>[
                       MaterialButton(
                         child: Text(
-                          "Ready for a quiz?",
+                          AppLocalizations().safeTitle2Category3QuizReturnTrans22,
                           style: TextStyle(
                             fontSize: 30.0,
                           ),
@@ -476,7 +476,7 @@ class ModuleTopic {
                     children: <Widget>[
                       MaterialButton(
                         child: Text(
-                          "Ready for a quiz?",
+                          AppLocalizations().safeTitle2Category3QuizReturnTrans22,
                           style: TextStyle(
                             fontSize: 30.0,
                           ),

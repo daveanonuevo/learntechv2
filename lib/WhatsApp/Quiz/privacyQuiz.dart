@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:learntech/WhatsApp/displayTopic.dart';
 import 'package:learntech/WhatsApp/topicList.dart';
+import 'package:learntech/localizations.dart';
 
 class PrivacyQuiz extends StatefulWidget {
   @override
@@ -28,15 +29,15 @@ class _PrivacyQuizState extends State<PrivacyQuiz> {
         context: context,
         builder: (BuildContext context){
           return AlertDialog(
-            title: Text("Congratulations!", style: TextStyle(color: Colors.black, fontWeight: FontWeight.w900, fontSize: 30.0),),
+            title: Text(AppLocalizations().safeTitle2Category3QuizReturnTrans1, style: TextStyle(color: Colors.black, fontWeight: FontWeight.w900, fontSize: 30.0),),
             content: Text(
-              "You have correctly answered the question. Remember to manage your own privacy!\nPress next to be redirected to the next content.",
+              AppLocalizations().safeTitle2Category3QuizReturnTrans11,
               style: TextStyle(color: Colors.black, fontSize: 30.0),
             ),
             actions: <Widget>[
               RaisedButton(
                 child: Text(
-                  "Next",
+                  AppLocalizations().safeTitle2Category3QuizReturnTrans3,
                   style: TextStyle(color: Colors.black, fontSize: 30.0),
                 ),
                  onPressed:() {
@@ -56,7 +57,7 @@ class _PrivacyQuizState extends State<PrivacyQuiz> {
               ),
               RaisedButton(
                 child: Text(
-                  "Cancel",
+                  AppLocalizations().safeTitle2Category3QuizReturnTrans4,
                   style: TextStyle(color: Colors.black, fontSize: 30.0),
                 ),
                 onPressed:() {
@@ -72,9 +73,9 @@ class _PrivacyQuizState extends State<PrivacyQuiz> {
         context: context,
         builder: (BuildContext context){
           return AlertDialog(
-            title: Text("Oops!", style: TextStyle(color: Colors.black, fontWeight: FontWeight.w900, fontSize: 30.0),),
+            title: Text(AppLocalizations().safeTitle2Category3QuizReturnTrans7, style: TextStyle(color: Colors.black, fontWeight: FontWeight.w900, fontSize: 30.0),),
             content: Text(
-              "You have answered wrongly. Please try again!",
+              AppLocalizations().safeTitle2Category3QuizReturnTrans8,
               style: TextStyle(color: Colors.black, fontSize: 30.0),
             ),
             actions: <Widget>[
@@ -96,9 +97,9 @@ class _PrivacyQuizState extends State<PrivacyQuiz> {
         context: context,
         builder: (BuildContext context){
           return AlertDialog(
-            title: Text("Please Select An Answer!", style: TextStyle(color: Colors.black, fontWeight: FontWeight.w900, fontSize: 30.0),),
+            title: Text(AppLocalizations().safeTitle2Category3QuizReturnTrans9, style: TextStyle(color: Colors.black, fontWeight: FontWeight.w900, fontSize: 30.0),),
             content: Text(
-              "Nice try, you can't find any answers here!",
+              AppLocalizations().safeTitle2Category3QuizReturnTrans10,
               style: TextStyle(color: Colors.black, fontSize: 30.0),
             ),
             actions: <Widget>[
@@ -128,7 +129,7 @@ class _PrivacyQuizState extends State<PrivacyQuiz> {
             ),
             backgroundColor: Colors.white,
             title: Text(
-              "Privacy Quiz",
+              AppLocalizations().safeTitle2Category3QuizReturnTrans12,
               style: TextStyle(color: Colors.black, fontSize: 30.0),
             )),
         body: Column(children: <Widget>[
@@ -136,7 +137,7 @@ class _PrivacyQuizState extends State<PrivacyQuiz> {
             padding:
                 const EdgeInsets.symmetric(vertical: 5.0, horizontal: 10.0),
             child: Text(
-              "If you want to set your last seen to allow only people you know, which of the following would you choose?",
+              AppLocalizations().safeTitle2Category3QuizReturnTrans13,
               style: TextStyle(color: Colors.black, fontSize: 30.0),
             ),
           ),
@@ -145,7 +146,7 @@ class _PrivacyQuizState extends State<PrivacyQuiz> {
             children: <Widget>[
               RadioListTile(
                   title: Text(
-                    'Everyone',
+                    AppLocalizations().safeTitle2Category3QuizReturnTrans14,
                     style: new TextStyle(color: Colors.black, fontSize: 30.0),
                   ),
                   groupValue: radioValue,
@@ -154,7 +155,7 @@ class _PrivacyQuizState extends State<PrivacyQuiz> {
               Divider(height: 5.0, color: Colors.black),
               RadioListTile(
                   title: Text(
-                    'My Contacts',
+                    AppLocalizations().safeTitle2Category3QuizReturnTrans15,
                     style: new TextStyle(color: Colors.black, fontSize: 30.0),
                   ),
                   groupValue: radioValue,
@@ -163,7 +164,7 @@ class _PrivacyQuizState extends State<PrivacyQuiz> {
               Divider(height: 5.0, color: Colors.black),
               RadioListTile(
                   title: Text(
-                    'Nobody',
+                    AppLocalizations().safeTitle2Category3QuizReturnTrans16,
                     style: new TextStyle(color: Colors.black, fontSize: 30.0),
                   ),
                   groupValue: radioValue,
@@ -181,7 +182,7 @@ class _PrivacyQuizState extends State<PrivacyQuiz> {
             child: RaisedButton(
               color: Colors.white30,
               child: Text(
-                "Submit!",
+                AppLocalizations().safeTitle2Category3QuizTrans4,
                 style: TextStyle(color: Colors.black, fontSize: 30.0),
               ),
               onPressed: () {

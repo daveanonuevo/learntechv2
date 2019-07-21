@@ -31,7 +31,7 @@ class _DisplayTopicState extends State<DisplayTopic> {
         backgroundColor: Colors.white,
         title: Text(
             widget.topic.topicName,
-          style: TextStyle(color: Colors.black, fontSize: 30.0),
+          style: TextStyle(color: Colors.black, fontSize: 25.0),
         ),
       ),
       body: ListView(

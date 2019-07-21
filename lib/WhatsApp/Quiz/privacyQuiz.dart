@@ -140,9 +140,6 @@ class _PrivacyQuizState extends State<PrivacyQuiz> {
               style: TextStyle(color: Colors.black, fontSize: 30.0),
             ),
           ),
-          Padding(
-            padding: EdgeInsets.all(50.0),
-          ),
           Divider(height: 5.0, color: Colors.black),
           Column(
             children: <Widget>[

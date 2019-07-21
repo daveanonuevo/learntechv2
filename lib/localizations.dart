@@ -244,7 +244,13 @@ class AppLocalizations {
 		return Intl.message('When receiving messages from unknown senders indicating you have won money/lucky draw, always check if you had indeed participated in a lucky draw or an event related to winning a prize.', name: 'safeTitle2Category2ContentTrans1');
 	}
 	String get safeTitle2Category2ContentTrans2 {
-		return Intl.message('You SHOULD not be asked for personal information such as your credit card number etc. Prerequisites like requiring you to pay before you can claim your prize are fake. Do not fall victim into such messages as they are scamming you. Ignoring such messages will be the best response to such situations. Nothing is free in this world!', name: 'safeTitle2Category2ContentTrans2');
+		return Intl.message('You SHOULD NOT be asked for personal information such as your credit card number etc.', name: 'safeTitle2Category2ContentTrans2');
+	}
+  String get safeTitle2Category2ContentTrans3 {
+		return Intl.message('Prerequisites like requiring you to pay before you can claim your prize are fake.', name: 'safeTitle2Category2ContentTrans3');
+	}
+  String get safeTitle2Category2ContentTrans4 {
+		return Intl.message('DO NOT fall victim into such messages as they are scamming you. Ignoring such messages will be the best response to such situations. Nothing is free in this world!', name: 'safeTitle2Category2ContentTrans4');
 	}
 	String get safeTitle2Category3Trans {
 		return Intl.message('Identifying Fake News', name: 'safeTitle2Category3Trans');

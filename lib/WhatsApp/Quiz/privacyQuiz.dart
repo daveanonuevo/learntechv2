@@ -14,13 +14,98 @@ class _PrivacyQuizState extends State<PrivacyQuiz> {
     });
   }
 
+  void _clearAnswer() {
+    setState(() {
+      radioValue = null;
+    });
+  }
+
   void _checkAnswer() {
     if (radioValue == 2) {
-      //answer is correct
-      return;
+      showDialog(
+        context: context,
+        builder: (BuildContext context){
+          return AlertDialog(
+            title: Text("Congratulations!", style: TextStyle(color: Colors.black, fontWeight: FontWeight.w900, fontSize: 30.0),),
+            content: Text(
+              "You have correctly answered the question. Remember to manage your own privacy!\nPress next to be redirected to the next content.",
+              style: TextStyle(color: Colors.black, fontSize: 30.0),
+            ),
+            actions: <Widget>[
+              RaisedButton(
+                child: Text(
+                  "Next",
+                  style: TextStyle(color: Colors.black, fontSize: 30.0),
+                ),
+                // onPressed:() {
+                //   Navigator.push(
+                //     context, MaterialPageRoute(
+                //       builder: (context) => (),
+                //     ),
+                //   );
+                // }                
+              ),
+              RaisedButton(
+                child: Text(
+                  "Cancel",
+                  style: TextStyle(color: Colors.black, fontSize: 30.0),
+                ),
+                onPressed:() {
+                  Navigator.of(context).pop();
+                },
+              ), 
+            ],
+          );
+        }
+      );
+    } else if ((radioValue == 3) || (radioValue == 1)) {
+      showDialog(
+        context: context,
+        builder: (BuildContext context){
+          return AlertDialog(
+            title: Text("Oops!", style: TextStyle(color: Colors.black, fontWeight: FontWeight.w900, fontSize: 30.0),),
+            content: Text(
+              "You have answered wrongly. Please try again!",
+              style: TextStyle(color: Colors.black, fontSize: 30.0),
+            ),
+            actions: <Widget>[
+              RaisedButton(
+                child: Text(
+                  "OK",
+                  style: TextStyle(color: Colors.black, fontSize: 30.0),
+                ),
+                onPressed:() {
+                  Navigator.of(context).pop();
+                },
+              ), 
+            ],
+          );
+        }
+      );
     } else {
-      //answer is wrong
-      return;
+      showDialog(
+        context: context,
+        builder: (BuildContext context){
+          return AlertDialog(
+            title: Text("Please Select An Answer!", style: TextStyle(color: Colors.black, fontWeight: FontWeight.w900, fontSize: 30.0),),
+            content: Text(
+              "Nice try, you can't find any answers here!",
+              style: TextStyle(color: Colors.black, fontSize: 30.0),
+            ),
+            actions: <Widget>[
+              RaisedButton(
+                child: Text(
+                  "OK",
+                  style: TextStyle(color: Colors.black, fontSize: 30.0),
+                ),
+                onPressed:() {
+                  Navigator.of(context).pop();
+                },
+              ), 
+            ],
+          );
+        }
+      );
     }
   }
 
@@ -35,7 +120,7 @@ class _PrivacyQuizState extends State<PrivacyQuiz> {
             backgroundColor: Colors.white,
             title: Text(
               "Privacy Quiz",
-              style: TextStyle(color: Colors.black),
+              style: TextStyle(color: Colors.black, fontSize: 30.0),
             )),
         body: Column(children: <Widget>[
           Padding(
@@ -43,7 +128,7 @@ class _PrivacyQuizState extends State<PrivacyQuiz> {
                 const EdgeInsets.symmetric(vertical: 5.0, horizontal: 10.0),
             child: Text(
               "If you want to set your last seen to allow only people you know, which of the following would you choose?",
-              style: TextStyle(fontSize: 28),
+              style: TextStyle(color: Colors.black, fontSize: 30.0),
             ),
           ),
           Padding(
@@ -55,7 +140,7 @@ class _PrivacyQuizState extends State<PrivacyQuiz> {
               RadioListTile(
                   title: Text(
                     'Everyone',
-                    style: new TextStyle(fontSize: 16.0),
+                    style: new TextStyle(color: Colors.black, fontSize: 30.0),
                   ),
                   groupValue: radioValue,
                   value: 1,
@@ -64,7 +149,7 @@ class _PrivacyQuizState extends State<PrivacyQuiz> {
               RadioListTile(
                   title: Text(
                     'My Contacts',
-                    style: new TextStyle(fontSize: 16.0),
+                    style: new TextStyle(color: Colors.black, fontSize: 30.0),
                   ),
                   groupValue: radioValue,
                   value: 2,
@@ -73,7 +158,7 @@ class _PrivacyQuizState extends State<PrivacyQuiz> {
               RadioListTile(
                   title: Text(
                     'Nobody',
-                    style: new TextStyle(fontSize: 16.0),
+                    style: new TextStyle(color: Colors.black, fontSize: 30.0),
                   ),
                   groupValue: radioValue,
                   value: 3,
@@ -91,9 +176,12 @@ class _PrivacyQuizState extends State<PrivacyQuiz> {
               color: Colors.white30,
               child: Text(
                 "Submit!",
-                style: TextStyle(color: Colors.black),
+                style: TextStyle(color: Colors.black, fontSize: 30.0),
               ),
-              onPressed: _checkAnswer,
+              onPressed: () {
+                _checkAnswer();
+                _clearAnswer();
+              }
             ),
           )
         ]));

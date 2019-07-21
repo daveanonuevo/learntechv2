@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:learntech/WhatsApp/displayTopic.dart';
+import 'package:learntech/WhatsApp/topicList.dart';
 
 class PrivacyQuiz extends StatefulWidget {
   @override
@@ -37,13 +39,20 @@ class _PrivacyQuizState extends State<PrivacyQuiz> {
                   "Next",
                   style: TextStyle(color: Colors.black, fontSize: 30.0),
                 ),
-                // onPressed:() {
-                //   Navigator.push(
-                //     context, MaterialPageRoute(
-                //       builder: (context) => (),
-                //     ),
-                //   );
-                // }                
+                 onPressed:() {
+                   Navigator.push(
+                     context, MaterialPageRoute(
+                       builder: (context) => (
+                       DisplayTopic(
+                         topic: ModuleTopic.loadTopics(
+                             "Security Tips")[1],
+                         module: "Security Tips",
+                         count: 1,
+                       )
+                       ),
+                     ),
+                   );
+                 }
               ),
               RaisedButton(
                 child: Text(

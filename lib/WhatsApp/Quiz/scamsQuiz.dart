@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+import '../displayTopic.dart';
+import '../topicList.dart';
+
 class ScamsQuiz extends StatefulWidget {
   @override
   _ScamsQuizState createState() => _ScamsQuizState();
@@ -39,13 +42,18 @@ class _ScamsQuizState extends State<ScamsQuiz> {
                   "Next",
                   style: TextStyle(color: Colors.black, fontSize: 30.0),
                 ),
-                // onPressed:() {
-                //   Navigator.push(
-                //     context, MaterialPageRoute(
-                //       builder: (context) => (),
-                //     ),
-                //   );
-                // }                
+                 onPressed:() {
+                   Navigator.push(
+                     context, MaterialPageRoute(
+                       builder: (context) => (DisplayTopic(
+                         topic: ModuleTopic.loadTopics(
+                             "Security Tips")[2],
+                         module: "Security Tips",
+                         count: 2,
+                       )),
+                     ),
+                   );
+                 }
               ),
               RaisedButton(
                 child: Text(
@@ -143,9 +151,6 @@ class _ScamsQuizState extends State<ScamsQuiz> {
               "What's a sign that something is a scam?",
               style: TextStyle(color: Colors.black, fontSize: 30.0),
             ),
-          ),
-          Padding(
-            padding: EdgeInsets.all(50.0),
           ),
           Divider(height: 5.0, color: Colors.black),
           Column(

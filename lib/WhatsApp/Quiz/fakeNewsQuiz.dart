@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:learntech/UI/mainScreen.dart';
 
+import '../displayTopic.dart';
+import '../topicList.dart';
+
 class FakeNewsQuiz extends StatefulWidget {
   @override
   _FakeNewsQuizState createState() => _FakeNewsQuizState();
@@ -35,11 +38,11 @@ class _FakeNewsQuizState extends State<FakeNewsQuiz> {
                 onPressed:() {
                   Navigator.push(
                     context, MaterialPageRoute(
-                      builder: (context) => MainPage(),
+                      builder: (context) =>MainPage()
                     ),
                   );
-                } 
-              ),  
+                }
+              ),
               RaisedButton(
                 child: Text(
                   "Cancel",
@@ -72,7 +75,7 @@ class _FakeNewsQuizState extends State<FakeNewsQuiz> {
                 onPressed:() {
                   Navigator.of(context).pop();
                 },
-              ), 
+              ),
             ],
           );
         }
@@ -105,16 +108,13 @@ class _FakeNewsQuizState extends State<FakeNewsQuiz> {
               style: TextStyle(color: Colors.black, fontSize: 30.0),
             ),
         ),
-        Padding(
-            padding: EdgeInsets.all(50.0),
-        ),
         Divider(height: 5.0, color: Colors.black),
         Column(
             children: <Widget>[
               RadioListTile(
                   title: Text(
                     'True',
-                    style: new TextStyle(color: Colors.black, fontSize: 30.0),          
+                    style: new TextStyle(color: Colors.black, fontSize: 30.0),
                   ),
                   groupValue: radioValue,
                   value: 1,
@@ -124,7 +124,7 @@ class _FakeNewsQuizState extends State<FakeNewsQuiz> {
               RadioListTile(
                   title: Text(
                     'False',
-                    style: new TextStyle(color: Colors.black, fontSize: 30.0),                      
+                    style: new TextStyle(color: Colors.black, fontSize: 30.0),
                   ),
                   groupValue: radioValue,
                   value: 2,
@@ -140,7 +140,7 @@ class _FakeNewsQuizState extends State<FakeNewsQuiz> {
                   color: Colors.white30,
                   child: Text(
                     "Submit!",
-                    style: TextStyle(color: Colors.black, fontSize: 30.0),                      
+                    style: TextStyle(color: Colors.black, fontSize: 30.0),
                   ),
                   onPressed: _checkAnswer,
                 ),

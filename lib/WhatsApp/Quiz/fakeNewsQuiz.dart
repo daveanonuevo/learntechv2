@@ -18,6 +18,12 @@ class _FakeNewsQuizState extends State<FakeNewsQuiz> {
     });
   }
 
+  void _clearAnswer() {
+    setState(() {
+      radioValue = null;
+    });
+  }
+
   void _checkAnswer() {
     if (radioValue == 2) {
       showDialog(
@@ -57,13 +63,39 @@ class _FakeNewsQuizState extends State<FakeNewsQuiz> {
         }
       );
     } else {
+      if (radioValue == 1) {
+        showDialog(
+          context: context,
+          builder: (BuildContext context){
+            return AlertDialog(
+              title: Text("Oops!", style: TextStyle(color: Colors.black, fontWeight: FontWeight.w900, fontSize: 30.0),),
+              content: Text(
+                "You have answered wrongly. Please try again!",
+                style: TextStyle(color: Colors.black, fontSize: 30.0),
+              ),
+              actions: <Widget>[
+                RaisedButton(
+                  child: Text(
+                    "OK",
+                    style: TextStyle(color: Colors.black, fontSize: 30.0),
+                  ),
+                  onPressed:() {
+                    Navigator.of(context).pop();
+                  },
+                ),
+              ],
+            );
+          }
+        );
+        return;
+      }
       showDialog(
         context: context,
         builder: (BuildContext context){
           return AlertDialog(
-            title: Text("Oops!", style: TextStyle(color: Colors.black, fontWeight: FontWeight.w900, fontSize: 30.0),),
+            title: Text("Please Select An Answer!", style: TextStyle(color: Colors.black, fontWeight: FontWeight.w900, fontSize: 30.0),),
             content: Text(
-              "You have answered wrongly. Please try again!",
+              "Nice try, you can't find any answers here!",
               style: TextStyle(color: Colors.black, fontSize: 30.0),
             ),
             actions: <Widget>[
@@ -75,7 +107,7 @@ class _FakeNewsQuizState extends State<FakeNewsQuiz> {
                 onPressed:() {
                   Navigator.of(context).pop();
                 },
-              ),
+              ), 
             ],
           );
         }
@@ -142,7 +174,10 @@ class _FakeNewsQuizState extends State<FakeNewsQuiz> {
                     "Submit!",
                     style: TextStyle(color: Colors.black, fontSize: 30.0),
                   ),
-                  onPressed: _checkAnswer,
+                  onPressed: () {
+                    _checkAnswer();
+                    _clearAnswer();
+                  }
                 ),
               ),
             ],

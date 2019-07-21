@@ -120,15 +120,6 @@ class _ScamsQuizState extends State<ScamsQuiz> {
       );
     }
   }
-
-
-
-
-
-
-
-
-
   
   @override
   Widget build(BuildContext context) {
@@ -148,7 +139,7 @@ class _ScamsQuizState extends State<ScamsQuiz> {
             padding:
                 const EdgeInsets.symmetric(vertical: 5.0, horizontal: 10.0),
             child: Text(
-              "What's a sign that something is a scam?",
+              "What's a sign that something is a scam? (Select all appropriate answers)",
               style: TextStyle(color: Colors.black, fontSize: 30.0),
             ),
           ),

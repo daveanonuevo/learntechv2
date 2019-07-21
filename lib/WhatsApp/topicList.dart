@@ -160,6 +160,7 @@ class ModuleTopic {
                   AppLocalizations().waTitle1Category4ContentTrans4,
                   style: _localStyle,
                 ),
+                DivideLine(),
                 imagesBox(
                   "assets/WhatsAppTopics/Android/SendingMessages.gif", //Android not deployed
                 ),
@@ -189,6 +190,7 @@ class ModuleTopic {
                   AppLocalizations().waTitle1Category5ContentTrans4,
                   style: _localStyle,
                 ),
+                DivideLine(),
                 imagesBox(
                   "assets/WhatsAppTopics/Android/SendingVoiceMemos.gif",  //Both deployed
                 ),
@@ -223,6 +225,7 @@ class ModuleTopic {
                   AppLocalizations().waTitle1Category6ContentTrans5,
                   style: _localSub,
                 ),
+                DivideLine(),
                 imagesBox(
                   "assets/WhatsAppTopics/Android/SendingPhotos.gif",  //Both deployed
                 ),
@@ -270,6 +273,7 @@ class ModuleTopic {
                   AppLocalizations().waTitle1Category8ContentTrans1,
                   style: _localStyle,
                 ),
+                DivideLine(),
                 imagesBox(
                   "assets/WhatsAppTopics/Android/ReceivingCall.jpg",
                 ),
@@ -278,6 +282,7 @@ class ModuleTopic {
                   AppLocalizations().waTitle1Category8ContentTrans2,
                   style: _localStyle,
                 ),
+                DivideLine(),
                 imagesBox(
                   "assets/WhatsAppTopics/Android/Answering.gif",
                 ),
@@ -286,6 +291,7 @@ class ModuleTopic {
                   AppLocalizations().waTitle1Category8ContentTrans3,
                   style: _localStyle,
                 ),
+                DivideLine(),
                 imagesBox(
                   "assets/WhatsAppTopics/Android/Declining.gif",
                 ),
@@ -310,6 +316,7 @@ class ModuleTopic {
                   AppLocalizations().waTitle1Category9ContentTrans3,
                   style: _localStyle,
                 ),
+                DivideLine(),
                 imagesBox(
                   "assets/WhatsAppTopics/Android/AddingContactstoGroup.gif",  //Both deployed
                 ),
@@ -350,6 +357,7 @@ class ModuleTopic {
                 Text(
                     AppLocalizations().safeTitle2Category1ContentTrans4,
                     style: _localSub),
+                DivideLine(),    
                 imagesBox(
                   "assets/WhatsAppTopics/Android/LastSeen.gif",   //Android Haven't deploy
                 ),

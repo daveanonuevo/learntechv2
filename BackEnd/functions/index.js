@@ -20,8 +20,6 @@ const admin = require('firebase-admin');
 
 admin.initializeApp(functions.config().firebase);
 
-let db = admin.firestore();
-
 
 
 app.use(cors({origin: true}));
@@ -133,7 +131,7 @@ app.post('/attempts/', jsonParser, async function (req, res) {
     await db
         .collection(`quizStats/${req.body.question}/Attempts`)
         .add({"attempts": req.body.attempts,
-        "timestamp":FieldValue.serverTimestamp() });
+            "timestamp":FieldValue.serverTimestamp() });
 
     //retrieve numbers
 
@@ -158,6 +156,17 @@ app.post('/attempts/', jsonParser, async function (req, res) {
     res.end(`Referencing questions: ${req.body.question}, number of attempts: ${req.body.attempts}`);
 });
 
+app.get('/quizzes/', async (req, res) => {
+    let db = admin.firestore();
+    let jsonQuiz = [];
+    await db.collection(`quizzes`).get().then(snap => {
+        snap.forEach(doc => {
+            console.log(doc.data());
+            jsonQuiz.push(JSON.stringify(doc.data()));
+        });
+    });
+    res.end(jsonQuiz.toString());
+});
 
 exports.widgets = functions.https.onRequest((app));
 

@@ -32,9 +32,13 @@ class _FakeNewsQuizState extends State<FakeNewsQuiz> {
         builder: (BuildContext context){
           return AlertDialog(
             title: Text(AppLocalizations().safeTitle2Category3QuizReturnTrans1, style: TextStyle(color: Colors.black, fontWeight: FontWeight.w900, fontSize: 30.0),),
-            content: Text(
-              AppLocalizations().safeTitle2Category3QuizReturnTrans5,
-              style: TextStyle(color: Colors.black, fontSize: 30.0),
+            content: SingleChildScrollView(
+              child: ListBody(
+                children: <Widget>[
+                  Text(AppLocalizations().safeTitle2Category3QuizReturnTrans5,
+                  style: TextStyle(color: Colors.black, fontSize: 30.0)),
+                ],
+              ),
             ),
             actions: <Widget>[
               RaisedButton(

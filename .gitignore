@@ -72,3 +72,5 @@
 ./.idea/*
 ./BackEnd/*
 .idea/workspace.xml
+
+BackEnd/functions/hide\.js

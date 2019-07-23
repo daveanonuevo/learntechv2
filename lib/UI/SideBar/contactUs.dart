@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-//import 'package:http/http.dart' as http;
 import 'dart:async';
 import 'dart:io';
 import 'dart:convert';
@@ -17,7 +16,7 @@ class _ContactPageState extends State<ContactPage> {
   final _emailController = TextEditingController();
   final _messageController = TextEditingController();
   final _urlAPI =
-      "http://us-central1-learntech-d9387.cloudfunctions.net/widgets/";
+      "http://us-central1-learntech-d9387.cloudfunctions.net/widgets/contactus/";
   final _focusName = FocusNode();
   final _focusEmail = FocusNode();
   final _focusMessage = FocusNode();

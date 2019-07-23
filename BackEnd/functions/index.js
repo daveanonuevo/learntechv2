@@ -1,18 +1,28 @@
+'use strict';
+
 const functions = require('firebase-functions');
+
 const nodemailer = require('nodemailer');
 
-var express = require('express');
+const express = require('express');
 
-var bodyParser = require('body-parser')
+const bodyParser = require('body-parser');
 
 const cors = require('cors');
 
+let FieldValue = require('firebase-admin').firestore.FieldValue;
 
-var app = express();
+const app = express();
 
-var urlencodedParser = bodyParser.urlencoded({extended: false})
+const jsonParser = bodyParser.json();
 
-var jsonParser = bodyParser.json()
+const admin = require('firebase-admin');
+
+admin.initializeApp(functions.config().firebase);
+
+let db = admin.firestore();
+
+
 
 app.use(cors({origin: true}));
 
@@ -22,8 +32,10 @@ app.get('/', (req, res) => {
     res.end("Received GET request!");
 });
 
-
-app.post('/', jsonParser, function (req, res) {
+app.get('/contactus/', (req, res) => {
+    res.end("Stop xdd");
+});
+app.post('/contactus/', jsonParser, function (req, res) {
 
     const mailOptions = {
         from: "nssgenics@gmail.com",
@@ -107,19 +119,47 @@ app.post('/', jsonParser, function (req, res) {
 
     res.end("Success");
 });
-exports.widgets = functions.https.onRequest((app));
-// import { user } from "./password.js";
-// import { password } from "./password.js";
-// // Create and Deploy Your First Cloud Functions
-// // https://firebase.google.com/docs/functions/write-firebase-functions
-//
-// exports.helloWorld = functions.https.onRequest((request, response) => {
-//  response.send("Hello from Firebase!");
-// });
-//
-// const gmailEmail = functions.config().gmail.email;
-// const gmailPassword = functions.config().gmail.password;
+app.get('/attempts/', (req, res) => {
+    res.end("Stop attempts endpoint xdd");
+});
+app.post('/attempts/', jsonParser, async function (req, res) {
 
+    if (req.body.attempt <= 0 || !typeof req.body.question === "string") {
+        res.end("Error in values")
+    }
+
+    let db = admin.firestore();
+    // Writes to DB for the number of tries
+    await db
+        .collection(`quizStats/${req.body.question}/Attempts`)
+        .add({"attempts": req.body.attempts,
+        "timestamp":FieldValue.serverTimestamp() });
+
+    //retrieve numbers
+
+    await db.collection(`quizStats/${req.body.question}/Attempts`).get().then(async snap => {
+        let size = snap.size; // will return the collection size
+        let total = 0;
+        snap.forEach(doc => {
+            total += doc.get('attempts');
+        });
+        let average = total / size;
+        await db
+            .collection(`quiz`)
+            .doc(`${req.body.question}`)
+            .set({
+                "average": `${average}`,
+                "totalPlays": `${total}`,
+                "totalCorrects": size,
+                "timestamp": FieldValue.serverTimestamp()
+            });
+    });
+
+    res.end(`Referencing questions: ${req.body.question}, number of attempts: ${req.body.attempts}`);
+});
+
+
+exports.widgets = functions.https.onRequest((app));
 
 const mailTransport = nodemailer.createTransport({
     service: 'gmail',
@@ -128,5 +168,4 @@ const mailTransport = nodemailer.createTransport({
         pass: "",
     },
 });
-
 const APP_NAME = 'LEARN TECH CONTACT US';

@@ -1,4 +1,7 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
+import 'package:learntech/UI/SideBar/contactUs.dart';
 import 'package:learntech/UI/mainScreen.dart';
 import 'package:learntech/localizations.dart';
 
@@ -9,6 +12,8 @@ class FakeNewsQuiz extends StatefulWidget {
 
 class _FakeNewsQuizState extends State<FakeNewsQuiz> {
   int radioValue;
+  int attemptCounter = 0;
+  String url = "https://us-central1-learntech-d9387.cloudfunctions.net/widgets/attempts/";
 
   void _radioButton(int value) {
     setState(() {
@@ -44,6 +49,11 @@ class _FakeNewsQuizState extends State<FakeNewsQuiz> {
                   style: TextStyle(color: Colors.black, fontSize: 30.0),
                 ),
                 onPressed:() {
+                  String jsonMap = jsonEncode({
+                    'attempts': attemptCounter,
+                    'question': '${AppLocalizations().safeTitle2Category3TitleQuizTrans}'
+                  });
+                  apiRequest(url, jsonMap); //Sends jsonMap to url
                   Navigator.push(
                     context, MaterialPageRoute(
                       builder: (context) =>MainPage()
@@ -177,6 +187,7 @@ class _FakeNewsQuizState extends State<FakeNewsQuiz> {
                     style: TextStyle(color: Colors.black, fontSize: 30.0),
                   ),
                   onPressed: () {
+                    attemptCounter++;
                     _checkAnswer();
                     _clearAnswer();
                   }

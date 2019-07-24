@@ -1,4 +1,7 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
+import 'package:learntech/UI/SideBar/contactUs.dart';
 import 'package:learntech/localizations.dart';
 
 import '../displayTopic.dart';
@@ -13,6 +16,8 @@ class _ScamsQuizState extends State<ScamsQuiz> {
   bool checkBoxValue1 = false;
   bool checkBoxValue2 = false;
   bool checkBoxValue3 = false;
+  int attemptCounter = 0;
+  String url = "https://us-central1-learntech-d9387.cloudfunctions.net/widgets/attempts/";
 
   void _clearAnswer() {
     setState(() {
@@ -44,6 +49,11 @@ class _ScamsQuizState extends State<ScamsQuiz> {
                   style: TextStyle(color: Colors.black, fontSize: 30.0),
                 ),
                  onPressed:() {
+                   String jsonMap = jsonEncode({
+                     'attempts': attemptCounter,
+                     'question': '${AppLocalizations().safeTitle2Category3QuizReturnTrans17}'
+                   });
+                   apiRequest(url, jsonMap); //Sends jsonMap to url
                    Navigator.push(
                      context, MaterialPageRoute(
                        builder: (context) => (DisplayTopic(
@@ -189,6 +199,7 @@ class _ScamsQuizState extends State<ScamsQuiz> {
                 style: TextStyle(color: Colors.black, fontSize: 30.0),
               ),
               onPressed: () {
+                attemptCounter++;
                 _checkAnswer();
                 _clearAnswer();
               }

@@ -1,4 +1,7 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
+import 'package:learntech/UI/SideBar/contactUs.dart';
 import 'package:learntech/WhatsApp/displayTopic.dart';
 import 'package:learntech/WhatsApp/topicList.dart';
 import 'package:learntech/localizations.dart';
@@ -10,6 +13,8 @@ class PrivacyQuiz extends StatefulWidget {
 
 class _PrivacyQuizState extends State<PrivacyQuiz> {
   int radioValue;
+  int attemptCounter = 0;
+  String url = "https://us-central1-learntech-d9387.cloudfunctions.net/widgets/attempts/";
 
   void _radioButton(int value) {
     setState(() {
@@ -41,6 +46,11 @@ class _PrivacyQuizState extends State<PrivacyQuiz> {
                   style: TextStyle(color: Colors.black, fontSize: 30.0),
                 ),
                  onPressed:() {
+                  String jsonMap = jsonEncode({
+                    'attempts': attemptCounter,
+                    'question': '${AppLocalizations().safeTitle2Category3QuizReturnTrans12}'
+                  });
+                  apiRequest(url, jsonMap); //Sends jsonMap to url
                    Navigator.push(
                      context, MaterialPageRoute(
                        builder: (context) => (
@@ -68,7 +78,7 @@ class _PrivacyQuizState extends State<PrivacyQuiz> {
           );
         }
       );
-    } else if ((radioValue == 3) || (radioValue == 1)) {
+    } else if ((radioValue == 3) || (radioValue == 1)) { //Wrong Answer
       showDialog(
         context: context,
         builder: (BuildContext context){
@@ -186,6 +196,7 @@ class _PrivacyQuizState extends State<PrivacyQuiz> {
                 style: TextStyle(color: Colors.black, fontSize: 30.0),
               ),
               onPressed: () {
+                attemptCounter++;
                 _checkAnswer();
                 _clearAnswer();
               }

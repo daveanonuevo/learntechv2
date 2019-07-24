@@ -37,7 +37,11 @@ class _DynamicQuizState extends State<DynamicQuiz> {
         ),
         itemCount: _questions.length,
         itemBuilder: (context, index) => ListTile(
-          title: Text(_questions[index].title, style: TextStyle(fontSize: 32)),
+          //leading: Icon(_questions[index].icon, color: Colors.black), //I have no idea whats this lmao 
+          title: Text(
+            _questions[index].title,
+            style: TextStyle(fontSize: 32)
+          ),
           onTap: () => {
             (_questions[index].type == "radio")
                 ? Navigator.push(
@@ -72,6 +76,7 @@ class Question {
   int numberOfOptions;
   List<dynamic> options;
   List<dynamic> correctAnswer;
+  List<Icon> icon;
 
   Question(
       {@required this.type,
@@ -79,7 +84,8 @@ class Question {
       @required this.question,
       @required this.numberOfOptions,
       @required this.options,
-      @required this.correctAnswer});
+      @required this.correctAnswer,
+      @required this.icon});
 
   Question.fromJSON(Map<String, dynamic> jsonMap)
       : type = jsonMap["type"],
@@ -87,7 +93,8 @@ class Question {
         numberOfOptions = jsonMap["numberOfOptions"],
         title = jsonMap["title"],
         options = jsonMap["options"],
-        correctAnswer = jsonMap["correctAnswer"];
+        correctAnswer = jsonMap["correctAnswer"],
+        icon = jsonMap["icon"];
 }
 
 Future<Stream<Question>> getQuestions() async {

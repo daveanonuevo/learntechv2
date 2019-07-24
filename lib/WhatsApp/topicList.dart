@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learntech/WhatsApp/Quiz/dynamicQuiz.dart';
 import 'package:learntech/WhatsApp/Quiz/fakeNewsQuiz.dart';
 import 'package:learntech/WhatsApp/Quiz/privacyQuiz.dart';
 import 'package:learntech/WhatsApp/Quiz/scamsQuiz.dart';
@@ -94,8 +95,7 @@ class ModuleTopic {
               topicName: AppLocalizations().waTitle1Category2Trans,
               icon: Icons.account_circle,
               topicInfo: [
-                Text(
-                    AppLocalizations().waTitle1Category2ContentTrans1,
+                Text(AppLocalizations().waTitle1Category2ContentTrans1,
                     style: _localStyle),
                 DivideLine(),
                 Text(
@@ -103,12 +103,12 @@ class ModuleTopic {
                   style: _localSub,
                 ),
                 DivideLine(),
-                Text(
-                    AppLocalizations().waTitle1Category2ContentTrans3,
+                Text(AppLocalizations().waTitle1Category2ContentTrans3,
                     style: _localStyle),
                 DivideLine(),
                 imagesBox(
-                    "assets/WhatsAppTopics/Android/CreatingAnAccount.gif"),  //both deployed
+                    "assets/WhatsAppTopics/Android/CreatingAnAccount.gif"),
+                //both deployed
                 DivideLine(),
               ],
             ),
@@ -132,7 +132,7 @@ class ModuleTopic {
                 ),
                 DivideLine(),
                 imagesBox(
-                  "assets/WhatsAppTopics/Android/AddingContacts.gif",  //both deployed
+                  "assets/WhatsAppTopics/Android/AddingContacts.gif", //both deployed
                 ),
                 DivideLine(),
               ],
@@ -192,7 +192,7 @@ class ModuleTopic {
                 ),
                 DivideLine(),
                 imagesBox(
-                  "assets/WhatsAppTopics/Android/SendingVoiceMemos.gif",  //Both deployed
+                  "assets/WhatsAppTopics/Android/SendingVoiceMemos.gif", //Both deployed
                 ),
                 DivideLine(),
               ],
@@ -227,7 +227,7 @@ class ModuleTopic {
                 ),
                 DivideLine(),
                 imagesBox(
-                  "assets/WhatsAppTopics/Android/SendingPhotos.gif",  //Both deployed
+                  "assets/WhatsAppTopics/Android/SendingPhotos.gif", //Both deployed
                 ),
                 DivideLine(),
 //                Text(
@@ -260,7 +260,7 @@ class ModuleTopic {
                 ),
                 DivideLine(),
                 imagesBox(
-                  "assets/WhatsAppTopics/Android/GivingCalls.gif",   //Both Deployed
+                  "assets/WhatsAppTopics/Android/GivingCalls.gif", //Both Deployed
                 ),
                 DivideLine(),
               ],
@@ -318,7 +318,7 @@ class ModuleTopic {
                 ),
                 DivideLine(),
                 imagesBox(
-                  "assets/WhatsAppTopics/Android/AddingContactstoGroup.gif",  //Both deployed
+                  "assets/WhatsAppTopics/Android/AddingContactstoGroup.gif", //Both deployed
                 ),
                 DivideLine(),
                 Text(
@@ -354,12 +354,11 @@ class ModuleTopic {
                   AppLocalizations().safeTitle2Category1ContentTrans3,
                   style: _localStyle,
                 ),
-                Text(
-                    AppLocalizations().safeTitle2Category1ContentTrans4,
+                Text(AppLocalizations().safeTitle2Category1ContentTrans4,
                     style: _localSub),
-                DivideLine(),    
+                DivideLine(),
                 imagesBox(
-                  "assets/WhatsAppTopics/Android/LastSeen.gif",   //Android Haven't deploy
+                  "assets/WhatsAppTopics/Android/LastSeen.gif", //Android Haven't deploy
                 ),
                 DivideLine(),
                 Center(
@@ -368,12 +367,13 @@ class ModuleTopic {
                     children: <Widget>[
                       MaterialButton(
                         child: Text(
-                          AppLocalizations().safeTitle2Category3QuizReturnTrans22,
+                          AppLocalizations()
+                              .safeTitle2Category3QuizReturnTrans22,
                           style: TextStyle(
                             fontSize: 30.0,
                           ),
                         ),
-                        height:90.0,
+                        height: 90.0,
                         highlightElevation: 8,
                         color: Colors.amberAccent,
                         shape: RoundedRectangleBorder(
@@ -381,12 +381,12 @@ class ModuleTopic {
                         ),
                         onPressed: () {
                           Navigator.push(
-                            context, MaterialPageRoute(
-                              builder: (context) => PrivacyQuiz()
-                            ),
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => PrivacyQuiz()),
                           );
                         },
-                      ), 
+                      ),
                     ],
                   ),
                 ),
@@ -397,29 +397,21 @@ class ModuleTopic {
               topicName: AppLocalizations().safeTitle2Category2Trans,
               icon: Icons.warning,
               topicInfo: [
-                Text(
-                  AppLocalizations().safeTitle2Category2ContentTrans1,
-                  style: _localStyle
-                ),
+                Text(AppLocalizations().safeTitle2Category2ContentTrans1,
+                    style: _localStyle),
                 DivideLine(),
                 Image.asset(
                   "assets/SecurityTopics/Scam.jpg",
                 ),
                 DivideLine(),
-                Text(
-                  AppLocalizations().safeTitle2Category2ContentTrans2,
-                  style: _localStyle
-                ),
+                Text(AppLocalizations().safeTitle2Category2ContentTrans2,
+                    style: _localStyle),
                 DivideLine(),
-                Text(
-                  AppLocalizations().safeTitle2Category2ContentTrans3,
-                  style: _localStyle
-                ),
+                Text(AppLocalizations().safeTitle2Category2ContentTrans3,
+                    style: _localStyle),
                 DivideLine(),
-                Text(
-                  AppLocalizations().safeTitle2Category2ContentTrans4,
-                  style: _localStyle
-                ),
+                Text(AppLocalizations().safeTitle2Category2ContentTrans4,
+                    style: _localStyle),
                 DivideLine(),
                 Center(
                   child: Row(
@@ -427,12 +419,13 @@ class ModuleTopic {
                     children: <Widget>[
                       MaterialButton(
                         child: Text(
-                          AppLocalizations().safeTitle2Category3QuizReturnTrans22,
+                          AppLocalizations()
+                              .safeTitle2Category3QuizReturnTrans22,
                           style: TextStyle(
                             fontSize: 30.0,
                           ),
                         ),
-                        height:90.0,
+                        height: 90.0,
                         highlightElevation: 8,
                         color: Colors.amberAccent,
                         shape: RoundedRectangleBorder(
@@ -440,12 +433,12 @@ class ModuleTopic {
                         ),
                         onPressed: () {
                           Navigator.push(
-                            context, MaterialPageRoute(
-                              builder: (context) => ScamsQuiz()
-                            ),
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => ScamsQuiz()),
                           );
                         },
-                      ), 
+                      ),
                     ],
                   ),
                 ),
@@ -456,19 +449,15 @@ class ModuleTopic {
               topicName: AppLocalizations().safeTitle2Category3Trans,
               icon: Icons.announcement,
               topicInfo: [
-                Text(
-                    AppLocalizations().safeTitle2Category3ContentTrans1,
-                    style: _localStyle
-                ),
+                Text(AppLocalizations().safeTitle2Category3ContentTrans1,
+                    style: _localStyle),
                 DivideLine(),
                 Image.asset(
                   "assets/SecurityTopics/FakeNews.jpg",
                 ),
                 DivideLine(),
-                Text(
-                    AppLocalizations().safeTitle2Category3ContentTrans2,
-                    style: _localStyle
-                ),
+                Text(AppLocalizations().safeTitle2Category3ContentTrans2,
+                    style: _localStyle),
                 DivideLine(),
                 Center(
                   child: Row(
@@ -476,12 +465,13 @@ class ModuleTopic {
                     children: <Widget>[
                       MaterialButton(
                         child: Text(
-                          AppLocalizations().safeTitle2Category3QuizReturnTrans22,
+                          AppLocalizations()
+                              .safeTitle2Category3QuizReturnTrans22,
                           style: TextStyle(
                             fontSize: 30.0,
                           ),
                         ),
-                        height:90.0,
+                        height: 90.0,
                         highlightElevation: 8,
                         color: Colors.amberAccent,
                         shape: RoundedRectangleBorder(
@@ -489,16 +479,23 @@ class ModuleTopic {
                         ),
                         onPressed: () {
                           Navigator.push(
-                            context, MaterialPageRoute(
-                              builder: (context) => FakeNewsQuiz()
-                            ),
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => FakeNewsQuiz()),
                           );
                         },
-                      ), 
+                      ),
                     ],
                   ),
                 ),
                 DivideLine(),
+              ],
+            ),
+            ModuleTopic(
+              topicName: "Online Quizzes (experimental)",
+              icon: Icons.warning,
+              topicInfo: [
+                DynamicQuiz(),
               ],
             ),
           ];

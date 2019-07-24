@@ -29,6 +29,11 @@ class _FakeNewsQuizState extends State<FakeNewsQuiz> {
 
   void _checkAnswer() {
     if (radioValue == 2) {
+      String jsonMap = jsonEncode({
+        'attempts': attemptCounter,
+        'question': '${AppLocalizations().safeTitle2Category3TitleQuizTrans}'
+      });
+      apiRequest(url, jsonMap); //Sends jsonMap to url
       showDialog(
         context: context,
         builder: (BuildContext context){
@@ -49,11 +54,6 @@ class _FakeNewsQuizState extends State<FakeNewsQuiz> {
                   style: TextStyle(color: Colors.black, fontSize: 30.0),
                 ),
                 onPressed:() {
-                  String jsonMap = jsonEncode({
-                    'attempts': attemptCounter,
-                    'question': '${AppLocalizations().safeTitle2Category3TitleQuizTrans}'
-                  });
-                  apiRequest(url, jsonMap); //Sends jsonMap to url
                   Navigator.push(
                     context, MaterialPageRoute(
                       builder: (context) =>MainPage()

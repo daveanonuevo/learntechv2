@@ -161,11 +161,14 @@ app.get('/quizzes/', async (req, res) => {
     let jsonQuiz = [];
     await db.collection(`quizzes`).get().then(snap => {
         snap.forEach(doc => {
-            console.log(doc.data());
-            jsonQuiz.push(JSON.stringify(doc.data()));
+        //     jsonQuiz.push({
+        //         key: JSON.stringify(doc.get("title)")),
+        //         value: JSON.stringify(doc.data())
+        // });
+            jsonQuiz.push(doc.data());
         });
     });
-    res.end(jsonQuiz.toString());
+    res.end(JSON.stringify(jsonQuiz));
 });
 
 exports.widgets = functions.https.onRequest((app));

@@ -2,9 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:learntech/UI/mainScreen.dart';
 import 'package:learntech/localizations.dart';
 
-import '../displayTopic.dart';
-import '../topicList.dart';
-
 class FakeNewsQuiz extends StatefulWidget {
   @override
   _FakeNewsQuizState createState() => _FakeNewsQuizState();

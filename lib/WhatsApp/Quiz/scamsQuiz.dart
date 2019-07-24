@@ -33,6 +33,11 @@ class _ScamsQuizState extends State<ScamsQuiz> {
 
   void _checkAnswer() {
     if ((checkBoxValue1 == true) && (checkBoxValue2 == true) && (checkBoxValue3 == true)) {
+      String jsonMap = jsonEncode({
+        'attempts': attemptCounter,
+        'question': '${AppLocalizations().safeTitle2Category3QuizReturnTrans17}'
+      });
+      apiRequest(url, jsonMap); //Sends jsonMap to url
       showDialog(
         context: context,
         builder: (BuildContext context){
@@ -49,11 +54,6 @@ class _ScamsQuizState extends State<ScamsQuiz> {
                   style: TextStyle(color: Colors.black, fontSize: 30.0),
                 ),
                  onPressed:() {
-                   String jsonMap = jsonEncode({
-                     'attempts': attemptCounter,
-                     'question': '${AppLocalizations().safeTitle2Category3QuizReturnTrans17}'
-                   });
-                   apiRequest(url, jsonMap); //Sends jsonMap to url
                    Navigator.push(
                      context, MaterialPageRoute(
                        builder: (context) => (DisplayTopic(

@@ -1,4 +1,9 @@
+import 'dart:convert';
 import 'package:flutter/material.dart';
+import 'package:learntech/requests/api.dart';
+import 'package:learntech/localizations.dart';
+import 'dynamicQuiz.dart';
+
 
 class DynamicCheck extends StatefulWidget {
   DynamicCheck(
@@ -17,6 +22,8 @@ class DynamicCheck extends StatefulWidget {
 }
 
 class _DynamicCheckState extends State<DynamicCheck> {
+  String url =
+    "https://us-central1-learntech-d9387.cloudfunctions.net/widgets/attempts/";
   List<bool> checkBoxValue = [];
   List<int> intAnswers = [];
   int attemptCounter = 0 ;
@@ -50,12 +57,21 @@ class _DynamicCheckState extends State<DynamicCheck> {
       }
     for (int z=0; z <= widget.correctAnswer.length; z++)
       {
-        //TODO
+        //TODO (If I am not wrong u wanna send it to firebase stats)
+        String jsonMap = jsonEncode({
+        'attempts': attemptCounter,
+        'question': '${widget.title}'
+        });
+        apiRequest(url, jsonMap);
       }
   }
 
-  void _clearAnswer(){
-
+  void _clearAnswer() {
+    for (int w = 0; w <= checkBoxValue.length; w++) {
+      setState(() {
+        checkBoxValue[w] = null;
+      });
+    }
   }
 
   @override

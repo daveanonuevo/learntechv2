@@ -37,7 +37,10 @@ class _DynamicQuizState extends State<DynamicQuiz> {
         ),
         itemCount: _questions.length,
         itemBuilder: (context, index) => ListTile(
-          title: Text(_questions[index].title, style: TextStyle(fontSize: 32)),
+          title: Text(
+            _questions[index].title,
+            style: TextStyle(fontSize: 32)
+          ),
           onTap: () => {
             (_questions[index].type == "radio")
                 ? Navigator.push(

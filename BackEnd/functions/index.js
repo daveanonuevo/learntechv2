@@ -155,7 +155,6 @@ app.post('/attempts/', jsonParser, async function (req, res) {
 
     res.end(`Referencing questions: ${req.body.question}, number of attempts: ${req.body.attempts}`);
 });
-
 app.get('/quizzes/', async (req, res) => {
     let db = admin.firestore();
     let jsonQuiz = [];
@@ -170,6 +169,30 @@ app.get('/quizzes/', async (req, res) => {
     });
     res.end(JSON.stringify(jsonQuiz));
 });
+app.post('/quizzes/', jsonParser, async function (req, res) {
+
+    const question = req.body.question;
+    const title = req.body.title;
+    const type = req.body.type;
+    const options = req.body.options;
+    const correctAnswer = req.body.correctAnswer;
+    const numberOfOptions = req.body.numberOfOptions;
+    console.log(req);
+    let db = admin.firestore();
+    await db
+        .collection(`quizzes`).doc(`${title}`)
+        .set({
+            "title": title,
+            "type": type,
+            "question": question,
+            "correctAnswer": correctAnswer,
+            "options": options,
+            "numberOfOptions": numberOfOptions,
+            "timestamp":FieldValue.serverTimestamp() });
+
+    res.end(`You have added the question "${req.body.question}", of title "${req.body.title}", of type "${req.body.type}".\n The options given are "${req.body.options}", the correct answers is/are "${req.body.correctAnswer}".`);
+});
+
 
 exports.widgets = functions.https.onRequest((app));
 

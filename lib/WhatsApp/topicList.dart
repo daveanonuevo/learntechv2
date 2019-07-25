@@ -495,7 +495,30 @@ class ModuleTopic {
               topicName: "Online Quizzes (experimental)",
               icon: Icons.warning,
               topicInfo: [
-                DynamicQuiz(),
+                Text("Warning! This is an experimental feature. This requires internet connection.", style: TextStyle(fontSize: 32.0),),
+
+                MaterialButton(
+                  child: Text("Proceed",
+                    style: TextStyle(
+                      fontSize: 30.0,
+                      color: Colors.black,
+                    ),
+                  ),
+                  height: 90.0,
+                  highlightElevation: 8,
+                  color: Colors.lightBlue,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => DynamicQuiz()),
+                    );
+                  },
+                ),
+
               ],
             ),
           ];

@@ -60,7 +60,7 @@ class _DynamicQuizState extends State<DynamicQuiz> {
                       options: _questions[index].options,
                       title: _questions[index].title,
                     )),
-                  ) //push to a radio dynamic page
+                  ) //push to a check dynamic page
           },
         ),
       ),
